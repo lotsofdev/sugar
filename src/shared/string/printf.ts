@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import __sprintf from 'sprintf-js.js';
+import __sprintf from 'sprintf-js';
 
 /**
  * @name                printf
