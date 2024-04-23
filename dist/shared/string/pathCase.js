@@ -17,7 +17,7 @@ import { pathCase } from 'change-case';
  * @snippet         __pathCase($1)
  *
  * @example     js
- * import { __pathCase } from '@coffeekraken/sugar/string.js';
+ * import { __pathCase } from '@lotsof/sugar/string';
  * __pathCase('hello world'); // => hello/world
  *
  * @see             https://www.npmjs.com/package/change-case

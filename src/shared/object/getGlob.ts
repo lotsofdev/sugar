@@ -26,7 +26,7 @@ import __flatten from './flatten.js';
  * @snippet         __getGlob($1, $2)
  *
  * @example             js
- * import { __getGlob } from '@coffeekraken/sugar/object.js';
+ * import { __getGlob } from '@lotsof/sugar/object';
  * __getGlob({
  *  hello: {
  *     world: true,

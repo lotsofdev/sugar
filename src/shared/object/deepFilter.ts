@@ -21,7 +21,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @todo      tests
  *
  * @example           js
- * import { __deepFilter } from '@coffeekraken/sugar/object.js';
+ * import { __deepFilter } from '@lotsof/sugar/object';
  * __deepFilter ({
  *    coco: 'hello',
  *    plop: true,

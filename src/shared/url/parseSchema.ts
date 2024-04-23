@@ -31,7 +31,7 @@ import __parseString from '../string/parse.js';
  * @todo      tests
  *
  * @example       js
- * import { __parseSchema } from '@coffeekraken/sugar/url.js';
+ * import { __parseSchema } from '@lotsof/sugar/url';
  * __parseSchema('https://github.com/myApp/master/3', '{project:string}/{?branch:string}/{?idx:number}');
  * // {
  * //   url: 'https://github.com/myApp/master/3',

@@ -26,7 +26,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * __deepClean($1);
  *
  * @example       js
- * import { __deepClean } from '@coffeekraken/sugar/object.js';
+ * import { __deepClean } from '@lotsof/sugar/object';
  * __deepClean({
  *    hello: 'world',
  *    something: null

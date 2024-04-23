@@ -24,7 +24,7 @@
  * })
  *
  * @example               js
- * import { __sort } from '@coffeekraken/sugar/object.js';
+ * import { __sort } from '@lotsof/sugar/object';
  * __sort({
  *    coco: { weight: 10 },
  *    lolo: { weight: 2 },

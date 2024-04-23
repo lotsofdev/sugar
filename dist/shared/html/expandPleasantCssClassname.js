@@ -17,7 +17,7 @@
  * @todo      tests
  *
  * @example         js
- * import { __expandPleasantCssClassname } from '@coffeekraken/sugar/html.js';
+ * import { __expandPleasantCssClassname } from '@lotsof/sugar/html';
  * __expandPleasantCssClassname('...');
  *
  * @since       2.0.0

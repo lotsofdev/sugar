@@ -16,7 +16,7 @@
  * @snippet         __formatDuration($1)
  *
  * @example       js
- * import { __formatDuration } from '@coffeekraken/sugar/datetime.js';
+ * import { __formatDuration } from '@lotsof/sugar/datetime';
  * __formatDuration(2000); // => 2s
  *
  * @since       2.0.0

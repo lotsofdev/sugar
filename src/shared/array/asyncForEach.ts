@@ -17,7 +17,7 @@
  * });
  *
  * @example         js
- * import { __asyncForEach } from '@coffeekraken/sugar/array.js';
+ * import { __asyncForEach } from '@lotsof/sugar/array';
  * const waitFor = (ms) => new Promise(r => setTimeout(r, ms));
  * __asyncForEach([0,1,2,3], async (item) => {
  *    await waitWor(50);

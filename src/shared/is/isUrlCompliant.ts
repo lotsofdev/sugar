@@ -19,7 +19,7 @@ import __urlCompliant from '../string/urlCompliant.js';
  * @snippet         __isUrlCompliant($1)
  *
  * @example         php
- * import { __isUrlCompliant } from '@coffeekraken/sugar/string.js';
+ * import { __isUrlCompliant } from '@lotsof/sugar/string';
  * __isUrlCompliant('Hello world'); // false
  * __isUrlCompliant('/something/cool'); // true
  *

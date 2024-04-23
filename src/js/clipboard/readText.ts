@@ -15,7 +15,7 @@
  * @snippet         __readText($1)
  *
  * @example         js
- * import { __copyText, __readText } from '@lotsof/sugar/clipboard.js';
+ * import { __copyText, __readText } from '@lotsof/sugar/clipboard';
  * await __readText();
  *
  * @since           2.0.0

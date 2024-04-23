@@ -28,7 +28,7 @@ import __sha256 from '../crypto/sha256.js';
  * @snippet         __folderHashSync($1)
  *
  * @example         js
- * import { __folderHashSync } from '@coffeekraken/sugar/fs.js';
+ * import { __folderHashSync } from '@lotsof/sugar/fs';
  * __folderHashSync('my/cool/folder'); // => YZOrKDx9LCLd8X39PoFTflXGpRU=,
  *
  * @since           2.0.0

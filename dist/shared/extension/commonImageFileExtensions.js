@@ -14,7 +14,7 @@
  * @snippet         __commonImageFileExtensions()
  *
  * @example         js
- * import { __commonImageFileExtensions } from '@coffeekraken/sugar/extension.js';
+ * import { __commonImageFileExtensions } from '@lotsof/sugar/extension';
  * const extensions = __commonImageFileExtensions();
  *
  * @since       2.0.0

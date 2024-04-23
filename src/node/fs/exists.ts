@@ -25,7 +25,7 @@ import * as __fs from 'fs';
  * await __exists($1)
  *
  * @example         js
- * import { __exists } from '@coffeekraken/sugar/fs.js';
+ * import { __exists } from '@lotsof/sugar/fs';
  *  __exists('/something/cool.txt'); // => true
  *
  * @since       2.0.0

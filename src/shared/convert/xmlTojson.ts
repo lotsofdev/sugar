@@ -16,7 +16,7 @@ import { XMLParser } from 'fast-xml-parser';
  * @snippet         __xmlToJson($1)
  *
  * @example         js
- * import ( __xmlToJson ) from '@lotsof/sugar/convert.js';
+ * import ( __xmlToJson ) from '@lotsof/sugar/convert';
  * __xmlToJson('...');
  *
  * @todo    tests

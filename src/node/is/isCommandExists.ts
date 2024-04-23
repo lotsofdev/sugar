@@ -19,7 +19,7 @@ import { spawnSync } from 'child_process';
  * await __isCommandExists($1)
  *
  * @example         js
- * import { __isCommandExists } from '@coffeekraken/sugar/is.js';
+ * import { __isCommandExists } from '@lotsof/sugar/is';
  * await  __isCommandExists('ls'); // => true
  *
  * @since       2.0.0

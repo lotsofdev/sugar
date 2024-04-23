@@ -21,7 +21,7 @@ import __set from './set.js';
  * @snippet         __ensurePropertyExists($1, $2)
  *
  * @example           js
- * import { __ensureProperyExists } from '@coffeekraken/sugar/object.js';
+ * import { __ensureProperyExists } from '@lotsof/sugar/object';
  * const myObj = { hello: 'world' }«
  * __ensureProperyExists(myObj, 'cool.object', {});
  * // { hello: 'world', cool: { object: {} } }

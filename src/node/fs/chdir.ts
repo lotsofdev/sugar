@@ -16,7 +16,7 @@
  * @snippet         __chdir($1)
  *
  * @example         js
- * import { __chdir } from '@coffeekraken/sugar/fs.js';
+ * import { __chdir } from '@lotsof/sugar/fs';
  * __chdir('/my/cool/file.txt', 'Hello world');
  *
  * @since       2.0.0

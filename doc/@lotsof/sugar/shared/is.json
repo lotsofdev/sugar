@@ -1,0 +1,70 @@
+{
+    "id": "@lotsof.sugar.shared.is.isArray",
+    "name": "isArray",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "value": {
+            "name": "value",
+            "type": {
+                "types": [
+                    {
+                        "type": "Mixed"
+                    }
+                ],
+                "raw": "Mixed"
+            },
+            "description": "The value to check",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Boolean"
+                }
+            ],
+            "raw": "Boolean"
+        },
+        "description": "true if it's a Array, false if not"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Check if the passed value is a js Array",
+    "namespace": "@lotsof.sugar.shared.is",
+    "status": "stable",
+    "snippet": {
+        "label": "__isArray($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __isArray } from '@coffeekraken/sugar/is'\nif (__isArray([]) {\n  // do something\n}"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "isArray.ts",
+    "extension": "ts",
+    "relPath": "src/shared/is/isArray.ts",
+    "children": {}
+}

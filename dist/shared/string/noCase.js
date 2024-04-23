@@ -17,7 +17,7 @@ import { noCase } from 'change-case';
  * @snippet         __noCase($1)
  *
  * @example     js
- * import { __noCase } from '@coffeekraken/sugar/string.js';
+ * import { __noCase } from '@lotsof/sugar/string';
  * __noCase('hello world'); // => hello world
  *
  * @see             https://www.npmjs.com/package/change-case

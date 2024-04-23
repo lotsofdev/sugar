@@ -23,7 +23,7 @@ import __rgbaToHsla from './rgbaToHsla.js';
  * @snippet         __convert($1, $2)
  *
  * @example         js
- * import { __convert } from '@coffeekraken/sugar/color.js';
+ * import { __convert } from '@lotsof/sugar/color';
  * __convert('rgba(10,20,30,100)', 'rgba'); // => { r: 10, g: 20, b: 30, a: 100 }
  *
  * @since       2.0.0

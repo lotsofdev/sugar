@@ -38,7 +38,7 @@ import __deepMerge from '../object/deepMerge.js';
  * @todo      tests
  *
  * @example           js
- * import { __deepProxy } from '@coffeekraken/sugar/object.js';
+ * import { __deepProxy } from '@lotsof/sugar/object';
  * const a = __deepProxy({
  *    hello: 'world'
  * }, (actionObj) => {

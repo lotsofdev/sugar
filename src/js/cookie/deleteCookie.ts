@@ -17,7 +17,7 @@ import __setCookie from './setCookie.js';
  * @todo            tests
  *
  * @example         js
- * import { __deleteCookie } from '@lotsof/sugar/cookie.js';
+ * import { __deleteCookie } from '@lotsof/sugar/cookie';
  * __deleteCookie('myCookie');
  *
  * @since       2.0.0

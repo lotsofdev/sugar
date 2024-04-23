@@ -18,7 +18,7 @@ import { constantCase } from 'change-case';
  * @snippet         __constantCase($1)
  *
  * @example     js
- * import { __constantCase } from '@coffeekraken/sugar/string.js';
+ * import { __constantCase } from '@lotsof/sugar/string';
  * __constantCase('hello world'); // => HELLO_WORLD
  *
  * @see             https://www.npmjs.com/package/change-case

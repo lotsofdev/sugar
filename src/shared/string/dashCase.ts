@@ -18,7 +18,7 @@ import { kebabCase } from 'change-case';
  * @snippet         __dashCase($1)
  *
  * @example     js
- * import { __dashCase } from '@coffeekraken/sugar/string.js';
+ * import { __dashCase } from '@lotsof/sugar/string';
  * __dashCase('hello world'); // => hello-world
  *
  * @see             https://www.npmjs.com/package/change-case

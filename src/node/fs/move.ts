@@ -19,7 +19,7 @@ import __fs from 'fs-extra';
  * await __move($1, $2)
  *
  * @example       js
- * import { __move } from '@coffeekraken/sugar/fs.js';
+ * import { __move } from '@lotsof/sugar/fs';
  * await __move('my/cool/dir', 'another/place/for/directory').then(() => {
  *    // do something...
  * });

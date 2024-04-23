@@ -1,0 +1,97 @@
+{
+    "id": "@lotsof.sugar.shared.math.circleConstrain",
+    "name": "circleConstrain",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "center": {
+            "name": "center",
+            "type": {
+                "types": [
+                    {
+                        "type": "Vector2"
+                    }
+                ],
+                "raw": "Vector2"
+            },
+            "description": "The center point of the circle",
+            "defaultStr": ""
+        },
+        "radius": {
+            "name": "radius",
+            "type": {
+                "types": [
+                    {
+                        "type": "Number"
+                    }
+                ],
+                "raw": "Number"
+            },
+            "description": "The radius to constrain the point in",
+            "defaultStr": ""
+        },
+        "point": {
+            "name": "point",
+            "type": {
+                "types": [
+                    {
+                        "type": "Vector2"
+                    }
+                ],
+                "raw": "Vector2"
+            },
+            "description": "The point to constrain",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Vector2"
+                }
+            ],
+            "raw": "Vector2"
+        },
+        "description": "The new constrained value for the point"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Take as parameter a central point, a radius and a points to constrain inside the circle defined by the radius",
+    "namespace": "@lotsof.sugar.shared.math",
+    "status": "stable",
+    "snippet": {
+        "label": "__circleConstrain($1, $1)",
+        "code": "__circleConstain({\n     x: $1, y: $2\n}, $3, {\n     x: $4, y: $5\n})"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __circleConstrain } from '@coffeekraken/sugar/math'\n__circleConstrain({\n\tx: 10, y: 10\n}, 10, {\n\tx: 10, y: 5\n})"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "circleConstrain.ts",
+    "extension": "ts",
+    "relPath": "src/shared/math/circleConstrain.ts",
+    "children": {}
+}

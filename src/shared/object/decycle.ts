@@ -18,7 +18,7 @@ import { decycle as __decycle } from 'json-cyclic';
  * @todo     tests
  *
  * @example     js
- * import { __decycle } from '@coffeekraken/sugar/object.js';
+ * import { __decycle } from '@lotsof/sugar/object';
  * __decycle({
  *    something: 'cool',
  *    with: 'circular references',

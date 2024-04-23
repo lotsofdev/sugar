@@ -16,7 +16,7 @@
  * @todo      tests
  *
  * @example         js
- * import { __stripDocblocks } from '@coffeekraken/sugar/string.js';
+ * import { __stripDocblocks } from '@lotsof/sugar/string';
  * __stripDocblocks('...');
  *
  * @since       2.0.0

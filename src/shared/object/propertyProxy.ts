@@ -21,7 +21,7 @@
  * @todo      tests
  *
  * @example 	js
- * import { __propertyProxy } from '@coffeekraken/sugar/object.js';
+ * import { __propertyProxy } from '@lotsof/sugar/object';
  * const myObject = {
  * 		title : 'World'
  * };

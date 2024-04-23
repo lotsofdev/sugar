@@ -22,7 +22,7 @@ import __sameItems from './sameItems.js';
  * @snippet         __intersection($1, $2)
  *
  * @example         js
- * import { __intersection } from '@coffeekraken/sugar/array.js';
+ * import { __intersection } from '@lotsof/sugar/array';
  * __intersection([1,2,3,4], [1,3,5]); // => [1,3]
  *
  * @since           2.0.0

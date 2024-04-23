@@ -17,7 +17,7 @@
  * @snippet         __hexToRgba($1)
  *
  * @example         js
- * import { __hexToRgba } from '@coffeekraken/sugar/color.js';
+ * import { __hexToRgba } from '@lotsof/sugar/color';
  * __hexToRgba('#ff00ff');
  *
  * @see         https://www.npmjs.com/package/colors-convert

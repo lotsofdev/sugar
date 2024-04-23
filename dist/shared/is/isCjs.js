@@ -13,7 +13,7 @@
  * @snippet         __isCjs()
  *
  * @example       js
- * import { __isCjs } from '@coffeekraken/sugar/is.js';
+ * import { __isCjs } from '@lotsof/sugar/is';
  * __isCjs(); // => true
  *
  * @since     2.0.0

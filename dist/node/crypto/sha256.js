@@ -1,4 +1,4 @@
-import sha256 from 'crypto-js/sha256.js';
+import sha256 from 'crypto-js/sha256';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';
 const __encryptedMessages = {};
@@ -14,7 +14,7 @@ const __encryptedMessages = {};
  * @snippet         __sha256.encrypt($1)
  *
  * @example         js
- * import { __sha256 } from '@coffeekraken/sugar/crypto.js';
+ * import { __sha256 } from '@coffeekraken/sugar/crypto';
  * __sha256.encrypt('hello world');
  *
  * @todo        tests

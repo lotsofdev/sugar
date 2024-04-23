@@ -1,0 +1,84 @@
+{
+    "id": "@lotsof.sugar.shared.url.gravatarUrl",
+    "name": "gravatarUrl",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "email": {
+            "name": "email",
+            "type": {
+                "types": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "raw": "String"
+            },
+            "description": "The user email",
+            "defaultStr": ""
+        },
+        "size": {
+            "name": "size",
+            "type": {
+                "types": [
+                    {
+                        "type": "Number"
+                    }
+                ],
+                "raw": "Number"
+            },
+            "description": "The wanted image size. From 1 to 2048",
+            "default": 200,
+            "defaultStr": "200"
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "String"
+                }
+            ],
+            "raw": "String"
+        },
+        "description": "The generated gravatar url"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Return a gravatar url depending on the passed user email and size",
+    "namespace": "@lotsof.sugar.shared.url",
+    "status": "stable",
+    "snippet": {
+        "label": "__gravatarUrl($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __gravatarUrl } from '@lotsof/sugar/url';\n__gravatarUrl('olivier.bossel@gmail.com'); // https://www.gravatar.com/avatar/b5df60055b6287bb7c90c0078ce20a5f"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "gravatarUrl.ts",
+    "extension": "ts",
+    "relPath": "src/shared/url/gravatarUrl.ts",
+    "children": {}
+}

@@ -1,5 +1,5 @@
-import AES from 'crypto-js/aes.js';
-import utf8 from 'crypto-js/enc-utf8.js';
+import AES from 'crypto-js/aes';
+import utf8 from 'crypto-js/enc-utf8';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';
 /**
@@ -16,7 +16,7 @@ import toString from '../../shared/string/toString.js';
  * @snippet         __aes.encrypt($1)
  *
  * @example         js
- * import { __aes } from '@coffeekraken/sugar/crypto.js';
+ * import { __aes } from '@lotsof/sugar/crypto';
  * __aes.encrypt('hello world');
  *
  * @since           2.0.0

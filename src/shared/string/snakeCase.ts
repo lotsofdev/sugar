@@ -18,7 +18,7 @@ import { snakeCase } from 'change-case';
  * @snippet         __snakeCase($1)
  *
  * @example     js
- * import { __snakeCase } from '@coffeekraken/sugar/string.js';
+ * import { __snakeCase } from '@lotsof/sugar/string';
  * __snakeCase('hello world'); // => HELLO WORLD
  *
  * @see             https://www.npmjs.com/package/change-case

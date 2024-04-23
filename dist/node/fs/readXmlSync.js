@@ -17,7 +17,7 @@ import __xmlToJson from '../../shared/convert/xmlTojson.js';
  * @snippet         __readXmlSync($1)
  *
  * @example         js
- * import { __readXmlSync } from '@coffeekraken/sugar/fs.js';
+ * import { __readXmlSync } from '@lotsof/sugar/fs';
  * __readXmlSync('my-cool-xml/file.xml');
  *
  * @since       2.0.0

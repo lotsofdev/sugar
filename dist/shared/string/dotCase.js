@@ -17,7 +17,7 @@ import { dotCase } from 'change-case';
  * @snippet         __dotCase($1)
  *
  * @example     js
- * import { __dotCase } from '@coffeekraken/sugar/string.js';
+ * import { __dotCase } from '@lotsof/sugar/string';
  * __dotCase('hello world'); // => hello.world
  *
  * @see             https://www.npmjs.com/package/change-case

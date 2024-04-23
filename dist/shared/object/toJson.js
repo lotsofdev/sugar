@@ -16,7 +16,7 @@ import __set from './set.js';
  * @snippet         __toJson($1)
  *
  * @example         js
- * import { __toJson } from '@coffeekraken/sugar/object.js';
+ * import { __toJson } from '@lotsof/sugar/object';
  * class MyClass {
  *      hello = 'world';
  *      something() {}

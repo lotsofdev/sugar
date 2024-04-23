@@ -15,7 +15,7 @@ import __fs from 'fs-extra';
  * @snippet         __unlinkSync($1)
  *
  * @example       js
- * import { __unlinkSync } from '@coffeekraken/sugar/fs.js';
+ * import { __unlinkSync } from '@lotsof/sugar/fs';
  *  __unlinkSync('my/cool/file.json');
  *
  * @see             https://github.com/jprichardson/node-fs-extra

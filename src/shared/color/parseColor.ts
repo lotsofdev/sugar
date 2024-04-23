@@ -24,7 +24,7 @@ import __rgbaToHsla from './rgbaToHsla.js';
  * @snippet         __parseColor($1)
  *
  * @example         js
- * import { __parseColor } from '@coffeekraken/sugar/color.js';
+ * import { __parseColor } from '@lotsof/sugar/color';
  * __parseColor('rgba(10,20,30,100)'); // => { r: 10, b: 20, b: 30, a: 100 }
  *
  * @since         2.0.0

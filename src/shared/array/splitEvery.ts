@@ -15,7 +15,7 @@
  * @snippet         __splitEvery($1, $2)
  *
  * @example           js
- * import { __splitEvery } from '@coffeekraken/sugar/array.js';
+ * import { __splitEvery } from '@lotsof/sugar/array';
  * __splitEvery([1,2,3,4,5,6,7,8,9], 3);
  * // [[1,2,3],[4,5,6],[7,8,9]]
  *

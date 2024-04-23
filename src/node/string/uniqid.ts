@@ -16,7 +16,7 @@ import { randomUUID } from 'crypto';
  * @snippet         __uniqid()
  *
  * @example       js
- * import { __uniqid } from '@coffeekraken/sugar/string.js';
+ * import { __uniqid } from '@lotsof/sugar/string';
  * console.log(__uniqid()); // => 1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed
  *
  * @see       https://geshan.com.np/blog/2022/01/nodejs-uuid/

@@ -16,7 +16,7 @@
  * @snippet         __roundWithSign($1)
  *
  * @example         js
- * import { __roundWithSign } from '@coffeekraken/sugar/math.js';
+ * import { __roundWithSign } from '@lotsof/sugar/math';
  * __roundWithSign(1.5); // => 1
  * __roundWithSign(-1.5); // => -1
  *

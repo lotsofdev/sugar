@@ -29,7 +29,7 @@
  * @todo      tests
  *
  * @example     js
- * import { __replaceTokens } from '@coffeekraken/sugar/string.js';
+ * import { __replaceTokens } from '@lotsof/sugar/string';
  * __replaceTokens('hello [world]', { world: 'Coco' }); // => hello Coco
  *
  * @since     2.0.0

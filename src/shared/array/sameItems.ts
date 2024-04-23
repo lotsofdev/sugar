@@ -24,7 +24,7 @@ import __unique from './unique.js';
  * @snippet         __sameItems($1, $2)
  *
  * @example         js
- * import { __sameItems } from '@coffeekraken/sugar/array.js';
+ * import { __sameItems } from '@lotsof/sugar/array';
  * __sameItems([1,2,3,4], [1,3,5]); // => [1,3]
  *
  * @since           2.0.0

@@ -20,7 +20,7 @@ import __simplifySpecialChars from './simplifySpecialChars.js';
  * @todo      tests
  *
  * @example         php
- * import { __idCompliant } from '@coffeekraken/sugar/string.js';
+ * import { __idCompliant } from '@lotsof/sugar/string';
  * __idCompliant('Hello world'); // => hello-world
  *
  * @since       2.0.0

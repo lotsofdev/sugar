@@ -22,7 +22,7 @@
  * })
  *
  * @example         js
- * import { __map } from '@coffeekraken/sugar/object.js';
+ * import { __map } from '@lotsof/sugar/object';
  * const myObject = {
  *    hello: 'world',
  *    cat: 'Nelson'

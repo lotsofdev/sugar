@@ -17,7 +17,7 @@ import __unescape from 'unescape';
  * @todo      tests
  *
  * @example         js
- * import { __unescapeHtml } from '@coffeekraken/sugar/html.js';
+ * import { __unescapeHtml } from '@lotsof/sugar/html';
  * __unescapeHtml('&lt;s-code-example&gt;'); // => <s-code-example>
  *
  * @see             https://www.npmjs.com/package/unescape

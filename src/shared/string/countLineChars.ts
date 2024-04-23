@@ -28,7 +28,7 @@ import __deepMerge from '../object/deepMerge.js';
  * @snippet         __countLineChars($1)
  *
  * @example         js
- * import { __countLineChars } from '@coffeekraken/sugar/string.js';
+ * import { __countLineChars } from '@lotsof/sugar/string';
  *  __countLineChars('Hello <red>World</red>'); // 11
  *
  * @since     2.0.0

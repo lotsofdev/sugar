@@ -18,7 +18,7 @@ import { camelCase } from 'change-case';
  * @snippet         __camelCase($1)
  *
  * @example     js
- * import { __camelCase } from '@coffeekraken/sugar/string.js';
+ * import { __camelCase } from '@lotsof/sugar/string';
  * __camelCase('hello world'); // => HELLO WORLD
  *
  * @see             https://www.npmjs.com/package/change-case

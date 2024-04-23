@@ -17,7 +17,7 @@
  * @todo        tests
  *
  * @example         php
- * import { __simplifySpecialChars } from '@coffeekraken/sugar/string.js';
+ * import { __simplifySpecialChars } from '@lotsof/sugar/string';
  * __simplifySpecialChars('É'); // E
  *
  * @see             https://stackoverflow.com/questions/14114411/remove-all-special-characters-from-a-string/14114443

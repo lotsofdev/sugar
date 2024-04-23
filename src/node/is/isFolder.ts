@@ -17,7 +17,7 @@ import * as __fs from 'fs';
  * @snippet         __isFolder($1)
  *
  * @example     js
- * import { __isfolder } from '@coffeekraken/sugar/is.js';
+ * import { __isfolder } from '@lotsof/sugar/is';
  * __isfolder('something/cool');
  *
  * @since       2.0.0

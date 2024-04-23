@@ -25,7 +25,7 @@ import __get from './get.js';
  * @snippet         __set($1, $2)
  *
  * @example               js
- * import { __set } from '@coffeekraken/sugar/object.js';
+ * import { __set } from '@lotsof/sugar/object';
  *  __set('myObject.cool.value', 'Hello world'); // => Hello world
  *
  * @since       2.0.0

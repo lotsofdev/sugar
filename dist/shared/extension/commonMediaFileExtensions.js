@@ -18,7 +18,7 @@ import __unique from '../array/unique.js';
  * @snippet         __commonMediaFileExtensions()
  *
  * @example         js
- * import { __commonMediaFileExtensions } from '@coffeekraken/sugar/extension.js';
+ * import { __commonMediaFileExtensions } from '@lotsof/sugar/extension';
  * const extensions = __commonMediaFileExtensions(); // => ['avi','mp3',...]
  *
  * @since       2.0.0

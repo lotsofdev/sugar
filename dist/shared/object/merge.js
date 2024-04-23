@@ -18,7 +18,7 @@
  * @snippet         __merge($1, $2)
  *
  * @example           js
- * import { __merge } from '@coffeekraken/sugar/object.js';
+ * import { __merge } from '@lotsof/sugar/object';
  * __merge({a: 'hello'}, {a: 'plop', hello: 'world');
  *
  * @since       2.0.0

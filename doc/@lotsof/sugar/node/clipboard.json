@@ -1,0 +1,66 @@
+{
+    "id": "@lotsof.sugar.node.clipboard.copyText",
+    "name": "copyText",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "text": {
+            "name": "text",
+            "type": {
+                "types": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "raw": "String"
+            },
+            "description": "The text to copy",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "String"
+                }
+            ],
+            "raw": "String"
+        },
+        "description": "The text that has been copied"
+    },
+    "platform": [
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Simple function to copy things into the system clipboard.\nThis is using https://www.npmjs.com/package/clipboardy under the hood.",
+    "namespace": "@lotsof.sugar.node.clipboard",
+    "status": "stable",
+    "snippet": {
+        "label": "__copyText($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __copyText } from '@lotsof/sugar/clipboard';\n__copyText('Hello world');"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "copyText.ts",
+    "extension": "ts",
+    "relPath": "src/node/clipboard/copyText.ts",
+    "children": {}
+}

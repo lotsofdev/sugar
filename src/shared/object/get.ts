@@ -22,7 +22,7 @@ import __unquote from '../string/unquote.js';
  * @snippet         __get($1, $2)
  *
  * @example             js
- * import { __get } from '@coffeekraken/sugar/object.js';
+ * import { __get } from '@lotsof/sugar/object';
  * __get(myObject, 'my.cool.value'); // => 'Hello world'
  *
  * @since     2.0.0

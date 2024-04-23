@@ -21,7 +21,7 @@
  * })
  *
  * @example 		js
- * import { __throttle } from '@coffeekraken/sugar/function.js';
+ * import { __throttle } from '@lotsof/sugar/function';
  * const myThrottledFn = __throttle(1000, () => {
  * 		// my function content that will be
  * 		// executed only once each second

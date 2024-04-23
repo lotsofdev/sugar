@@ -13,7 +13,7 @@ import __encodeObject from 'object-encode';
  * @snippet         __object.encrypt($1)
  *
  * @example         js
- * import { __object } from '@coffeekraken/sugar/crypto.js';
+ * import { __object } from '@lotsof/sugar/crypto';
  * __object.encrypt({
  *      hello: 'world'
  * });

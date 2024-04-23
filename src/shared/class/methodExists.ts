@@ -20,7 +20,7 @@
  * class Coco {
  *    hello() {}
  * }
- * import { __methodExists } from '@coffeekraken/sugar/class.js';
+ * import { __methodExists } from '@lotsof/sugar/class';
  * const myInstance = new Coco();
  * __methodExists(myInstance, 'hello', 'world'); // => ['world'];
  * __methodExists(myInstance, 'hello'); // => true

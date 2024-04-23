@@ -17,7 +17,7 @@ import * as __fs from 'fs';
  * @snippet         __isSymlink($1)
  *
  * @example     js
- * import { __isSymlink } from '@coffeekraken/sugar/is.js';
+ * import { __isSymlink } from '@lotsof/sugar/is';
  * __isSymlink('something/cool');
  *
  * @todo        Tests

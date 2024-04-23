@@ -14,7 +14,7 @@
  * @snippet         __easeInQuart($1)
  *
  * @example         js
- * import { __easeInQuart } from '@coffeekraken/sugar/easing.js';
+ * import { __easeInQuart } from '@lotsof/sugar/easing';
  * __easeInQuart(0.4);
  *
  * @todo      tests

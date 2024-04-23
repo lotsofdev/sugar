@@ -17,7 +17,7 @@ import __extension from '../fs/extension.js';
  * @snippet         __filename($1)
  *
  * @example       js
- * import { __filename } from '@coffeekraken/sugar/fs.js';
+ * import { __filename } from '@lotsof/sugar/fs';
  * __filename('hello/world.js'); // => world.js
  *
  * @since         2.0.0

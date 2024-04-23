@@ -22,7 +22,7 @@ import __parseHsla from './parseHsla.js';
  * @snippet         __hslaToHex($1)
  *
  * @example         js
- * import { __hslaToHex } from '@coffeekraken/sugar/color.js';
+ * import { __hslaToHex } from '@lotsof/sugar/color';
  * __hslaToHex(10,20,30);
  *
  * @see         https://www.npmjs.com/package/colors-convert

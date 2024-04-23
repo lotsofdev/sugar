@@ -16,7 +16,7 @@ import * as __fs from 'fs';
  * @snippet         __gradFirst
  *
  * @example       js
- * import { __grabFirstExistinSync } from '@coffeekraken/sugar/fs.js';
+ * import { __grabFirstExistinSync } from '@lotsof/sugar/fs';
  * __grabFirstExisting([
  *  'file/1.txt',
  *  'file/2.txt

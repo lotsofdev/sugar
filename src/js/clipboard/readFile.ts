@@ -15,7 +15,7 @@
  * @snippet         __readFile($1)
  *
  * @example         js
- * import { __readFile } from '@lotsof/sugar/clipboard.js';
+ * import { __readFile } from '@lotsof/sugar/clipboard';
  * await __readFile();
  *
  * @since           2.0.0

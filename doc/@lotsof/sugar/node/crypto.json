@@ -1,0 +1,157 @@
+{
+    "id": "@lotsof.sugar.node.crypto.aes",
+    "name": "aes",
+    "type": {
+        "types": [
+            {
+                "type": "Object"
+            }
+        ],
+        "raw": "Object"
+    },
+    "platform": [
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Expose two function named \"encrypt\" and \"decrypt\" that you can use to process your content using the aes algorithm",
+    "namespace": "@lotsof.sugar.node.crypto",
+    "status": "stable",
+    "snippet": {
+        "label": "__aes.encrypt($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __aes } from '@lotsof/sugar/crypto';\n__aes.encrypt('hello world');"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "aes.ts",
+    "extension": "ts",
+    "relPath": "src/node/crypto/aes.ts",
+    "children": {
+        "encrypt": {
+            "id": "s8e02b1eccead6154d6ede96020dfa837a386d1557ebd340a6adf847f344f2972",
+            "name": "encrypt",
+            "type": {
+                "types": [
+                    {
+                        "type": "Function"
+                    }
+                ],
+                "raw": "Function"
+            },
+            "param": {
+                "message": {
+                    "name": "message",
+                    "type": {
+                        "types": [
+                            {
+                                "type": "String"
+                            }
+                        ],
+                        "raw": "String"
+                    },
+                    "description": "The message to encrypt",
+                    "defaultStr": ""
+                },
+                "key": {
+                    "name": "key",
+                    "type": {
+                        "types": [
+                            {
+                                "type": "String"
+                            }
+                        ],
+                        "raw": "String"
+                    },
+                    "description": "The secret key to encrypt",
+                    "default": "coffeekraken.sugar.crypto.aes",
+                    "defaultStr": "'coffeekraken.sugar.crypto.aes'"
+                }
+            },
+            "return": {
+                "type": {
+                    "types": [
+                        {
+                            "type": "String"
+                        }
+                    ],
+                    "raw": "String"
+                },
+                "description": "The encrypted message"
+            },
+            "description": "Encrypt",
+            "author": {
+                "name": "Olivier Bossel",
+                "email": "olivier.bossel@gmail.com",
+                "url": "https://coffeekraken.io"
+            }
+        },
+        "decrypt": {
+            "id": "s5566da547676bfb5910700a8fd20e770ef975a474d31a5729ee2b71651fecd8d",
+            "name": "decrypt",
+            "type": {
+                "types": [
+                    {
+                        "type": "Function"
+                    }
+                ],
+                "raw": "Function"
+            },
+            "param": {
+                "message": {
+                    "name": "message",
+                    "type": {
+                        "types": [
+                            {
+                                "type": "String"
+                            }
+                        ],
+                        "raw": "String"
+                    },
+                    "description": "The message to decrypt",
+                    "defaultStr": ""
+                },
+                "key": {
+                    "name": "key",
+                    "type": {
+                        "types": [
+                            {
+                                "type": "String"
+                            }
+                        ],
+                        "raw": "String"
+                    },
+                    "description": "The secret key to decrypt",
+                    "default": "coffeekraken.sugar.crypto.aes",
+                    "defaultStr": "'coffeekraken.sugar.crypto.aes'"
+                }
+            },
+            "return": {
+                "type": {
+                    "types": [
+                        {
+                            "type": "String"
+                        }
+                    ],
+                    "raw": "String"
+                },
+                "description": "The decrypted message"
+            },
+            "description": "Decrypt",
+            "author": {
+                "name": "Olivier Bossel",
+                "email": "olivier.bossel@gmail.com",
+                "url": "https://coffeekraken.io"
+            }
+        }
+    }
+}

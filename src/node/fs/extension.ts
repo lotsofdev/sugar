@@ -15,7 +15,7 @@
  * @snippet         __extension($1)
  *
  * @example         js
- * import { __extension } from '@coffeekraken/sugar/fs.js';
+ * import { __extension } from '@lotsof/sugar/fs';
  * __extension('hello/world.jpg'); // => jpg
  *
  * @since         2.0.0

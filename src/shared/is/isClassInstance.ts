@@ -14,7 +14,7 @@
  * @snippet         __isClassInstance($1)
  *
  * @example         js
- * import { __isClassInstance } from '@coffeekraken/sugar/is.js';
+ * import { __isClassInstance } from '@lotsof/sugar/is';
  * if (__isClassInstance({
  *      something: 'hello'
  * })); // => false

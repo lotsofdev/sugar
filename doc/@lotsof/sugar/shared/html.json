@@ -1,0 +1,70 @@
+{
+    "id": "@lotsof.sugar.shared.html.escapeHtml",
+    "name": "escapeHtml",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "html": {
+            "name": "html",
+            "type": {
+                "types": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "raw": "String"
+            },
+            "description": "The html to unescape",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "String"
+                }
+            ],
+            "raw": "String"
+        },
+        "description": "The unescaped html"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "This function allows you to escape some html characters like &lt;, etc...",
+    "namespace": "@lotsof.sugar.shared.html",
+    "status": "stable",
+    "snippet": {
+        "label": "__escapeHtml($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __escapeHtml } from '@lotsof/sugar/html';\n__escapeHtml('<s-code-example>'); // => &lt;s-code-example&gt;"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "escapeHtml.ts",
+    "extension": "ts",
+    "relPath": "src/shared/html/escapeHtml.ts",
+    "children": {}
+}

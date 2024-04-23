@@ -24,7 +24,7 @@ import __extension from './extension.js';
  * ])
  *
  * @example         js
- * import { __checkPathWithMultipleExtensions } from '@coffeekraken/sugar/fs.js';
+ * import { __checkPathWithMultipleExtensions } from '@lotsof/sugar/fs';
  * __checkPathWithMultipleExtensions('/my/cool/file.txt', ['txt','js','css']);
  *
  * @since       2.0.0

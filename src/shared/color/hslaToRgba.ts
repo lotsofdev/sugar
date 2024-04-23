@@ -23,7 +23,7 @@ import __parseHsla from './parseHsla.js';
  * @snippet         __hslaToRgba($1)
  *
  * @example         js
- * import { __hslToRgba } from '@coffeekraken/sugar/color.js';
+ * import { __hslToRgba } from '@lotsof/sugar/color';
  * __hslToRgba(10,20,30);
  *
  * @see         https://www.npmjs.com/package/colors-convert

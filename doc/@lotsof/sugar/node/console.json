@@ -1,0 +1,63 @@
+{
+    "id": "@lotsof.sugar.node.console.parseHtml",
+    "name": "parseHtml",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "message": {
+            "name": "message",
+            "type": {
+                "types": [
+                    {
+                        "type": "String"
+                    },
+                    {
+                        "type": "Array"
+                    }
+                ],
+                "raw": "String|Array"
+            },
+            "description": "The message to format of an array of messages to format",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "String"
+                }
+            ],
+            "raw": "String"
+        },
+        "description": "The formated message"
+    },
+    "platform": [
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Parse the simple html tags to format the console message",
+    "namespace": "@lotsof.sugar.node.console",
+    "status": "stable",
+    "snippet": {
+        "label": "__parseHtml($1)"
+    },
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "parseHtml.ts",
+    "extension": "ts",
+    "relPath": "src/node/console/parseHtml.ts",
+    "children": {}
+}

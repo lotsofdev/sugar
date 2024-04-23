@@ -17,7 +17,7 @@
  * @snippet         __parseAuthorString($1)
  *
  * @example       js
- * import { __parseAuthorString } from '@coffeekraken/sugar/package.js';
+ * import { __parseAuthorString } from '@lotsof/sugar/package';
  *  __parseAuthorString("Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)")
  * // => {
  *   "name": "Olivier Bossel",

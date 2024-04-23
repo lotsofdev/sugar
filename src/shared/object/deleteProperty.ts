@@ -18,7 +18,7 @@ import __set from './set.js';
  * @snippet         __deleteProperty($1, $2)
  *
  * @example         js
- * import { __deleteProperty } from '@coffeekraken/sugar/object.js';
+ * import { __deleteProperty } from '@lotsof/sugar/object';
  * const myObject = {
  *    hello: 'world',
  *    plop: 'yop'

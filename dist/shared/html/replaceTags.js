@@ -18,7 +18,7 @@ import __toString from '../string/toString.js';
  * @snippet         __replaceTags($1m $2)
  *
  * @example             js
- * import { __replaceTags } from '@coffeekraken/sugar/html.js';
+ * import { __replaceTags } from '@lotsof/sugar/html';
  *  __replaceTags('<span>Hello</span> world', {
  *    span: (tag, content) => `<div>${content}</div>`; // => <div>Hello</div> world
  * });

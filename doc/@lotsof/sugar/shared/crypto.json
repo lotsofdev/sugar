@@ -1,0 +1,129 @@
+{
+    "id": "@lotsof.sugar.shared.crypto.sha256",
+    "name": "sha256",
+    "type": {
+        "types": [
+            {
+                "type": "Object"
+            }
+        ],
+        "raw": "Object"
+    },
+    "platform": [
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Expose two function named \"encrypt\" and \"decrypt\" that you can use to process your content using the sha256 algorithm",
+    "namespace": "@lotsof.sugar.shared.crypto",
+    "status": "stable",
+    "snippet": {
+        "label": "__sha256.encrypt($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __sha256 } from '@coffeekraken/sugar/crypto';\n__sha256.encrypt('hello world');"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "sha256.ts",
+    "extension": "ts",
+    "relPath": "src/node/crypto/sha256.ts",
+    "children": {
+        "encrypt": {
+            "id": "s4ac7787e432691a98148698f2c45e6fb66ecd40724de239512e647434b8971be",
+            "name": "encrypt",
+            "type": {
+                "types": [
+                    {
+                        "type": "Function"
+                    }
+                ],
+                "raw": "Function"
+            },
+            "param": {
+                "message": {
+                    "name": "message",
+                    "type": {
+                        "types": [
+                            {
+                                "type": "String"
+                            }
+                        ],
+                        "raw": "String"
+                    },
+                    "description": "The message to encrypt",
+                    "defaultStr": ""
+                }
+            },
+            "return": {
+                "type": {
+                    "types": [
+                        {
+                            "type": "String"
+                        }
+                    ],
+                    "raw": "String"
+                },
+                "description": "The encrypted string"
+            },
+            "description": "Encrypt",
+            "author": {
+                "name": "Olivier Bossel",
+                "email": "olivier.bossel@gmail.com",
+                "url": "https://coffeekraken.io"
+            }
+        },
+        "decrypt": {
+            "id": "s9893ce4e78964c19b9570c8ae76b5c4395195d06a5cd5278b2a96dc6df13cca0",
+            "name": "decrypt",
+            "type": {
+                "types": [
+                    {
+                        "type": "Function"
+                    }
+                ],
+                "raw": "Function"
+            },
+            "param": {
+                "message": {
+                    "name": "message",
+                    "type": {
+                        "types": [
+                            {
+                                "type": "String"
+                            }
+                        ],
+                        "raw": "String"
+                    },
+                    "description": "The message to decrypt",
+                    "defaultStr": ""
+                }
+            },
+            "return": {
+                "type": {
+                    "types": [
+                        {
+                            "type": "String"
+                        }
+                    ],
+                    "raw": "String"
+                },
+                "description": "The decrypted message"
+            },
+            "description": "Decrypt",
+            "author": {
+                "name": "Olivier Bossel",
+                "email": "olivier.bossel@gmail.com",
+                "url": "https://coffeekraken.io"
+            }
+        }
+    }
+}

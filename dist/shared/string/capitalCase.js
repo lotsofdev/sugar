@@ -17,7 +17,7 @@ import { capitalCase } from 'change-case';
  * @snippet         __capitalCase($1)
  *
  * @example     js
- * import { __capitalCase } from '@coffeekraken/sugar/string.js';
+ * import { __capitalCase } from '@lotsof/sugar/string';
  * __capitalCase('hello world'); // => HELLO WORLD
  *
  * @see             https://www.npmjs.com/package/change-case

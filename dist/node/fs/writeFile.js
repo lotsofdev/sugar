@@ -32,7 +32,7 @@ import __folderPath from './folderPath.js';
  * await __writeFile($1, $2)
  *
  * @example       js
- * import { __writeFile } from '@coffeekraken/sugar/fs.js';
+ * import { __writeFile } from '@lotsof/sugar/fs';
  * __writeFile('my/cool/file.txt', 'Hello World').then(() => {
  *    // do something on complete...
  * });

@@ -1,0 +1,67 @@
+{
+    "id": "@lotsof.sugar.node.is.isCommandExists",
+    "name": "isCommandExists",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "command": {
+            "name": "command",
+            "type": {
+                "types": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "raw": "String"
+            },
+            "description": "The command to check like \"ls\", \"node\", etc...",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Promise"
+                }
+            ],
+            "raw": "Promise"
+        },
+        "description": "A promise fullfiled once the check has finished with true of false as value"
+    },
+    "platform": [
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "This function allows you to check if a command exists on the system where the script is running",
+    "namespace": "@lotsof.sugar.node.is",
+    "status": "stable",
+    "snippet": {
+        "label": "__isCommandExists($1)",
+        "code": "await __isCommandExists($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __isCommandExists } from '@lotsof/sugar/is';\nawait  __isCommandExists('ls'); // => true"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "isCommandExists.ts",
+    "extension": "ts",
+    "relPath": "src/node/is/isCommandExists.ts",
+    "children": {}
+}

@@ -17,7 +17,7 @@ import __clipboardy from 'clipboardy';
  * @snippet         __read()
  *
  * @example       js
- * import { __copy, __read } from '@lotsof/sugar/clipboard.js';
+ * import { __copy, __read } from '@lotsof/sugar/clipboard';
  * __copy('Hello world');
  * __read(); // => Hello world
  *

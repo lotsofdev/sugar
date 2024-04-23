@@ -17,7 +17,7 @@ import { trainCase } from 'change-case';
  * @snippet         __trainCase($1)
  *
  * @example     js
- * import { __trainCase } from '@coffeekraken/sugar/string.js';
+ * import { __trainCase } from '@lotsof/sugar/string';
  * __trainCase('hello world'); // => Hello-World
  *
  * @see             https://www.npmjs.com/package/change-case

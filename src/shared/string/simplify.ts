@@ -25,7 +25,7 @@ import __deepMerge from '../object/deepMerge.js';
  * @snippet         __simplify($1)
  *
  * @example       js
- * import { __simplify } from '@coffeekraken/sugar/string.js';
+ * import { __simplify } from '@lotsof/sugar/string';
  * __simplify('éàddö'); // => eaddo
  *
  * @since     2.0.0

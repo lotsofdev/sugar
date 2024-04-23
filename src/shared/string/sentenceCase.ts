@@ -18,7 +18,7 @@ import { sentenceCase } from 'change-case';
  * @snippet         __sentenceCase($1)
  *
  * @example     js
- * import { __sentenceCase } from '@coffeekraken/sugar/string.js';
+ * import { __sentenceCase } from '@lotsof/sugar/string';
  * __sentenceCase('hello world'); // => Hello world
  *
  * @see             https://www.npmjs.com/package/change-case

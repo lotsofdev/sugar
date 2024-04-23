@@ -16,7 +16,7 @@
  * @snippet         __getArgsNames($1)
  *
  * @example         js
- * import { __getArgsNames } from '@coffeekraken/sugar/function.js';
+ * import { __getArgsNames } from '@lotsof/sugar/function';
  * function hello(world, coco, plop) { }
  * __getArgsNames(hello); // => ['world', 'coco', 'plop']
  *

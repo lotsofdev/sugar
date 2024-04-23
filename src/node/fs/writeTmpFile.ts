@@ -27,7 +27,7 @@ import __writeFileSync from './writeFileSync.js';
  * await __writeTmpFile($1, $2)
  *
  * @example       js
- * import { __writeTmpFile } from '@coffeekraken/sugar/fs.js';
+ * import { __writeTmpFile } from '@lotsof/sugar/fs';
  * __writeTmpFile('Hello World').then((path) => {
  *    // do something on complete...
  * });

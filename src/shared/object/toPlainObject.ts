@@ -19,7 +19,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @snippet         __toPlainObject($1)
  *
  * @example           js
- * import { __toPlainObject } from '@coffeekraken/sugar/object.js';
+ * import { __toPlainObject } from '@lotsof/sugar/object';
  * __toPlainObject({ something: 'cool' });
  *
  * @since       2.0.0

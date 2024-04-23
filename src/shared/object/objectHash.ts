@@ -18,7 +18,7 @@ import __hashSum from 'hash-sum';
  * @todo    tests
  *
  * @example         js
- * import { __objectHash } from '@coffeekraken/sugar/object.js';
+ * import { __objectHash } from '@lotsof/sugar/object';
  * __objectHash('my/cool/folder'); // => YZOrKDx9LCLd8X39PoFTflXGpRU=,
  *
  * @see             https://www.npmjs.com/package/hash-sum

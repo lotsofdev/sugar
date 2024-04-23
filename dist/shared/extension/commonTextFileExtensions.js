@@ -15,7 +15,7 @@ import __commonProgrammingFileExtensions from './commonProgrammingFileExtensions
  * @snippet         __commonTextFileExtensions()
  *
  * @example         js
- * import { __commonTextFileExtensions } from '@coffeekraken/sugar/extension.js';
+ * import { __commonTextFileExtensions } from '@lotsof/sugar/extension';
  * const extensions = __commonTextFileExtensions();
  *
  * @since       2.0.0

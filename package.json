@@ -280,7 +280,9 @@
   },
   "dependencies": {
     "aggregation": "^1.2.7",
+    "atob": "^2.1.2",
     "blueimp-md5": "^2.19.0",
+    "btoa": "^1.2.1",
     "chalk": "^5.3.0",
     "change-case": "^5.4.3",
     "clipboardy": "^4.0.0",

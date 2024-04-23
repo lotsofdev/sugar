@@ -31,7 +31,7 @@ import * as __fs from 'fs';
  * await _writeJson($1, $2)
  *
  * @example       js
- * import { __writeJson } from '@coffeekraken/sugar/fs.js';
+ * import { __writeJson } from '@lotsof/sugar/fs';
  * __writeJson('my/cool/file.json', { hello: 'world' }).then(() => {
  *    // do something on complete...
  * });

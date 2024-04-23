@@ -1,0 +1,70 @@
+{
+    "id": "@lotsof.sugar.shared.class.cloneClass",
+    "name": "cloneClass",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "class": {
+            "name": "class",
+            "type": {
+                "types": [
+                    {
+                        "type": "Class"
+                    }
+                ],
+                "raw": "Class"
+            },
+            "description": "The class to clone",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Class"
+                }
+            ],
+            "raw": "Class"
+        },
+        "description": "A new class"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "Clone ES6 Classes",
+    "namespace": "@lotsof.sugar.shared.class",
+    "status": "stable",
+    "snippet": {
+        "label": "__cloneClass($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __cloneClass } from '@lotsof/sugar/class';\nconst NewClass = __cloneClass(class MyClass() {});"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "cloneClass.ts",
+    "extension": "ts",
+    "relPath": "src/shared/class/cloneClass.ts",
+    "children": {}
+}

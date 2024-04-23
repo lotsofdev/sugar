@@ -26,7 +26,7 @@ import __countLineChars from './countLineChars.js';
  * @snippet         __crop($1, $2)
  *
  * @example         js
- * import { __crop } from '@coffeekraken/sugar/string.js';
+ * import { __crop } from '@lotsof/sugar/string';
  * __crop('Hello World', 10); // => Hello w...
  *
  * @since       2.0.0

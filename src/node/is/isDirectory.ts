@@ -19,7 +19,7 @@ import * as __fs from 'fs';
  * @snippet         __isDirectory($1)
  *
  * @example     js
- * import { __isDirectory } from '@coffeekraken/sugar/is.js';
+ * import { __isDirectory } from '@lotsof/sugar/is';
  * __isDirectory('something/cool');
  *
  * @since       2.0.0

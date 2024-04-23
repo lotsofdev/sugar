@@ -1,0 +1,71 @@
+{
+    "id": "@lotsof.sugar.shared.perf.loopsCount",
+    "name": "loopsCount",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "timeframe": {
+            "name": "timeframe",
+            "type": {
+                "types": [
+                    {
+                        "type": "Number"
+                    }
+                ],
+                "raw": "Number"
+            },
+            "description": "The timeframe to use for calculation",
+            "default": 100,
+            "defaultStr": "100"
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Number"
+                }
+            ],
+            "raw": "Number"
+        },
+        "description": "The count of loops executed in the passed timeframe"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "This function calculate how mane loops are executed in a certain timeframe (ms).\nThis is usefull to estimate the computer speed on which this code is running...",
+    "namespace": "@lotsof.sugar.shared.perf",
+    "status": "stable",
+    "snippet": {
+        "label": "__loopsCount($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __loopsCount } from '@lotsof/sugar/perf';\n__loopsCount(); // 122003"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "loopsCount.ts",
+    "extension": "ts",
+    "relPath": "src/shared/perf/loopsCount.ts",
+    "children": {}
+}

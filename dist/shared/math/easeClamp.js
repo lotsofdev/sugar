@@ -18,7 +18,7 @@ import __clamp from './clamp.js';
  * @todo      tests
  *
  * @example       js
- * import { __easeClamp } from '@coffeekraken/sugar/math.js';
+ * import { __easeClamp } from '@lotsof/sugar/math';
  * __easeClamp(-20, -10, 0, 100, 110); // => -10
  *
  * @since     2.0.0

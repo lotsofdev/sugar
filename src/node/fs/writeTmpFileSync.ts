@@ -26,7 +26,7 @@ import __writeFileSync from './writeFileSync.js';
  * @snippet         __writeTmpFileSync($1, $2)
  *
  * @example       js
- * import { __writeTmpFileSync } from '@coffeekraken/sugar/fs.js';
+ * import { __writeTmpFileSync } from '@lotsof/sugar/fs';
  * const path = __writeTmpFileSync('Hello World');
  *
  * @since           2.0.0

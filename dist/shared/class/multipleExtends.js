@@ -16,7 +16,7 @@ import __aggregation from 'aggregation/es5';
  * @snippet         __multipleExtends($1, $2)
  *
  * @example         js
- * import { __multipleExtends } from '@coffeekraken/sugar/class.js';
+ * import { __multipleExtends } from '@lotsof/sugar/class';
  * class MyCoolClass extends __multipleExtends(Another, AnotherOne) {
  * }
  *

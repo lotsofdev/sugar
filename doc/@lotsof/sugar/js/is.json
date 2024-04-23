@@ -1,0 +1,66 @@
+{
+    "id": "@lotsof.sugar.js.is.isDomElement",
+    "name": "isDomElement",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "element": {
+            "name": "element",
+            "type": {
+                "types": [
+                    {
+                        "type": "any"
+                    }
+                ],
+                "raw": "any"
+            },
+            "description": "The element to check",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Boolean"
+                }
+            ],
+            "raw": "Boolean"
+        },
+        "description": "true if is a DOM element, false if not"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        }
+    ],
+    "description": "Check if the passed element is a DOM element",
+    "namespace": "@lotsof.sugar.js.is",
+    "status": "stable",
+    "snippet": {
+        "label": "__isDomElement($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __isDomElement } from '@coffeekraken/sugar/dom'\n__isDomElement($myElement);"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "isDomElement.ts",
+    "extension": "ts",
+    "relPath": "src/shared/is/isDomElement.ts",
+    "children": {}
+}

@@ -20,7 +20,7 @@ import __fastFolderSize from 'fast-folder-size';
  * await __folderSize($1)
  *
  * @example           js
- * import { __folderSize } from '@coffeekraken/sugar/fs.js';
+ * import { __folderSize } from '@lotsof/sugar/fs';
  * await __folderSize('my/cool/folder');
  *
  *

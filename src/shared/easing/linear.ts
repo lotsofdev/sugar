@@ -14,7 +14,7 @@
  * @snippet         __linear($1)
  *
  * @example         js
- * import { __linear } from '@coffeekraken/sugar/easing.js';
+ * import { __linear } from '@lotsof/sugar/easing';
  * __linear(0.4);
  *
  * @todo      tests

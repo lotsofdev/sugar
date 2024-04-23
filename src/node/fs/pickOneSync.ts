@@ -22,7 +22,7 @@ import __micromatch from 'micromatch';
  * @snippet         __pickOneSync([$1])
  *
  * @example         js
- * import { __pickOneSync } from '@coffeekraken/sugar/fs.js';
+ * import { __pickOneSync } from '@lotsof/sugar/fs';
  * __pickOneSync(['myCoolFile.json', 'myCoolFile2.json'], {});
  *
  * @since       2.0.0

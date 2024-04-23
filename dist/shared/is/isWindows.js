@@ -16,7 +16,7 @@
  * @snippet         __isWindows()
  *
  * @example       js
- * import { __isWindows } from '@coffeekraken/sugar/is.js';
+ * import { __isWindows } from '@lotsof/sugar/is';
  * __isWindows(); // => true
  *
  * @since           2.0.0

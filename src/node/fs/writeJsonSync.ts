@@ -20,7 +20,7 @@ import __folderPath from './folderPath.js';
  * @snippet         __writeJsonSync($1, $2)
  *
  * @example       js
- * import { __writeJsonSync } from '@coffeekraken/sugar/fs.js';
+ * import { __writeJsonSync } from '@lotsof/sugar/fs';
  * __writeJsonSync('my/cool/file.json', { hello: 'world' });
  *
  * @since         2.0.0

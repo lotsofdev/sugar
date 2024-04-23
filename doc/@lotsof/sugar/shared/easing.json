@@ -1,0 +1,55 @@
+{
+    "id": "@lotsof.sugar.shared.easing.availableEasingsArray",
+    "name": "availableEasingsArray",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Array"
+                }
+            ],
+            "raw": "Array"
+        },
+        "description": "An array of all the easing functions available"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "This function simply return back an array of all the available easings function in the sugar toolkit",
+    "namespace": "@lotsof.sugar.shared.easing",
+    "status": "stable",
+    "snippet": {
+        "label": "__availableEasingsArray()"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __availableEasingsArray } from '@lotsof/sugar/easing';\n__availableEasingsArray();"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "availableEasingsArray.ts",
+    "extension": "ts",
+    "relPath": "src/shared/easing/availableEasingsArray.ts",
+    "children": {}
+}

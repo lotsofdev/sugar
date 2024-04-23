@@ -16,7 +16,7 @@ import __fs from 'fs-extra';
  * @snippet         __removeSync($1)
  *
  * @example       js
- * import { __removeSync } from '@coffeekraken/sugar/fs.js';
+ * import { __removeSync } from '@lotsof/sugar/fs';
  *  __removeSync('my/cool/file.json');
  *
  * @see             https://github.com/jprichardson/node-fs-extra

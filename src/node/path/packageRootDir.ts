@@ -26,7 +26,7 @@ import __findPkgJson from 'find-package-json';
  * @snippet         __packageRootDir()
  *
  * @example         js
- * import { __packageRootDir } from '@coffeekraken/sugar/path.js';
+ * import { __packageRootDir } from '@lotsof/sugar/path';
  * const root = __packageRootDir();
  *
  * @see       https://www.npmjs.com/package/find-package-json

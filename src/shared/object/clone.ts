@@ -24,7 +24,7 @@ import __deepClone from 'lodash.clonedeep';
  * @snippet         __clone($1)
  *
  * @example       js
- * import { __clone } from '@coffeekraken/sugar/object.js';
+ * import { __clone } from '@lotsof/sugar/object';
  * __clone({
  *    hello: 'world'
  * });

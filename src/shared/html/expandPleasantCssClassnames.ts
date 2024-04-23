@@ -17,7 +17,7 @@ import __expandPleasantCssClassname from './expandPleasantCssClassname.js';
  * @snippet         __expandPleasantCssClassnames($1)
  *
  * @example         js
- * import { __expandPleasantCssClassnames } from '@coffeekraken/sugar/html.js';
+ * import { __expandPleasantCssClassnames } from '@lotsof/sugar/html';
  * __expandPleasantCssClassnames('...');
  *
  * @since       2.0.0

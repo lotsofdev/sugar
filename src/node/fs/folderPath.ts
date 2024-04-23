@@ -20,7 +20,7 @@ import __isPath from '../../shared/is/isPath.js';
  * @snippet         __folderPath($1)
  *
  * @example         js
- * import { __folderPath } from '@coffeekraken/sugar/fs.js';
+ * import { __folderPath } from '@lotsof/sugar/fs';
  * __folderPath('my/cool/path.js'); // => true
  *
  * @since           2.0.0

@@ -1,0 +1,66 @@
+{
+    "id": "@lotsof.sugar.js.clipboard.copyFile",
+    "name": "copyFile",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "url": {
+            "name": "url",
+            "type": {
+                "types": [
+                    {
+                        "type": "String"
+                    }
+                ],
+                "raw": "String"
+            },
+            "description": "The file url copy to the clipboard",
+            "defaultStr": ""
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Promise"
+                }
+            ],
+            "raw": "Promise"
+        },
+        "description": "A promise fullfilled when the copy has been made correctly"
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        }
+    ],
+    "description": "This function allows you to copy to the clipboard the passed file path/url",
+    "namespace": "@lotsof.sugar.js.clipboard",
+    "status": "stable",
+    "snippet": {
+        "label": "__copyFile($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __copyFile } from '@lotsof/sugar/clipboard';\n__copyFile('https://www.google.com/favicon.ico');"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "copyFile.ts",
+    "extension": "ts",
+    "relPath": "src/js/clipboard/copyFile.ts",
+    "children": {}
+}

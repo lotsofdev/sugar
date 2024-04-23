@@ -33,7 +33,7 @@ import __easeInOutQuart from '../easing/easeInOutQuart.js';
  * await easeInterval;
  *
  * @example         js
- * import { __easeInterval } from '@coffeekraken/sugar/function.js';
+ * import { __easeInterval } from '@lotsof/sugar/function';
  * await __easeInterval(2000, (easedPercent) => {
  *      // do something...
  * }, {

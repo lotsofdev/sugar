@@ -20,7 +20,7 @@ import __commonImageFileExtensions from '../extension/commonImageFileExtensions.
  * @snippet         __isImageUrl($1)
  *
  * @example               js
- * import { __isImageUrl } from '@coffeekraken/sugar/is.js';
+ * import { __isImageUrl } from '@lotsof/sugar/is';
  * __isImageUrl('something.jpg); // => true
  * __isImageUrl('other.pdf); // => false
  *

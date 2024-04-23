@@ -18,7 +18,7 @@ import { kebabCase } from 'change-case';
  * @snippet         __paramCase($1)
  *
  * @example       js
- * import { __paramCase } from '@coffeekraken/sugar/string.js';
+ * import { __paramCase } from '@lotsof/sugar/string';
  * __paramCase('some thoing cool'); // => some-thing-cool
  *
  * @see         https://www.npmjs.com/package/change-case

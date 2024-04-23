@@ -21,7 +21,7 @@ import __camelCase from '../string/camelCase.js';
  * @snippet         __camelCaseProps($1)
  *
  * @example         js
- * import { __camelCaseProps } from '@coffeekraken/sugar/object.js';
+ * import { __camelCaseProps } from '@lotsof/sugar/object';
  * __camelCaseProps({
  *    'hello-world': true
  * });

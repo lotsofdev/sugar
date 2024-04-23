@@ -26,7 +26,7 @@ import __deepMerge from '../../shared/object/deepMerge.js';
  * @snippet         __fileHashSync($1)
  *
  * @example         js
- * import { __fileHashSync } from '@coffeekraken/sugar/fs.js';
+ * import { __fileHashSync } from '@lotsof/sugar/fs';
  * __fileHashSync('my/cool/folder'); // => YZOrKDx9LCLd8X39PoFTflXGpRU=,
  *
  * @since           2.0.0

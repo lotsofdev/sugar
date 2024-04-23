@@ -28,7 +28,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @snippet         __diff($1, $2)
  *
  * @example         js
- * import { __diff } from '@coffeekraken/sugar/object.js';
+ * import { __diff } from '@lotsof/sugar/object';
  * const myObject1 = {
  *    hello: 'world',
  *    plop: 'yop'

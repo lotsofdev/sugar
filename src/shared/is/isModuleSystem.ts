@@ -19,7 +19,7 @@ import __isEsm from './isEsm.js';
  * @snippet         __isModuleSystem($1)
  *
  * @example       js
- * import { __isModuleSystem } from '@coffeekraken/sugar/is.js';
+ * import { __isModuleSystem } from '@lotsof/sugar/is';
  * __isModuleSystem('esm'); // => true
  * __isModuleSystem('cjs'); // => false
  *

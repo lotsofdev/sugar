@@ -16,7 +16,7 @@ import { ICommonFileExtensionsSettings } from './commonFileExtensions.js';
  * @snippet         __commonDiscFileExtensions()
  *
  * @example         js
- * import { __commonDiscFileExtensions } from '@coffeekraken/sugar/extension.js';
+ * import { __commonDiscFileExtensions } from '@lotsof/sugar/extension';
  * const extensions = __commonDiscFileExtensions();
  *
  * @since       2.0.0

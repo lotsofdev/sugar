@@ -15,7 +15,7 @@ const __encryptedMessages = {};
  * @snippet         __md5.encrypt($1)
  *
  * @example         js
- * import { __md5 } from '@coffeekraken/sugar/crypto.js';
+ * import { __md5 } from '@lotsof/sugar/crypto';
  * __md5.encrypt('hello world');
  *
  * @todo        interface

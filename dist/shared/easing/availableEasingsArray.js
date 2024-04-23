@@ -13,7 +13,7 @@
  * @snippet         __availableEasingsArray()
  *
  * @example         js
- * import { __availableEasingsArray } from '@coffeekraken/sugar/easing.js';
+ * import { __availableEasingsArray } from '@lotsof/sugar/easing';
  * __availableEasingsArray();
  *
  * @todo      tests

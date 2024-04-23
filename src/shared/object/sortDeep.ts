@@ -23,7 +23,7 @@ import __sort from './sort.js';
  * })
  *
  * @example               js
- * import { __sortDeep } from '@coffeekraken/sugar/object.js';
+ * import { __sortDeep } from '@lotsof/sugar/object';
  * __sortDeep({
  *    lolo: { weight: 2 },
  *    coco: { weight: 10 },

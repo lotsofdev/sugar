@@ -17,7 +17,7 @@
  * @snippet         __convertTime($1, $2)
  *
  * @example           js
- * import { __convertTime } from '@coffeekraken/sugar/datetime.js';
+ * import { __convertTime } from '@lotsof/sugar/datetime';
  * __convertTime('10s', 'ms'); // => 10000
  *
  * @since       2.0.0

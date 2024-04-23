@@ -30,7 +30,7 @@ import __clone from './clone.js';
  * })
  *
  * @example       js
- * import { __deepMap } from '@coffeekraken/sugar/object.js';
+ * import { __deepMap } from '@lotsof/sugar/object';
  * __deepMap({
  *    hello: 'world'
  * }, ({object, prop, value, path}) => {

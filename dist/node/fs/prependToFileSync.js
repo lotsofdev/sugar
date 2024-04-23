@@ -17,7 +17,7 @@ import __writeFileSync from '../fs/writeFileSync.js';
  * @snippet         __prependToFileSync($1, $2)
  *
  * @example         js
- * import { __prependToFileSync } from '@coffeekraken/sugar/fs.js';
+ * import { __prependToFileSync } from '@lotsof/sugar/fs';
  * __prependToFileSync('/my/cool/file.txt', 'Hello world');
  *
  * @since       2.0.0

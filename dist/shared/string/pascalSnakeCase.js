@@ -17,7 +17,7 @@ import { pascalSnakeCase } from 'change-case';
  * @snippet         __pascalSnakeCase($1)
  *
  * @example     js
- * import { __pascalSnakeCase } from '@coffeekraken/sugar/string.js';
+ * import { __pascalSnakeCase } from '@lotsof/sugar/string';
  * __pascalSnakeCase('hello world'); // => Hello_World
  *
  * @see             https://www.npmjs.com/package/change-case

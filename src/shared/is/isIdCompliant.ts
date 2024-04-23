@@ -17,7 +17,7 @@ import __simplifySpecialChars from '../string/simplifySpecialChars.js';
  * @snippet         __isIdCompliant($1)
  *
  * @example         php
- * import { __isIdCompliant } from '@coffeekraken/sugar/string.js';
+ * import { __isIdCompliant } from '@lotsof/sugar/string';
  * __isIdCompliant('Hello world'); // => false
  * __isIdCompliant('hello-world'); // => true
  *

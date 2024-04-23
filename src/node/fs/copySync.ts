@@ -15,7 +15,7 @@ import __fs from 'fs-extra';
  * @snippet         __copySync($1, $2)
  *
  * @example       js
- * import { __copySync } from '@coffeekraken/sugar/fs.js';
+ * import { __copySync } from '@coffeekraken/sugar/fs';
  *  __copySync('my/cool/file.jpg', 'my/new/file.jpg');
  *
  * @see             https://github.com/jprichardson/node-fs-extra

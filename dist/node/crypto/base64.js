@@ -1,6 +1,6 @@
 import toString from '../../shared/string/toString.js';
-import __base64 from 'crypto-js/enc-base64.js';
-import __utf8 from 'crypto-js/enc-utf8.js';
+import __base64 from 'crypto-js/enc-base64';
+import __utf8 from 'crypto-js/enc-utf8';
 /**
  * @name            base64
  * @namespace       js.crypto
@@ -13,7 +13,7 @@ import __utf8 from 'crypto-js/enc-utf8.js';
  * @snippet         __base64.encrypt($1)
  *
  * @example         js
- * import { __base64 } from '@coffeekraken/sugar/crypto.js';
+ * import { __base64 } from '@coffeekraken/sugar/crypto';
  * __base64.encrypt('hello world');
  *
  * @todo        tests

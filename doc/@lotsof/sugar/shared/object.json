@@ -1,0 +1,100 @@
+{
+    "id": "@lotsof.sugar.shared.object.clone",
+    "name": "clone",
+    "type": {
+        "types": [
+            {
+                "type": "Function"
+            }
+        ],
+        "raw": "Function"
+    },
+    "param": {
+        "object": {
+            "name": "object",
+            "type": {
+                "types": [
+                    {
+                        "type": "Object"
+                    }
+                ],
+                "raw": "Object"
+            },
+            "description": "The object to copy",
+            "defaultStr": ""
+        },
+        "settings": {
+            "name": "settings",
+            "type": {
+                "types": [
+                    {
+                        "type": "Object"
+                    }
+                ],
+                "raw": "Object"
+            },
+            "description": "Specify some settings to configure your clone process",
+            "default": {},
+            "defaultStr": "{}"
+        }
+    },
+    "return": {
+        "type": {
+            "types": [
+                {
+                    "type": "Object"
+                }
+            ],
+            "raw": "Object"
+        },
+        "description": "The cloned object"
+    },
+    "setting": {
+        "deep": {
+            "name": "deep",
+            "type": {
+                "types": [
+                    {
+                        "type": "Boolean"
+                    }
+                ],
+                "raw": "Boolean"
+            },
+            "description": "Specify if you want to clone the object deeply",
+            "default": false,
+            "defaultStr": "false"
+        }
+    },
+    "platform": [
+        {
+            "name": "js",
+            "description": ""
+        },
+        {
+            "name": "node",
+            "description": ""
+        }
+    ],
+    "description": "This function allows you to clone an object either at 1 level, or deeply.",
+    "namespace": "@lotsof.sugar.shared.object",
+    "status": "stable",
+    "snippet": {
+        "label": "__clone($1)"
+    },
+    "example": [
+        {
+            "language": "js",
+            "code": "import { __clone } from '@lotsof/sugar/object';\n__clone({\n   hello: 'world'\n});"
+        }
+    ],
+    "since": "2.0.0",
+    "author": {
+        "name": "Olivier Bossel",
+        "email": "olivier.bossel@gmail.com",
+        "url": "https://coffeekraken.io"
+    },
+    "filename": "clone.ts",
+    "extension": "ts",
+    "relPath": "src/shared/object/clone.ts",
+    "children": {}
+}

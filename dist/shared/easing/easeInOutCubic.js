@@ -16,7 +16,7 @@
  * @todo     tests
  *
  * @example         js
- * import { __easeInOutCubic } from '@coffeekraken/sugar/easing.js';
+ * import { __easeInOutCubic } from '@lotsof/sugar/easing';
  * __easeInOutCubic(0.4);
  *
  * @since           2.0.0

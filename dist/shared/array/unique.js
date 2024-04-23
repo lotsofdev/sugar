@@ -15,7 +15,7 @@
  * @snippet         __unique($1)
  *
  * @example         js
- * import { __unique } from '@coffeekraken/sugar/array.js';
+ * import { __unique } from '@lotsof/sugar/array';
  * __unique(['hello','world','hello','world']); // => ['hello','world']
  *
  * @since       2.0.0

@@ -15,7 +15,7 @@ import __unique from './unique.js';
  * @snippet         __pickRandom($1)
  *
  * @example         js
- * import { __pickRandom } from '@coffeekraken/sugar/array.js';
+ * import { __pickRandom } from '@lotsof/sugar/array';
  * const array = ['hello','world'];
  * __pickRandom(array); // => 'world'
  *

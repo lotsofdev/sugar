@@ -18,7 +18,7 @@ import __isValidPath from 'is-valid-path';
  * @snippet         __isPath($1)
  *
  * @example       js
- * import { __isPath } from '@coffeekraken/sugar/is.js';
+ * import { __isPath } from '@lotsof/sugar/is';
  * __isPath('hello/world'); // => true
  *
  * @since           2.0.0

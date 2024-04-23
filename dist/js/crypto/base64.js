@@ -11,7 +11,7 @@ import toString from '../../shared/string/toString.js';
  * @snippet         __base64.encrypt($1)
  *
  * @example         js
- * import { __base64 } from '@coffeekraken/sugar/crypto.js';
+ * import { __base64 } from '@coffeekraken/sugar/crypto';
  * __base64.encrypt('hello world');
  *
  * @todo        interface

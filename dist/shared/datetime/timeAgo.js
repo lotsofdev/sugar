@@ -1,5 +1,5 @@
 // @ts-nocheck
-import __jsAgo from 'js-ago.js';
+import __jsAgo from 'js-ago';
 /**
  * @name                timeAgo
  * @namespace           shared.datetime
@@ -19,7 +19,7 @@ import __jsAgo from 'js-ago.js';
  * @snippet         __timeAgo($1)
  *
  * @example           js
- * import { __timeAgo } from '@coffeekraken/sugar/datetime.js';
+ * import { __timeAgo } from '@lotsof/sugar/datetime';
  * __timeAgo(1611344957); // => 7 secs ago
  *
  * @see         https://www.npmjs.com/package/js-ago

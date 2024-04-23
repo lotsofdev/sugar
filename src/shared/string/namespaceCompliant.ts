@@ -19,7 +19,7 @@ import __simplifySpecialChars from './simplifySpecialChars.js';
  * @todo     tests
  *
  * @example         php
- * import { __namespaceCompliant } from '@coffeekraken/sugar/string.js';
+ * import { __namespaceCompliant } from '@lotsof/sugar/string';
  * __namespaceCompliant('Hello world'); // => hello-world
  *
  * @since       2.0.0

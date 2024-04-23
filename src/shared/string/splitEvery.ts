@@ -22,7 +22,7 @@ import __countLineChars from './countLineChars.js';
  * @snippet         __splitEvery($1, $2)
  *
  * @example           js
- * import { __splitEvery } from '@coffeekraken/sugar/string.js';
+ * import { __splitEvery } from '@lotsof/sugar/string';
  * __splitEvery('Hello World', 2, {
  *    splitWords: true
  * }); // => ['He','ll','o ','Wo','rl','d']

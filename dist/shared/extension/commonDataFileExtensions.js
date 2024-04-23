@@ -14,7 +14,7 @@
  * @snippet         __commonDataFileExtensions()
  *
  * @example         js
- * import { __commonDataFileExtensions } from '@coffeekraken/sugar/extension.js';
+ * import { __commonDataFileExtensions } from '@lotsof/sugar/extension';
  * const extensions = __commonDataFileExtensions();
  *
  * @since       2.0.0

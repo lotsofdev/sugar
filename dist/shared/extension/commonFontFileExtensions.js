@@ -14,7 +14,7 @@
  * @snippet         __commonFontFileExtensions()
  *
  * @example         js
- * import { __commonFontFileExtensions } from '@coffeekraken/sugar/extension.js';
+ * import { __commonFontFileExtensions } from '@lotsof/sugar/extension';
  * const extensions = __commonFontFileExtensions();
  *
  * @since       2.0.0

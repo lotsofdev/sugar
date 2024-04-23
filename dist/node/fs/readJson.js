@@ -26,7 +26,7 @@ import __readJsonSync from './readJsonSync.js';
  * await __readJson($1)
  *
  * @example         js
- * import { __readJson } from '@coffeekraken/sugar/fs.js';
+ * import { __readJson } from '@lotsof/sugar/fs';
  * await __readJson('my-cool-json/file.json');
  *
  * @since       2.0.0

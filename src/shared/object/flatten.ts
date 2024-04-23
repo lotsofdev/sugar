@@ -25,7 +25,7 @@ import __isPlain from '../is/isPlainObject.js';
  * @snippet         __flatten($1)
  *
  * @example             js
- * import { __flatten } from '@coffeekraken/sugar/object.js';
+ * import { __flatten } from '@lotsof/sugar/object';
  * __flatten({
  *    hello: {
  *      world: 'Coco'

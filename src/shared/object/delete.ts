@@ -16,7 +16,7 @@
  * @snippet         __get($1, $2)
  *
  * @example             js
- * import { __delete } from '@coffeekraken/sugar/object.js';
+ * import { __delete } from '@lotsof/sugar/object';
  * __delete(myObject, 'my.cool.value');
  * __delete(myObject, 'my.cool.value.0');
  *

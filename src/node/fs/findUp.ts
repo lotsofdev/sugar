@@ -23,7 +23,7 @@ import __isGlob from '../../shared/is/isGlob.js';
  * await __findUp($1)
  *
  * @example         js
- * import { __findUp } from '@coffeekraken/sugar/fs.js';
+ * import { __findUp } from '@lotsof/sugar/fs';
  * const file = await __findUp('myCoolFile.json', {});
  * console.log(file.path);
  *

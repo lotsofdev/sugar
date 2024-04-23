@@ -19,7 +19,7 @@ import __fs from 'fs-extra';
  * await __emptyDir($1)
  *
  * @example       js
- * import { __emptyDir } from '@coffeekraken/sugar/fs.js';
+ * import { __emptyDir } from '@coffeekraken/sugar/fs';
  * await __emptyDir('my/cool/directory').then(() => {
  *    // do something...
  * });
