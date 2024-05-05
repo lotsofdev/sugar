@@ -1,0 +1,47 @@
+<div class="docmap-mdx">
+# deepFilter
+<div class="_namespace">@lotsof.sugar.shared.object</div>
+<div class="_metas">
+<div class="_status"><span class="_status-label">Status:</span><span class="_status-value -stable">stable</span></div>
+<div class="_since"><span class="_since-label">Since:</span><span class="_since-value">2.0.0</span></div>
+</div>
+<div class="_description">
+Allow to filter an object using a function and this through all of the object structure. It works the same as the filter method on the Array object type.
+The passed filter function will have as parameter each object properties and must return true or false depending if you want the
+passed property in the filtered object
+</div>
+<div class="_params">
+## Params
+1. <span class="_name">object<span class="_required">*</span></span><span class="_default"></span> <span class="_type">Object</span>
+   - The object to filter
+2. <span class="_name">filter<span class="_required">*</span></span><span class="_default"></span> <span class="_type">Function</span>
+   - The filter function that take as parameter the property itself, and the property name
+</div>
+<div class="_return">
+## Return
+- <span class="_description">The filtered object</span><span class="_default"></span><span class="_type">Object</span>
+</div>
+<div class="_examples">
+## Examples
+```js
+import { __deepFilter } from '@lotsof/sugar/object';
+__deepFilter ({
+   coco: 'hello',
+   plop: true,
+   sub: {
+     property: 'world'
+   }
+}, ({key, item}) => typeof item === 'string');
+// { coco: 'hello' }
+```
+</div>
+<div class="_settings">
+## Settings
+1. <span class="_name">clone</span><span class="_default">true</span> <span class="_type">Boolean</span>
+</div>
+<div class="_author">
+<span class="_name">Olivier Bossel</span>
+<span class="_email">olivier.bossel@gmail.com</span>
+<a href="https://coffeekraken.io" target="_blank" class="_url">https://coffeekraken.io</a>
+</div>
+</div>

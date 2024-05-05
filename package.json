@@ -231,16 +231,15 @@
     "./project": {
       "default": "./dist/node/project/_exports.js"
     },
+    "./scroll": {
+      "default": "./dist/js/scroll/_exports.js"
+    },
     "./storage": {
       "default": "./dist/js/storage/_exports.js"
     },
     "./string": {
-      "node": {
-        "default": "./dist/node/string/_exports.js"
-      },
-      "browser": {
-        "default": "./dist/js/string/_exports.js"
-      }
+      "node": "./dist/node/string/_exports.js",
+      "default": "./dist/js/string/_exports.js"
     },
     "./terminal": {
       "default": "./dist/node/terminal/_exports.js"

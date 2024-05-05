@@ -1,0 +1,44 @@
+<div class="docmap-mdx">
+# deepMerge
+<div class="_namespace">@lotsof.sugar.shared.object</div>
+<div class="_metas">
+<div class="_status"><span class="_status-label">Status:</span><span class="_status-value -stable">stable</span></div>
+<div class="_since"><span class="_since-label">Since:</span><span class="_since-value">2.0.0</span></div>
+</div>
+<div class="_description">
+Deep merge one object with another and return the merged object result. This merging implementation support:
+- Merging object with getters/setters
+- n numbers of objects as arguments
+- Choose beetween cloning first (default) the object or keeping the first passed object as result
+Note that by default the resulting object is a clone and do not have the same reference that the first passed object.
+</div>
+<div class="_params">
+## Params
+1. <span class="_name">args...<span class="_required">*</span></span><span class="_default"></span> <span class="_type">Object</span>
+   - Pass all the objects you want to merge
+2. <span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IDeepMergeSettings</span>
+   - Pass as last object the settings one that can contain these properties:
+</div>
+<div class="_return">
+## Return
+- <span class="_description">The merged object result</span><span class="_default"></span><span class="_type">Object</span>
+</div>
+<div class="_examples">
+## Examples
+```js
+import { __deepMerge } from '@lotsof/sugar/object';
+__deepMerge({a: {b: {c: 'c', d: 'd'}}}, {a: {b: {e: 'e', f: 'f'}}});
+// => { a: { b: { c: 'c', d: 'd', e: 'e', f: 'f' } } }
+```
+</div>
+<div class="_settings">
+## Settings
+1. <span class="_name">array</span><span class="_default">false</span> <span class="_type">Boolean</span>
+2. <span class="_name">clone</span><span class="_default">true</span> <span class="_type">Boolean</span>
+</div>
+<div class="_author">
+<span class="_name">Olivier Bossel</span>
+<span class="_email">olivier.bossel@gmail.com</span>
+<a href="https://coffeekraken.io" target="_blank" class="_url">https://coffeekraken.io</a>
+</div>
+</div>

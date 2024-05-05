@@ -1,0 +1,32 @@
+<div class="docmap-mdx">
+# packageJsonSync
+<div class="_namespace">@lotsof.sugar.node.package</div>
+<div class="_metas">
+<div class="_status"><span class="_status-label">Status:</span><span class="_status-value -stable">stable</span></div>
+</div>
+<div class="_description">
+Returns the package.json file depending on the passed cwd.
+It will go up the directories tree and get the first package.json found.
+</div>
+<div class="_params">
+## Params
+1. <span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">IPackageJsonSyncSettings</span>
+   - Some settings like cwd, etc...
+</div>
+<div class="_examples">
+## Examples
+```js
+import { __packageJsonSync } from '@coffeekraken/sugar/package';
+const root = __packageJsonSync();
+```
+</div>
+<div class="_settings">
+## Settings
+1. <span class="_name">cwd</span><span class="_default">/Users/olivier/data/web/lotsof/monorepo/packages/sugar</span> <span class="_type">String</span>
+</div>
+<div class="_author">
+<span class="_name">Olivier Bossel</span>
+<span class="_email">olivier.bossel@gmail.com</span>
+<a href="https://coffeekraken.io" target="_blank" class="_url">https://coffeekraken.io</a>
+</div>
+</div>
