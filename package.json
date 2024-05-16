@@ -302,6 +302,7 @@
     "is-equal": "^1.7.0",
     "is-glob": "^4.0.3",
     "is-valid-path": "^0.1.1",
+    "isbot": "^5.1.6",
     "js-ago": "^2.1.1",
     "js-md5": "^0.8.3",
     "json-cyclic": "^1.0.2",
@@ -312,10 +313,13 @@
     "minimatch": "^9.0.3",
     "object-encode": "^1.0.3",
     "param-case": "^4.0.0",
+    "rematrix": "^0.7.2",
     "sprintf-js": "^1.1.3",
     "strip-ansi": "^7.1.0",
+    "strip-css-comments": "^5.0.0",
     "striptags": "^3.2.0",
     "temp-dir": "^3.0.0",
-    "unescape": "^1.0.1"
+    "unescape": "^1.0.1",
+    "uuid": "^9.0.1"
   }
 }
