@@ -12,7 +12,6 @@ import __whenAnimationEnd from '../when/whenAnimationEnd.js';
 import __whenEntersViewport from '../when/whenEntersViewport.js';
 import __whenInteract from '../when/whenInteract.js';
 import __whenInViewport from '../when/whenInViewport.js';
-import __whenLod from '../when/whenLod.js';
 import __whenNearViewport from '../when/whenNearViewport.js';
 import __whenOutOfViewport from '../when/whenOutOfViewport.js';
 import __whenStylesheetsReady from '../when/whenStylesheetsReady.js';
@@ -82,12 +81,7 @@ export type TWhenTrigger =
   | 'visible'
   | 'domReady'
   | 'stylesheetsReady'
-  | 'animationEnd'
-  | 'lod:0'
-  | 'lod:1'
-  | 'lod:2'
-  | 'lod:3'
-  | 'lod:4';
+  | 'animationEnd';
 
 export const WhenTriggers = [
   'direct',
@@ -101,11 +95,6 @@ export const WhenTriggers = [
   'stylesheetsReady',
   'domReady',
   'animationEnd',
-  'lod:0',
-  'lod:1',
-  'lod:2',
-  'lod:3',
-  'lod:4',
 ];
 
 export default function __when(
@@ -132,14 +121,6 @@ export default function __when(
 
     // adding watchers
     trigger.forEach((t) => {
-      // lod (level of defails)
-      const lodMatches = t.match(/^lod\:([0-9]{1,2})/);
-      if (lodMatches && lodMatches[1]) {
-        const level = parseInt(lodMatches[1]);
-        promises.push(__whenLod(level));
-        return;
-      }
-
       // timeout
       const timeoutMatches = t.match(/^timeout\:([0-9]+)/);
       if (timeoutMatches && timeoutMatches[1]) {
