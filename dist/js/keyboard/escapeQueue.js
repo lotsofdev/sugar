@@ -20,10 +20,7 @@ export default function escapeQueue(callback, settings) {
             _escapeQueueMap.set($root, true);
             $root.addEventListener('keydown', (e) => {
                 var _a;
-                if (e.key !== 'Escape') {
-                    e.preventDefault();
-                }
-                if (!_escapeQueue.length || _isEscaping) {
+                if (e.key !== 'Escape' || !_escapeQueue.length || _isEscaping) {
                     return;
                 }
                 // make sure to not escape multiple times

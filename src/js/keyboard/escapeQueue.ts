@@ -90,11 +90,7 @@ export default function escapeQueue(
       _escapeQueueMap.set($root, true);
 
       $root.addEventListener('keydown', (e) => {
-        if (e.key !== 'Escape') {
-          e.preventDefault();
-        }
-
-        if (!_escapeQueue.length || _isEscaping) {
+        if (e.key !== 'Escape' || !_escapeQueue.length || _isEscaping) {
           return;
         }
 
