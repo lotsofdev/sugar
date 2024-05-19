@@ -1,4 +1,4 @@
-import __getTransitionProperties from '../style/getTransitionProperties';
+import __getTransitionProperties from '../style/getTransitionProperties.js';
 /**
  * @name                whenTransitionEnd
  * @namespace           js.dom.detect

@@ -1,3 +1,3 @@
-import __scrolledClasses from './scrolledClasses';
+import __scrolledClasses from './scrolledClasses.js';
 
 export { __scrolledClasses };

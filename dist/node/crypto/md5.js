@@ -1,3 +1,4 @@
+// @ts-ignore
 import md5 from 'crypto-js/md5';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';

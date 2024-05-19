@@ -1,5 +1,8 @@
 import __uniqid from '../../string/uniqid.js';
 const __whenInViewportStatuses = new WeakMap();
+class CancelablePromise extends Promise {
+    cancel() { }
+}
 export default function __whenInViewport($elm, settings) {
     const finalSettings = Object.assign({ offset: '10px', once: true, whenIn: undefined, whenOut: undefined }, (settings !== null && settings !== void 0 ? settings : {}));
     let observer;
@@ -16,7 +19,7 @@ export default function __whenInViewport($elm, settings) {
     const rootMargin = finalSettings.offset
         ? `${finalSettings.offset}`
         : getRootMargin();
-    const pro = new Promise((resolve) => {
+    const pro = new CancelablePromise((resolve) => {
         var _a;
         const options = {
             root: null, // relative to document viewport
@@ -64,6 +67,12 @@ export default function __whenInViewport($elm, settings) {
         }
         observer = new IntersectionObserver(onChange, options);
         observer.observe($elm);
+        setTimeout(() => {
+            pro.cancel = () => {
+                observer.disconnect();
+                Promise.resolve($elm);
+            };
+        });
     });
     pro.finally(() => {
         observer === null || observer === void 0 ? void 0 : observer.disconnect();

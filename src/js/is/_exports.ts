@@ -19,6 +19,7 @@ import __isUcBrowser from './isUcBrowser.js';
 import __isUserScrolling from './isUserScrolling.js';
 import __isVisible from './isVisible.js';
 
+export * from '../../shared/is/_exports.js';
 export {
   __isChrome,
   __isCrawler,

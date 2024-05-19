@@ -1,5 +1,5 @@
-import __readJsonSync from '../fs/readJsonSync';
-import __packageRootDir from '../path/packageRootDir';
+import __readJsonSync from '../fs/readJsonSync.js';
+import __packageRootDir from '../path/packageRootDir.js';
 export default function __packageJsonSync(settings = {}) {
     settings = Object.assign({ cwd: process.cwd() }, settings);
     const packageRootDir = __packageRootDir(settings.cwd, {

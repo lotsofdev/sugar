@@ -1,5 +1,5 @@
 {
-  "exclude": ["lotsof.config.ts"],
+  "exclude": ["lotsof.config.ts", "./dist/**/*"],
   "compilerOptions": {
     "noImplicitAny": false,
     "rootDir": "src",
@@ -7,9 +7,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es6",
-    "module": "es6",
+    "module": "NodeNext",
     "sourceMap": true,
+    "declaration": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "NodeNext"
   }
 }

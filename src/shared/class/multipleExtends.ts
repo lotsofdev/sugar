@@ -1,4 +1,4 @@
-import __aggregation from 'aggregation/es5';
+import __aggregation from 'aggregation/es5.js';
 
 /**
  * @name                multipleExtends

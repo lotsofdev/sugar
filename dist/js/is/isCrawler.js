@@ -1,4 +1,4 @@
-import __isbot from 'isbot';
+import { isbot as __isbot } from 'isbot';
 /**
  * @name        isCrawler
  * @namespace            js.is
@@ -26,7 +26,6 @@ import __isbot from 'isbot';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
  */
 export default function __isCrawler(ua = navigator.userAgent) {
-    // @ts-ignore
     return __isbot(ua);
 }
 //# sourceMappingURL=isCrawler.js.map

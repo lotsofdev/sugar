@@ -1,4 +1,4 @@
-import __isbot from 'isbot';
+import { isbot as __isbot } from 'isbot';
 
 /**
  * @name        isCrawler
@@ -27,6 +27,5 @@ import __isbot from 'isbot';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
  */
 export default function __isCrawler(ua: string = navigator.userAgent): boolean {
-  // @ts-ignore
   return __isbot(ua);
 }

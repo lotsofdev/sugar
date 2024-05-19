@@ -70,7 +70,7 @@ export interface IwhenSettings {
   whenStylesheetsReady?: IWhenStyleSheetsReadySettings;
 }
 
-export type TWhenTrigger =
+export type TWhenTrigger<string> = (
   | 'direct'
   | 'directly'
   | 'inViewport'
@@ -81,7 +81,8 @@ export type TWhenTrigger =
   | 'visible'
   | 'domReady'
   | 'stylesheetsReady'
-  | 'animationEnd';
+  | 'animationEnd'
+)[];
 
 export const WhenTriggers = [
   'direct',

@@ -1,4 +1,6 @@
+// @ts-ignore
 import AES from 'crypto-js/aes';
+// @ts-ignore
 import utf8 from 'crypto-js/enc-utf8';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';

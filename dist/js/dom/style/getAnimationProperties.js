@@ -1,4 +1,4 @@
-import __convertTime from '../../../shared/datetime/convertTime';
+import __convertTime from '../../../shared/datetime/convertTime.js';
 import __getStyleProperty from './getStyleProperty.js';
 export default function __getAnimationProperties(elm) {
     var _a, _b;

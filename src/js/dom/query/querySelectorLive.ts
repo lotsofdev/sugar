@@ -50,7 +50,7 @@ export interface IQuerySelectorLiveSettings {
   afterFirst?: Function;
   scopes: boolean;
   firstOnly: boolean;
-  when?: TWhenTrigger;
+  when?: TWhenTrigger<string>;
   attributes: string[];
 }
 

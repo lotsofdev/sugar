@@ -155,12 +155,9 @@
       "default": "./dist/shared/html/_exports.js"
     },
     "./is": {
-      "node": {
-        "default": "./dist/node/is/_exports.js"
-      },
-      "browser": {
-        "default": "./dist/js/is/_exports.js"
-      }
+      "node": "./dist/node/is/_exports.js",
+      "browser": "./dist/js/is/_exports.js",
+      "default": "./dist/shared/is/_exports.js"
     },
     "./iterable": {
       "default": "./dist/shared/iterable/_exports.js"
@@ -169,12 +166,9 @@
       "default": "./dist/shared/json/_exports.js"
     },
     "./keyboard": {
-      "node": {
-        "default": "./dist/node/keyboard/_exports.js"
-      },
-      "browser": {
-        "default": "./dist/js/keyboard/_exports.js"
-      }
+      "types": "./src/js/keyboard/_exports.ts",
+      "node": "./dist/node/keyboard/_exports.js",
+      "browser": "./dist/js/keyboard/_exports.js"
     },
     "./load": {
       "default": "./dist/node/load/_exports.js"
@@ -239,7 +233,7 @@
     },
     "./string": {
       "node": "./dist/node/string/_exports.js",
-      "default": "./dist/js/string/_exports.js"
+      "browser": "./dist/js/string/_exports.js"
     },
     "./terminal": {
       "default": "./dist/node/terminal/_exports.js"

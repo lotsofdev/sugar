@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import __closestScrollable from '../query/closestScrollable';
+import __closestScrollable from '../query/closestScrollable.js';
 export default function __whenNearViewport(elm, settings) {
     function getRootMargin() {
         return [

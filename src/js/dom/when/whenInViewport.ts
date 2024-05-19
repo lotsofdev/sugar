@@ -47,10 +47,18 @@ export interface IWhenInViewportSettings {
 
 const __whenInViewportStatuses = new WeakMap();
 
+export interface IWhenInViewportResult extends Promise<HTMLElement> {
+  cancel: Function;
+}
+
+class CancelablePromise extends Promise<HTMLElement> {
+  cancel() {}
+}
+
 export default function __whenInViewport(
   $elm: HTMLElement,
   settings?: Partial<IWhenInViewportSettings>,
-): Promise<HTMLElement> {
+): IWhenInViewportResult {
   const finalSettings: IWhenInViewportSettings = {
     offset: '10px',
     once: true,
@@ -77,7 +85,7 @@ export default function __whenInViewport(
     ? `${finalSettings.offset}`
     : getRootMargin();
 
-  const pro = new Promise((resolve) => {
+  const pro = new CancelablePromise((resolve) => {
     const options = {
       root: null, // relative to document viewport
       rootMargin,
@@ -131,11 +139,18 @@ export default function __whenInViewport(
 
     observer = new IntersectionObserver(onChange, options);
     observer.observe($elm);
+
+    setTimeout(() => {
+      pro.cancel = () => {
+        observer.disconnect();
+        Promise.resolve($elm);
+      };
+    });
   });
 
   pro.finally(() => {
     observer?.disconnect();
   });
 
-  return pro as Promise<HTMLElement>;
+  return pro;
 }

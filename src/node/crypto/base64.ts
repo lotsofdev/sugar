@@ -1,6 +1,9 @@
 import toString from '../../shared/string/toString.js';
 
+// @ts-ignore
 import __base64 from 'crypto-js/enc-base64';
+
+// @ts-ignore
 import __utf8 from 'crypto-js/enc-utf8';
 
 /**

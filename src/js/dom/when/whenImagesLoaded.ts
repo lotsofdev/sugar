@@ -1,4 +1,4 @@
-import __whenImageLoaded from './whenImageLoaded';
+import __whenImageLoaded from './whenImageLoaded.js';
 
 /**
  * @name            whenImagesLoaded

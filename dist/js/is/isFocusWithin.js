@@ -1,9 +1,9 @@
 /**
- * @name        isFocusWithin
- * @namespace            js.is
- * @type      Function
- * @platform          js
- * @status        stable
+ * @name            isFocusWithin
+ * @namespace       js.is
+ * @type            Function
+ * @platform        js
+ * @status          stable
  *
  * Check if the mouse is isFocusWithin the passed HTMLElement
  *
