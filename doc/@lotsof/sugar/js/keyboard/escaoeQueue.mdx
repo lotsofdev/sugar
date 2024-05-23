@@ -1,0 +1,58 @@
+---
+title: 'escaoeQueue'
+namespace: '@lotsof.sugar.js.keyboard'
+description: function trim() { [native code] }
+status: 'stable'
+since: '2.0.0'
+platform: '[{"name":"js","description":""}]'
+author: '{"name":"Olivier Bossel","email":"olivier.bossel@gmail.com","url":"https://coffeekraken.io"}'
+---
+<div class="docmap-mdx">
+# escaoeQueue
+<div class="_namespace">@lotsof.sugar.js.keyboard</div>
+<div class="_metas">
+<div class="_status"><span class="_status-label">Status:</span><span class="_status-value -stable">stable</span></div>
+<div class="_since"><span class="_since-label">Since:</span><span class="_since-value">2.0.0</span></div>
+<div class="_since"><span class="_since-label">Since:</span><span class="_since-value">2.0.0</span></div>
+</div>
+<div class="_description">
+This funciton allows you to register actions to execute when user press the escape key.
+It will take care of executing the last registered action first, then the others...
+This function returns a SPromise instance on which you can call the `cancel` method to unregister your
+action in the queue.
+</div>
+<div class="_params">
+## Params
+1. <span class="_name">callback</span><span class="_default"></span> <span class="_type">Function</span>
+   - The callback to call on pressing escape
+2. <span class="_name">settings</span><span class="_default">[object Object]</span> <span class="_type">Object</span>
+   - An option object to configure your hotkey. Here's the list of available settings:
+</div>
+<div class="_return">
+## Return
+- <span class="_description">An SPromise instance that will be resolved when the user has pressed the escape key and that it's yout turn in the queue</span><span class="_default"></span><span class="_type">SPromise</span>
+</div>
+<div class="_examples">
+## Examples
+```js
+import { __escapeQueue } from '@coffeekraken/sugar/keyboard'
+const promise = __escapeQueue();
+promise.then(() => {
+     // do something...
+});
+
+// if you want to cancel your subscription
+promise.cancel();
+```
+</div>
+<div class="_settings">
+## Settings
+1. <span class="_name">rootNode</span><span class="_default">document</span> <span class="_type">HTMLElement</span>
+2. <span class="_name">id</span><span class="_default"></span> <span class="_type">String</span>
+</div>
+<div class="_author">
+<span class="_name">Olivier Bossel</span>
+<span class="_email">olivier.bossel@gmail.com</span>
+<a href="https://coffeekraken.io" target="_blank" class="_url">https://coffeekraken.io</a>
+</div>
+</div>
