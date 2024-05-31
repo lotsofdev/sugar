@@ -2,9 +2,11 @@ import __distanceFromElementTopToViewportBottom from './distanceFromElementTopTo
 import __distanceFromElementTopToViewportTop from './distanceFromElementTopToViewportTop.js';
 import __scrollLeft from './scrollLeft.js';
 import __scrollTop from './scrollTop.js';
+import __nearestElement from './nearestElement.js';
 export {
-    __distanceFromElementTopToViewportBottom,
-    __distanceFromElementTopToViewportTop,
-    __scrollLeft,
-    __scrollTop,
+  __distanceFromElementTopToViewportBottom,
+  __distanceFromElementTopToViewportTop,
+  __scrollLeft,
+  __scrollTop,
+  __nearestElement,
 };
