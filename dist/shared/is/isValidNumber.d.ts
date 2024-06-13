@@ -17,13 +17,13 @@
  * @snippet         __isValidNumber()
  *
  * @example    js
- * import { __isValidNumber } from '@coffeekraken/sugar/is'
+ * import { __isValidNumber } from '@lotsof/sugar/is'
  * __isValidNumber(12) // true
  * __isValidNumber('he') // false
  * __isValidNumber(undefined) // false
  * __isValidNumber(NaN) // false
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isValidNumber(value: any): boolean;

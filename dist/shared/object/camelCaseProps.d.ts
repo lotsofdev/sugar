@@ -4,7 +4,7 @@
  * @type                Function
  * @platform            js
  * @platform            node
- * @status              beta
+ * @status              stable
  *
  * This function simply take an object as argument and return the same one but with properties in camel case.
  *
@@ -27,7 +27,7 @@
  * // }
  *
  * @since           2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface ICamelCasePropsSettings {
     deep: boolean;

@@ -16,14 +16,14 @@
  * @snippet         __isMap($1)
  *
  * @example    js
- * import { __isMap } from '@coffeekraken/sugar/is'
+ * import { __isMap } from '@lotsof/sugar/is'
  * const map = new Map();
  * if (__isMap(map) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isMap(value: any): boolean {
   return value instanceof Map;

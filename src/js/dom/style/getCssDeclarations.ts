@@ -17,12 +17,12 @@
  * @snippet         __getCssDeclarations()
  *
  * @example  	js
- * import { __getCssDeclarations } from '@coffeekraken/sugar/dom';
+ * import { __getCssDeclarations } from '@lotsof/sugar/dom';
  * __getCssDeclarations('style', [myCoolCssRules]);
  *
  * @see             https://github.com/marionebl/jogwheel/blob/master/source/library/get-declarations.js
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function getCssDeclarations(
   typeName = 'style',

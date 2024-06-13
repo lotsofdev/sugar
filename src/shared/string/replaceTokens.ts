@@ -12,16 +12,16 @@
  * @todo      interface
  * @todo      doc
  * @todo      tests
- * @todo      {Feature}     Add setting to define tokens delimiter
- * @todo      {Feature}     Support multi level tokens like [something.cool]
+ * @todo      Add setting to define tokens delimiter
+ * @todo      Support multi level tokens like [something.cool]
  *
  * @param       {String}          string          The string to process
- * @param       {Object}          argsObj         The arguments/value object
+ * @param       {Object}          tokensObj         The arguments/value object
  * @param       {Object}          [settings={}]   A settings object to configure the parsing process
  * @return      {String}                          The processed string
  *
  * @setting     {String}        [regexp=\[([a-zA-Z0-9-_]+)\] The regexp to use to match the tokens
- * @setting     {Boolean}       [stripUndefined=true]       Specify if you want to strip the tokens that are not found in the argsObj
+ * @setting     {Boolean}       [stripUndefined=true]       Specify if you want to strip the tokens that are not found in the tokensObj
  *
  * @snippet         (string) __replaceTokens($1, $2)
  * __replaceTokens($1, $2)
@@ -33,7 +33,7 @@
  * __replaceTokens('hello [world]', { world: 'Coco' }); // => hello Coco
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 interface IReplaceTokensSettings {
   regexp?: string;
@@ -42,7 +42,7 @@ interface IReplaceTokensSettings {
 
 function replaceTokens(
   string: string,
-  argsObj: any,
+  tokensObj: any,
   settings: IReplaceTokensSettings = {},
 ): string {
   settings = {
@@ -53,8 +53,9 @@ function replaceTokens(
   let tokens;
   const reg = new RegExp(settings.regexp ?? '\\[([a-zA-Z0-9-_]+)\\]', 'g');
   while ((tokens = reg.exec(string))) {
-    if (argsObj[tokens[1]] === undefined && !settings.stripUndefined) return '';
-    string = string.replace(tokens[0], argsObj[tokens[1]] || '');
+    if (tokensObj[tokens[1]] === undefined && !settings.stripUndefined)
+      return '';
+    string = string.replace(tokens[0], tokensObj[tokens[1]] || '');
   }
   return string;
 }

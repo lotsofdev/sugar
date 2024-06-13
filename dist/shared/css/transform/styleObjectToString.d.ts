@@ -4,7 +4,7 @@
  * @type            Function
  * @platform        js
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * Transform a style object to inline string separated by ;
  *
@@ -16,7 +16,7 @@
  * @snippet         __styleObjectToString($1)
  *
  * @example 	js
- * import { __styleObjectToString } from '@coffeekraken/sugar/css'
+ * import { __styleObjectToString } from '@lotsof/sugar/css'
  * const styleString =  __styleObjectToString({
  * 		paddingLeft : '20px',
  * 		display : 'block'
@@ -24,6 +24,6 @@
  * // output => padding-left:20px; display:block;
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __styleObjectToString(styleObj: any): string;

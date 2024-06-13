@@ -21,11 +21,11 @@ import __uniqid from '../../../js/string/uniqid.js';
  * @todo        tests
  *
  * @example       js
- * import { __injectStyle } from '@coffeekraken/sugar/dom';
+ * import { __injectStyle } from '@lotsof/sugar/dom';
  *  __injectStyle('a { color: red; }');
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IInjectStyleSettings {

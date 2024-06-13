@@ -22,7 +22,7 @@ import __urlSlug from 'url';
  *
  * @see             https://www.npmjs.com/package/url-slug
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function urlFromString(string) {
     return string

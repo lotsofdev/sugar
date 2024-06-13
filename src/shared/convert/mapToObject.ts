@@ -4,7 +4,7 @@
  * @type          Function
  * @platform          js
  * @platform          node
- * @status        beta
+ * @status        stable
  *
  * This function simply take a Map object and convert it to a plain object
  *
@@ -23,7 +23,7 @@
  * // }
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __mapToObject(map: any): any {
   const obj = {};

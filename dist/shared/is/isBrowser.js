@@ -15,13 +15,13 @@
  * @snippet         __isBrowser()
  *
  * @example    js
- * import { __isBrowser } from '@coffeekraken/sugar/is'
+ * import { __isBrowser } from '@lotsof/sugar/is'
  * if (__isBrowser() {
  *   // do something
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isBrowser() {
     return typeof window !== 'undefined';

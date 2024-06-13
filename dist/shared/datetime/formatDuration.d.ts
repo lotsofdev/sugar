@@ -20,6 +20,6 @@
  * __formatDuration(2000); // => 2s
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __formatDuration(duration: number): string;

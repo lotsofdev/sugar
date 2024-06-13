@@ -17,12 +17,12 @@
  * @snippet         __isMmddyyyyDate($1)
  *
  * @example    js
- * import { __isMmddyyyyDate } from '@coffeekraken/sugar/is'
+ * import { __isMmddyyyyDate } from '@lotsof/sugar/is'
  * if (__isMmddyyyyDate('12.25.2018')) {
  *     // do something cool
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isMmddyyyyDate(date: string): boolean;

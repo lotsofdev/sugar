@@ -24,7 +24,7 @@ import __parseAuthorString from './parseAuthorString.js';
  * @example       js
  * import { __formatPackageJson } from '@lotsof/sugar/package';
  * __formatPackageJson({
- *    "author": "Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)"
+ *    "author": "Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)"
  * }); // => {
  *    "author": {
  *      "name": "Olivier Bossel",
@@ -34,7 +34,7 @@ import __parseAuthorString from './parseAuthorString.js';
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __formatPackageJson(json) {
     // author

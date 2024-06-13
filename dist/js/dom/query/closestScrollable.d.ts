@@ -16,10 +16,10 @@
  * @todo      tests
  *
  * @example  	js
- * import { __closestScrollable } from '@coffeekraken/sugar/dom';
+ * import { __closestScrollable } from '@lotsof/sugar/dom';
  * __closestScrollable($myElement);
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __closestScrollable($elm: HTMLElement): HTMLElement | undefined;

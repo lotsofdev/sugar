@@ -20,7 +20,7 @@
  * __alphaToHex(1); // FF
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __alphaToHex(alpha) {
     const _opacity = Math.round(Math.min(Math.max(alpha || 1, 0), 1) * 255);

@@ -20,6 +20,6 @@
  * __chdir('/my/cool/file.txt', 'Hello world');
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __chdir(path: string): void;

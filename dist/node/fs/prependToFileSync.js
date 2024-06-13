@@ -21,7 +21,7 @@ import __writeFileSync from '../fs/writeFileSync.js';
  * __prependToFileSync('/my/cool/file.txt', 'Hello world');
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __prependToFileSync(path, content) {
     if (!__fs.existsSync(path)) {

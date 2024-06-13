@@ -17,12 +17,12 @@
  * @snippet         __isDdmmyyyyDate($1)
  *
  * @example    js
- * import { __isDdmmyyyyDate } from '@coffeekraken/sugar/is'
+ * import { __isDdmmyyyyDate } from '@lotsof/sugar/is'
  * if (__isDdmmyyyyDate('20.12.2018')) {
  *     // do something cool
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isDdmmyyyyDate(date: string): boolean;

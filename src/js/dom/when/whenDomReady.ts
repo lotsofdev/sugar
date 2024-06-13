@@ -19,14 +19,14 @@
  * @todo      tests
  *
  * @example  	js
- * import { __whenDomReady } from '@coffeekraken/sugar/dom'
+ * import { __whenDomReady } from '@lotsof/sugar/dom'
  * __whenDomReady().then(() => {
  *     // do something...
  * });
  *
  * @see             https://www.jstips.co/en/javascript/detect-document-ready-in-pure-js/
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenDomReady(): Promise<void> {
   return new Promise((resolve) => {

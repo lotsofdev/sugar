@@ -37,7 +37,7 @@ import * as __fs from 'fs';
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __writeJson(path, data) {
     return __awaiter(this, void 0, void 0, function* () {

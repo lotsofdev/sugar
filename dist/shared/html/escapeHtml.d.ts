@@ -21,6 +21,6 @@
  *
  * @see             https://www.npmjs.com/package/escape-html
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __escapeHtml(html: string): string;

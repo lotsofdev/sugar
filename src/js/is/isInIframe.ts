@@ -14,13 +14,13 @@
  * @todo      tests
  *
  * @example    js
- * import { __isInIframe } from '@coffeekraken/sugar/dom'
+ * import { __isInIframe } from '@lotsof/sugar/dom'
  * if (__isInIframe()) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isInIframe(): boolean {
   try {

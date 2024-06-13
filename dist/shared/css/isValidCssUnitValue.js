@@ -4,7 +4,7 @@
  * @type            Function
  * @platform        js
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * This function tells you if the passed value is a valid css unit based one like 10px, 20em, etc...
  *
@@ -14,12 +14,12 @@
  * @snippet         __isValidCssUnitValue($1)
  *
  * @example         js
- * import { __isValidCssUnitValue } from '@coffeekraken/sugar/css';
+ * import { __isValidCssUnitValue } from '@lotsof/sugar/css';
  * __isValidCssUnitValue('10px'); // => true
  * __isValidCssUnitValue('default'); // => false
  *
  * @since       2.0.0
- * @author 	                Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author 	                Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isValidCssUnitValue(value) {
     if (typeof value === 'number')
@@ -33,6 +33,7 @@ export default function __isValidCssUnitValue(value) {
     if ([
         'cm',
         'mm',
+        'Q',
         'in',
         'px',
         'pt',
@@ -43,6 +44,10 @@ export default function __isValidCssUnitValue(value) {
         'rem',
         'vw',
         'vh',
+        'lvh',
+        'lvw',
+        'svh',
+        'svw',
         'vmin',
         'vmax',
         '%',

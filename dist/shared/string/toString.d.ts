@@ -1,10 +1,10 @@
 /**
- * @name        toString
- * @namespace            shared.string
- * @type      Function
- * @platform          js
- * @platform          node
- * @status        beta
+ * @name            toString
+ * @namespace       shared.string
+ * @type            Function
+ * @platform        js
+ * @platform        node
+ * @status          stable
  *
  * Convert passed value to a string
  *
@@ -20,13 +20,13 @@
  * @snippet         __toString($1)
  *
  * @example    js
- * import { __toString } from '@coffeekraken/sugar/string'
+ * import { __toString } from '@lotsof/sugar/string'
  * __toString({
  * 	id:'hello'
  * }) // '{"id":"hello"}'
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 interface IToStringSettings {
     beautify?: boolean;

@@ -19,11 +19,11 @@ import __packageRootDir from '../path/packageRootDir.js';
  * @snippet         __composerPath($1)
  *
  * @example         js
- * import { __composerPath } from '@coffeekraken/sugar/composer`;
+ * import { __composerPath } from '@lotsof/sugar/composer`;
  * __composerPath('lodash');
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IComposerPathSettings {
   cwd: string;

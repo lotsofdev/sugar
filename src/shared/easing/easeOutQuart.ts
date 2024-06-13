@@ -20,7 +20,7 @@
  * @todo      tests
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __easeOutQuart(t: number): number {
   return 1 - --t * t * t * t;

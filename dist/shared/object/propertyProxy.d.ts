@@ -37,7 +37,7 @@
  * console.log(myObject.title) => 'Hello Youhou Universe';
  *
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 interface IPropertyProxyDescriptor {
     get: (value: any) => any;

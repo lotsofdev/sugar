@@ -19,11 +19,11 @@
  * @snippet         __toBase($1, $2)
  *
  * @example    js
- * import { __toBase } from '@coffeekraken/sugar/number'
+ * import { __toBase } from '@lotsof/sugar/number'
  * __toBase(1024, 62); // qF
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IToBaseSettings {
     chars: string;

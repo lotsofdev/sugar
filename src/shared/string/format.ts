@@ -21,11 +21,11 @@ import { format } from 'fecha';
  * @snippet         __format($1, $2)
  *
  * @example    js
- * import { __format } from '@coffeekraken/sugar/string'
+ * import { __format } from '@lotsof/sugar/string'
  *
  * @see       https://www.npmjs.com/package/fecha
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 type tFormat =
   | 'isoDate'

@@ -25,7 +25,7 @@
  * });
  *
  * @example         js
- * import { __onScrollEnd } from '@coffeekraken/sugar/scroll';
+ * import { __onScrollEnd } from '@lotsof/sugar/scroll';
  * __onScrollEnd($elm, () => {
  *      // do something
  * }, {
@@ -33,7 +33,7 @@
  * });
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IOnScrollEndSettings {
   offset: number;

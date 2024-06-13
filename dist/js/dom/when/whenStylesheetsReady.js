@@ -23,7 +23,7 @@ import __whenLinkLoaded from './whenLinkLoaded.js';
  * });
  *
  * @example 	js
- * import { __whenStylesheetsReady } from '@coffeekraken/sugar/dom'
+ * import { __whenStylesheetsReady } from '@lotsof/sugar/dom'
  * __whenStylesheetsReady([
  * 		myHTMLLinkElement1,
  * 		myHTMLLinkElement2
@@ -32,7 +32,7 @@ import __whenLinkLoaded from './whenLinkLoaded.js';
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenStylesheetsReady(links) {
     if (!links) {

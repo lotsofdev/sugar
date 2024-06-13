@@ -20,7 +20,7 @@
  * __parseRgba('rgba(20,10,100,20)');
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __parseRgba(rgbaString) {
     rgbaString = rgbaString.toLowerCase();

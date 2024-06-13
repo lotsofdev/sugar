@@ -21,7 +21,7 @@
  * __roundWithSign(-1.5); // => -1
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __roundWithSign(number: number): number {
   return Math.sign(number) * Math.round(Math.abs(number));

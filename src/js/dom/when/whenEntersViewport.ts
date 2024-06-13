@@ -27,13 +27,13 @@ import __isInViewport from '../../is/isInViewport.js';
  * @todo      tests
  *
  * @example 	js
- * import { __whenEntersViewport } from '@coffeekraken/sugar/dom'
+ * import { __whenEntersViewport } from '@lotsof/sugar/dom'
  * __whenEntersViewport($myElement).then(($elm) => {
  * 		// do something with your element that has entered the viewport...
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IWhenEntersViewportSettings {

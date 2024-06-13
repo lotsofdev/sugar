@@ -19,6 +19,6 @@
  * __extension('hello/world.jpg'); // => jpg
  *
  * @since         2.0.0
- * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __extension(path: string): string;

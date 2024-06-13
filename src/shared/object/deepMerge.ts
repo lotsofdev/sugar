@@ -34,7 +34,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * // => { a: { b: { c: 'c', d: 'd', e: 'e', f: 'f' } } }
  *
  * @since       2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IDeepMergeSettings {
   array?: boolean;

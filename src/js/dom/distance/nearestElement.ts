@@ -21,7 +21,7 @@ import __distanceBetween from '../../../shared/math/distanceBetween.js';
  * @snippet         __nearestElement($1, $2, $3)
  *
  * @example    js
- * import { __nearestElement } from '@coffeekraken/sugar/dom'
+ * import { __nearestElement } from '@lotsof/sugar/dom'
  * __nearestElement(myCoolElement, document.querySelectorAll('.my-cool-elements'), {
  *      direction: 'top'
  * });
@@ -35,14 +35,14 @@ export interface INearestElementSettings {
 
 export default function __nearestElement(
   $from: HTMLElement,
-  $elements: HTMLElement[] | NodeList<HTMLElement>,
+  $elements: HTMLElement[],
   settings?: INearestElementSettings,
-): HTMLElement {
+): HTMLElement | undefined {
   const finalParams: INearestElementSettings = {
     ...(settings ?? {}),
   };
 
-  let $nearestElement: HTMLElement = null,
+  let $nearestElement: HTMLElement,
     nearestDistance: Number = Infinity;
 
   const fromElmBound = $from.getBoundingClientRect();
@@ -52,7 +52,7 @@ export default function __nearestElement(
       continue;
     }
 
-    const elmBound = $elm.getBoundingClientRect();
+    const elmBound = (<HTMLElement>$elm).getBoundingClientRect();
 
     let distance: Number;
 
@@ -83,9 +83,10 @@ export default function __nearestElement(
     distance = __distanceBetween(fromElmBound, elmBound);
     if (distance < nearestDistance) {
       nearestDistance = distance;
-      $nearestElement = $elm;
+      $nearestElement = $elm as HTMLElement;
     }
   }
 
+  // @ts-ignore
   return $nearestElement;
 }

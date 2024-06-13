@@ -15,13 +15,13 @@
  * @snippet         __isFirefox()
  *
  * @example 	js
- * import { __isFirefox } from '@coffeekraken/sugar/is'
+ * import { __isFirefox } from '@lotsof/sugar/is'
  * if (__isFirefox()) {
  *   // do something cool
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isFirefox(ua = navigator.userAgent) {
     return ua.indexOf('Firefox') > -1;

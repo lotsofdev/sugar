@@ -24,13 +24,13 @@ import __positionFromEvent from '../position/positionFromEvent.js';
  * @todo      tests
  *
  * @example 	js
- * import { __onDrag } from '@coffeekraken/sugar/dom'
+ * import { __onDrag } from '@lotsof/sugar/dom'
  * __onDrag($myElement, (drag) => {
  *    // do something...
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IOnDragTrackItem {

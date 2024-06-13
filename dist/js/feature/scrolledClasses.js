@@ -15,7 +15,7 @@
  * @setting         {number}        [offset=100]        The offset you want before adding the classes
  * @setting         {number}        [offsetX=null]             The offset x you want before adding the classes
  * @setting         {number}        [offsetY=null]             The offset y you want before adding the classes
- * @setting         {string}        [class=scrolled]        The class name you want. Will be used also in the {class}-x and {class}-y classes
+ * @setting         {string}        [class=scrolled]        The class name you want. Will be used also in the %cls-x and %cls-y classes
  *
  * @snippet          __scrolledClasses($1);
  *
@@ -27,7 +27,7 @@
  * });
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __scrolledClasses(settings) {
     const style = window.getComputedStyle(document.body);
@@ -38,7 +38,7 @@ export default function __scrolledClasses(settings) {
         : finalSettings.offset, offsetY = finalSettings.offsetY !== 0
         ? finalSettings.offsetY
         : finalSettings.offset;
-    document.addEventListener('scroll', (e) => {
+    function handleScroll() {
         let isScrolled = false;
         if (window.scrollY >= offsetY) {
             if (!document.body.classList.contains(`${finalSettings.class}-y`)) {
@@ -72,6 +72,8 @@ export default function __scrolledClasses(settings) {
                 document.body.classList.remove(finalSettings.class);
             }
         }
-    });
+        requestAnimationFrame(handleScroll);
+    }
+    requestAnimationFrame(handleScroll);
 }
 //# sourceMappingURL=scrolledClasses.js.map

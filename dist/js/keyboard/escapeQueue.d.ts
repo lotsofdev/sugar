@@ -24,7 +24,7 @@
  * });
  *
  * @example    js
- * import { __escapeQueue } from '@coffeekraken/sugar/keyboard'
+ * import { __escapeQueue } from '@lotsof/sugar/keyboard'
  * const promise = __escapeQueue();
  * promise.then(() => {
  *      // do something...
@@ -35,7 +35,7 @@
  *
  * @see         https://www.npmjs.com/package/hotkeys-js
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IEscapeQueueSettings {
     id?: string;

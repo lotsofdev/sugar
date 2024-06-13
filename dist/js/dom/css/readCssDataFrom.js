@@ -12,11 +12,11 @@
  * @snippet         __readCssDataFrom(document.body)
  *
  * @example         js
- * import { __readCssDataFrom } from '@coffeekraken/sugar/dom';
+ * import { __readCssDataFrom } from '@lotsof/sugar/dom';
  * const data = __readCssDataFrom();
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function readCssDataFrom($elm, settings) {
     // const finalSettings: IReadCssDaraSettings = {

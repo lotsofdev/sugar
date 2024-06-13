@@ -19,7 +19,7 @@ import __fs from 'fs-extra';
  *
  * @see             https://github.com/jprichardson/node-fs-extra
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __moveSync(src, dest) {
     __fs.moveSync(src, dest);

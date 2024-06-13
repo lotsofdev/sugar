@@ -17,12 +17,12 @@ import __getCssDeclarations from './getCssDeclarations.js';
  * @snippet         __getKeyframesDeclarations($1)
  *
  * @example  	js
- * import { __getKeyframesDeclarations } from '@coffeekraken/sugar/dom';
+ * import { __getKeyframesDeclarations } from '@lotsof/sugar/dom';
  * __getKeyframesDeclarations('myCoolAnimation', [myCoolCssRules]);
  *
  * @see             https://github.com/marionebl/jogwheel/blob/master/source/library/get-keyframe-declarations.js
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function getKeyframesDeclarations(animationName, rules) {
     const keyframesNames = [];

@@ -27,7 +27,7 @@ import __parse from '../../../shared/string/parse.js';
  * @todo      tests
  *
  * @example 	js
- * import { __whenAttribute } from '@coffeekraken/sugar/dom'
+ * import { __whenAttribute } from '@lotsof/sugar/dom'
  *
  * // using promise
  * __whenAttribute(myCoolHTMLElement, 'value').then(value => {
@@ -45,7 +45,7 @@ import __parse from '../../../shared/string/parse.js';
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IWhenAttributeSettings {

@@ -23,7 +23,7 @@
  * @example       js
  * import { __formatPackageJson } from '@lotsof/sugar/package';
  * __formatPackageJson({
- *    "author": "Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)"
+ *    "author": "Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)"
  * }); // => {
  *    "author": {
  *      "name": "Olivier Bossel",
@@ -33,6 +33,6 @@
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __formatPackageJson(json: any): any;

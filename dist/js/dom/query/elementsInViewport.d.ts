@@ -17,11 +17,11 @@
  * @todo      tests
  *
  * @example 	js
- * import { __elementsInViewport } from '@coffeekraken/sugar/dom';
+ * import { __elementsInViewport } from '@lotsof/sugar/dom';
  * const $elements = __elementsInViewport();
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IElementsInViewportSettings {
     rootNode: HTMLElement;

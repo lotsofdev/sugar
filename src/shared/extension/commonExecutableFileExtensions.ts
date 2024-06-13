@@ -20,7 +20,7 @@ import { ICommonFileExtensionsSettings } from './commonFileExtensions.js';
  * const extensions = __commonExecutableFileExtensions();
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __commonExecutableFileExtensions(
   settings: Partial<ICommonFileExtensionsSettings> = {},

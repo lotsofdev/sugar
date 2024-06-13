@@ -18,11 +18,11 @@
  * @snippet         __ltrim($1, $2)
  *
  * @example    js
- * import { __ltrim } from '@coffeekraken/sugar/string'
+ * import { __ltrim } from '@lotsof/sugar/string'
  *  __ltrim('Hello World', 'Hello') // World
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __ltrim(string, needle, trimResult = true) {
     if (string.substr(0, needle.length) === needle) {

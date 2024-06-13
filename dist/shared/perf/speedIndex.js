@@ -30,7 +30,7 @@ import __loopsCount from './loopsCount.js';
  * __speedIndex(); // 78
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function speedIndex(slow = 100000, fast = 1500000) {
     const loopsCount = __loopsCount(100), // on 100ms

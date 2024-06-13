@@ -22,7 +22,7 @@
  * })
  *
  * @example    js
- * import { __distanceBetween } from '@coffeekraken/sugar/geom'
+ * import { __distanceBetween } from '@lotsof/sugar/geom'
  * __distanceBetween({
  * 	x: 10, y: 20
  * }, {
@@ -30,7 +30,7 @@
  * }) // 10
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 interface IDistanceBetweenPoint {
     x: number;

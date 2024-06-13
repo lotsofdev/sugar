@@ -21,7 +21,7 @@ import { randomUUID } from 'crypto';
  *
  * @see       https://geshan.com.np/blog/2022/01/nodejs-uuid/
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __uniqid(): string {
   return `s-${randomUUID()}`;

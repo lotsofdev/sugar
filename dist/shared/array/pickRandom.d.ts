@@ -19,6 +19,6 @@
  * __pickRandom(array); // => 'world'
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __pickRandom(array: any[], count?: number): any;

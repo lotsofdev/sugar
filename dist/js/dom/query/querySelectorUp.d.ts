@@ -3,7 +3,7 @@
  * @namespace            js.dom.query
  * @type                Function
  * @platform            js
- * @status              beta
+ * @status              stable
  *
  * Go up the dom three to find the first element that matches the passed selector
  *
@@ -16,7 +16,7 @@
  * @snippet         __querySelectorUp($1, $2)
  *
  * @example  	js
- * import { __querySelectorUp } from '@coffeekraken/sugar/dom'
+ * import { __querySelectorUp } from '@lotsof/sugar/dom'
  * const closestElm =  __querySelectorUp(myCoolElement, '.my-cool-class');
  * if (closestElm) {
  * 		// we have found en element that matches the selector
@@ -27,6 +27,6 @@
  * })
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __querySelectorUp($elm: HTMLElement, selector: string | Function): HTMLElement | undefined;

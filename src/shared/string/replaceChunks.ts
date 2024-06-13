@@ -22,13 +22,13 @@
  * });
  *
  * @example    js
- * import { __replaceChunks } from '@coffeekraken/sugar/string'
+ * import { __replaceChunks } from '@lotsof/sugar/string'
  * __replaceChunks('hello world', ['or'], (token) => {
  *      return `<span>${token}</span>;
  * }) // Hello w<span>or</span>ld
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __replaceChunks(
   string: string,

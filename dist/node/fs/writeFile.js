@@ -39,7 +39,7 @@ import __folderPath from './folderPath.js';
  *
  * @see             https://github.com/jprichardson/node-fs-extra
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __writeFile(path, data, options = {}) {
     return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {

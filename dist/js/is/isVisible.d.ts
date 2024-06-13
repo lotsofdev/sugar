@@ -16,13 +16,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __isVisible } from '@coffeekraken/sugar/dom'
+ * import { __isVisible } from '@lotsof/sugar/dom'
  * if (isVisible(myCoolHTMLElement) {
  * 		// i'm visible
  * }
  *
  * @see             https://stackoverflow.com/questions/19669786/check-if-element-is-visible-in-dom
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function isVisible(elm: HTMLElement): boolean;

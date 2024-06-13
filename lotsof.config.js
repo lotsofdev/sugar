@@ -1,7 +1,25 @@
-import { __packageRootDir } from '@lotsof/sugar/package';
-export default {
-    docmap: {
-        outDir: `${__packageRootDir()}/doc`,
+import { __defineConfig } from '@lotsof/config';
+import { __dirname } from '@lotsof/sugar/fs';
+
+__defineConfig({
+  docmap: {
+    settings: {
+      docblock: {
+        settings: {
+          //   renderMarkdown: true,
+          //   renderMarkdownProps: ['description'],
+        },
+      },
     },
-};
-//# sourceMappingURL=lotsof.config.js.map
+    build: {
+      outDir: `${__dirname()}/../website-sugar/src/content/sugar`,
+      outPath: (docmapObj, settings) => {
+        return `${__dirname()}/../website-sugar/src/content/${docmapObj.id
+          .replace('@lotsof.', '')
+          .replace(/\./g, '/')}.mdx`;
+      },
+      mdx: true,
+      json: false,
+    },
+  },
+});

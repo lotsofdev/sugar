@@ -23,13 +23,13 @@
  * @todo      tests
  *
  * @example 	js
- * import { __whenRemoved } from '@coffeekraken/sugar/dom'
+ * import { __whenRemoved } from '@lotsof/sugar/dom'
  * __whenRemoved(myCoolHTMLElement).then(() => {
  * 		// the element has been removed
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenRemoved($elm) {
     return new Promise((resolve, reject) => {

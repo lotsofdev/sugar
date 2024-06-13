@@ -12,7 +12,7 @@ import __countLineChars from './countLineChars.js';
  *
  * @param               {String}                  text                      The text to split
  * @param               {Number}                  every                     How many characters to split the text
- * @param               {Partial<ISplitEverySettings}       [settings=[]]       Some settings to configure your split process
+ * @param               {Partial<ISplitEverySettings}       [settings={}]       Some settings to configure your split process
  * @return              {Array}                                             An array of the splited text parts
  *
  * @setting         {Boolean}           [splitWords=true]        If you want to split the words or not...
@@ -28,7 +28,7 @@ import __countLineChars from './countLineChars.js';
  * }); // => ['He','ll','o ','Wo','rl','d']
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 // TODO: Add support for special characters like terminal colors, html tags, etc...

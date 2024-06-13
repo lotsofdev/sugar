@@ -14,13 +14,13 @@
  * @todo      tests
  *
  * @example    js
- * import { __isScrollable } from '@coffeekraken/sugar/dom'
+ * import { __isScrollable } from '@lotsof/sugar/dom'
  * if (__isScrollable($myElement)) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IIsScrollableSettings {
     x: boolean;

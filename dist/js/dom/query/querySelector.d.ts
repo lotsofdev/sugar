@@ -24,7 +24,7 @@
  * @todo      tests
  *
  * @example 	js
- * import { __querySelector } from '@coffeekraken/sugar/dom';
+ * import { __querySelector } from '@lotsof/sugar/dom';
  * // simple query
  * const elm = __querySelector('.a-cool-css-selector');
  *
@@ -34,7 +34,7 @@
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IQuerySelectorSettings {
     visible: boolean | null;

@@ -6,7 +6,7 @@ import __fs from 'fs-extra';
  * @type          Function
  * @async
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * Copy a file or directory (async)
  *
@@ -18,14 +18,14 @@ import __fs from 'fs-extra';
  * await __copy($1, $2)
  *
  * @example       js
- * import { __copy } from '@coffeekraken/sugar/fs';
+ * import { __copy } from '@lotsof/sugar/fs';
  * await __copy('my/cool/file.jpg', 'my/new/file.jpg').then(() => {
  *    // do something on complete...
  * });
  *
  * @see             https://github.com/jprichardson/node-fs-extra
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __copy(src: string, dest: string): Promise<void> {
   return __fs.copy(src, dest);

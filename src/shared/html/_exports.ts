@@ -5,8 +5,10 @@ import __extractCssClassesNames from './extractCssClassesNames.js';
 import __replaceTags from './replaceTags.js';
 import __stripTags from './stripTags.js';
 import __unescapeHtml from './unescapeHtml.js';
+import __encodeEntities from './encodeEntities.js';
 
 export {
+  __encodeEntities,
   __escapeHtml,
   __expandPleasantCssClassname,
   __expandPleasantCssClassnames,

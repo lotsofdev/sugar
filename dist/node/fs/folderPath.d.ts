@@ -22,7 +22,7 @@
  * __folderPath('my/cool/path.js'); // => true
  *
  * @since           2.0.0
- * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IFolderPathSettings {
     checkExistence: boolean;

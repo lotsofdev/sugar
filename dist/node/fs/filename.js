@@ -21,7 +21,7 @@ import __extension from '../fs/extension.js';
  * __filename('hello/world.js'); // => world.js
  *
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __filename(path, withExtension = true) {
     var _a;

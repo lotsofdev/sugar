@@ -15,13 +15,13 @@
  * @snippet         __isChrome()
  *
  * @example 	js
- * import { __isChrome } from '@coffeekraken/sugar/is'
+ * import { __isChrome } from '@lotsof/sugar/is'
  * if ( __isChrome()) {
  *   // do something cool
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isChrome(ua: string = navigator.userAgent): boolean {
   return ua.indexOf('Chrome') > -1;

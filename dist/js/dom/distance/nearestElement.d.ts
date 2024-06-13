@@ -19,7 +19,7 @@
  * @snippet         __nearestElement($1, $2, $3)
  *
  * @example    js
- * import { __nearestElement } from '@coffeekraken/sugar/dom'
+ * import { __nearestElement } from '@lotsof/sugar/dom'
  * __nearestElement(myCoolElement, document.querySelectorAll('.my-cool-elements'), {
  *      direction: 'top'
  * });
@@ -30,4 +30,4 @@
 export interface INearestElementSettings {
     direction?: 'top' | 'right' | 'bottom' | 'left';
 }
-export default function __nearestElement($from: HTMLElement, $elements: HTMLElement[] | NodeList<HTMLElement>, settings?: INearestElementSettings): HTMLElement;
+export default function __nearestElement($from: HTMLElement, $elements: HTMLElement[], settings?: INearestElementSettings): HTMLElement | undefined;

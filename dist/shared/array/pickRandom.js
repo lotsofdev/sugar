@@ -20,7 +20,7 @@ import __unique from './unique.js';
  * __pickRandom(array); // => 'world'
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __pickRandom(array, count = 1) {
     // make the array unique

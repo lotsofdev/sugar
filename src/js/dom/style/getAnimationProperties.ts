@@ -18,7 +18,7 @@ import __getStyleProperty from './getStyleProperty.js';
  * @snippet         __getAnimationProperties($1)
  *
  * @example  	js
- * import { __getAnimationProperties } from '@coffeekraken/sugar/dom'
+ * import { __getAnimationProperties } from '@lotsof/sugar/dom'
  * const props = __getAnimationProperties(myCoolHTMLElement);
  * // output format
  * // {
@@ -32,7 +32,7 @@ import __getStyleProperty from './getStyleProperty.js';
  * // }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IGetAnimationPropertiesObject {

@@ -15,13 +15,13 @@
  * @snippet         __isSamsungBrowser()
  *
  * @example    js
- * import { __isSamsumgBrowser } from '@coffeekraken/sugar/is'
+ * import { __isSamsumgBrowser } from '@lotsof/sugar/is'
  * if (__isSamsumgBrowser()) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isSamsumgBrowser(ua = navigator.userAgent) {
     return ua.match(/SamsungBrowser/i) !== null;

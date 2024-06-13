@@ -25,7 +25,7 @@ import __parseRgba from './parseRgba.js';
  *
  * @see         https://www.npmjs.com/package/colors-convert
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 function RGBAToHSLA(r, g, b, a) {
     // Make r, g, and b fractions of 1

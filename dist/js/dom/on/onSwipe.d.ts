@@ -28,7 +28,7 @@
  * @todo      tests
  *
  * @example 	js
- * import { __onSwipe } from '@coffeekraken/sugar/dom'
+ * import { __onSwipe } from '@lotsof/sugar/dom'
  * __onSwipe(myCoolElm, (swipe) => {
  * 	// check the swipe direction
  * 	if (swipe.left) {
@@ -42,7 +42,7 @@
  *
  * @see 		https://gist.github.com/SleepWalker/da5636b1abcbaff48c4d
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IOnSwipeSettings {
     threshold: number;

@@ -25,7 +25,7 @@ import __isClass from 'is-class';
  *
  * @see       https://www.npmjs.com/package/is-class
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function isClass(cls) {
     if (!Array.isArray(cls))

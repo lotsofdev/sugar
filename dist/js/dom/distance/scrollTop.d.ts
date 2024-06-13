@@ -14,11 +14,11 @@
  * @todo      tests
  *
  * @example     js
- * import { __scrollTop } from '@coffeekraken/sugar/dom';
+ * import { __scrollTop } from '@lotsof/sugar/dom';
  * __scrollTop();
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io) (https://olivierbossel.com)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev) (https://olivierbossel.com)
  */
 declare function scrollTop(): number;
 export default scrollTop;

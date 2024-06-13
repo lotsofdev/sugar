@@ -23,7 +23,7 @@ import __fs from 'fs';
  * @snippet         __packageMetasSync($1)
  *
  * @example     js
- * import { __packageMetasSync } from '@coffeekraken/sugar/package';
+ * import { __packageMetasSync } from '@lotsof/sugar/package';
  * __packageMetasSync();
  *
  * @since       2.0.0

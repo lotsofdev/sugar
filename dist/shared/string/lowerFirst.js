@@ -16,11 +16,11 @@
  * @snippet         __lowerFirst($1)
  *
  * @example    js
- * import { __lowerFirst } from '@coffeekraken/sugar/string'
+ * import { __lowerFirst } from '@lotsof/sugar/string'
  * __lowerFirst('Hello world') // hello world
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __lowerFirst(string) {
     return string.charAt(0).toLowerCase() + string.slice(1);

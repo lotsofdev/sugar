@@ -3,7 +3,6 @@
  * @namespace         shared.crypto
  * @type              Object
  * @platform          js
- * @platform          node
  * @status            stable
  *
  * Expose two function named "encrypt" and "decrypt" that you can use to process your content using the md5 algorithm
@@ -14,11 +13,8 @@
  * import { __md5 } from '@lotsof/sugar/crypto';
  * __md5.encrypt('hello world');
  *
- * @todo        interface
- * @todo        doc
- *
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 declare const _default: {
     /**
@@ -30,7 +26,7 @@ declare const _default: {
      * @param       {String}      message         The message to encrypt
      * @return      {String}                      The encrypted string
      *
-     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
      */
     encrypt: (message: any) => string;
     /**
@@ -42,7 +38,7 @@ declare const _default: {
      * @param       {String}        message         The message to decrypt
      * @return      {String}                        The decrypted message
      *
-     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
      */
     decrypt: (message: string) => any;
 };

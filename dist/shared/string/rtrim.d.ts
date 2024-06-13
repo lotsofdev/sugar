@@ -18,10 +18,10 @@
  * @snippet             __rtrim($1, $2)
  *
  * @example    js
- * import { __rtrim } from '@coffeekraken/sugar/string'
+ * import { __rtrim } from '@lotsof/sugar/string'
  * __rtrim('Hello World', 'ld') // Hello Wor
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __rtrim(string: string, needle: string, trimResult?: boolean): string;

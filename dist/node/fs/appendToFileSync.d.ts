@@ -17,10 +17,10 @@
  * @todo            tests
  *
  * @example         js
- * import { __appendToFileSync } from '@coffeekraken/sugar/fs';
+ * import { __appendToFileSync } from '@lotsof/sugar/fs';
  * __appendToFileSync('/my/cool/file.txt', 'Hello world');
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __appendToFileSync(path: string, content: string): void;

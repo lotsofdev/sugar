@@ -15,10 +15,10 @@
  * @todo      tests
  *
  * @example    js
- * import { __injectScript } from '@coffeekraken/sugar/dom'
+ * import { __injectScript } from '@lotsof/sugar/dom'
  *  __injectScript('dist/js/app.js')
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __injectScript(src: string, $parent?: HTMLElement): Promise<HTMLScriptElement>;

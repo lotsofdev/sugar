@@ -1,12 +1,14 @@
 import __simplifySpecialChars from '../string/simplifySpecialChars.js';
 
+import __idCompliant from '../string/idCompliant.js';
+
 /**
  * @name            isIdCompliant
  * @namespace            shared.string
  * @type            Function
  * @platform        js
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * This function check if the passed value is "id" compliant.
  * This mean that it has no special characters, no spaces and that it is lowercase
@@ -22,66 +24,12 @@ import __simplifySpecialChars from '../string/simplifySpecialChars.js';
  * __isIdCompliant('hello-world'); // => true
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export default function __isIdCompliant(str: string): boolean {
-  // "" empty
   if (!str) {
     return false;
   }
-
-  // spaces
-  if (str.match(/\s/gm)) {
-    return false;
-  }
-
-  // special characters
-  if (str !== __simplifySpecialChars(str)) {
-    return false;
-  }
-
-  // replace characters like /, etc...
-  const dict = {
-    '/': '-',
-    '@': '',
-    '.': '-',
-    ',': '-',
-    '\\': '-',
-    '(': '-',
-    ')': '-',
-    '{': '-',
-    '}': '-',
-    '[': '-',
-    ']': '-',
-    '=': '-',
-    '?': '-',
-    '!': '-',
-    '&': '-',
-    '%': '-',
-    '*': '-',
-    '"': '-',
-    "'": '-',
-    '`': '-',
-    '+': '-',
-    '°': '-',
-    $: '-',
-    '<': '-',
-    '>': '-',
-    ':': '-',
-    '#': '-',
-  };
-
-  for (let [char, v] of Object.entries(dict)) {
-    if (str.includes(char)) {
-      return false;
-    }
-  }
-
-  // lowercase
-  if (str !== str.toLowerCase()) {
-    return false;
-  }
-
-  return true;
+  return __idCompliant(str) === str;
 }

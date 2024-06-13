@@ -3,7 +3,7 @@
  * @namespace       js.dom.detect
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  * @async
  *
  * Monitor an HTMLElement to be notified when it is near (100vh before or after) the viewport, or in the viewport
@@ -25,13 +25,13 @@
  * @todo      tests
  *
  * @example 	js
- * import { __whenNearViewport } from '@coffeekraken/sugar/dom'
+ * import { __whenNearViewport } from '@lotsof/sugar/dom'
  * __whenNearViewport(myCoolHTMLElement).then($elm => {
  * 		// do something with your element that has entered the viewport...
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IWhenNearViewportSettings {
     offset: string | number | undefined;

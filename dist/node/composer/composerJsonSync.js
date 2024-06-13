@@ -23,7 +23,7 @@ import __composerPath from './composerPath.js';
  * @todo        Implement a cache strategy to avoid making same process again and again
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function composerJsonSync(nameOrPath, settings) {
     if (nameOrPath.match(/^\//)) {

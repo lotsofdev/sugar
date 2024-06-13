@@ -16,10 +16,10 @@
  * @snippet         __upperFirst($1)
  *
  * @example    js
- * import { __upperFirst } from '@coffeekraken/sugar/string'
+ * import { __upperFirst } from '@lotsof/sugar/string'
  * __upperFirst('hello world') // Hello world
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __upperFirst(string: string): string;

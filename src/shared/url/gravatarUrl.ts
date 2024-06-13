@@ -1,4 +1,4 @@
-import __md5 from '../crypto/md5.js';
+import __md5 from '../../shared/crypto/md5.js';
 
 /**
  * @name                gravatarUrl
@@ -23,7 +23,7 @@ import __md5 from '../crypto/md5.js';
  * __gravatarUrl('olivier.bossel@gmail.com'); // https://www.gravatar.com/avatar/b5df60055b6287bb7c90c0078ce20a5f
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __gravatarUrl(
   email: string,

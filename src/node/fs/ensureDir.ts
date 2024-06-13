@@ -26,7 +26,7 @@ import __fs from 'fs-extra';
  *
  * @see             https://github.com/jprichardson/node-fs-extra
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __ensureDir(dir: string): Promise<void> {
   return __fs.ensureDir(dir);

@@ -10,7 +10,7 @@
  *
  * @param               {String}                  text                      The text to split
  * @param               {Number}                  every                     How many characters to split the text
- * @param               {Partial<ISplitEverySettings}       [settings=[]]       Some settings to configure your split process
+ * @param               {Partial<ISplitEverySettings}       [settings={}]       Some settings to configure your split process
  * @return              {Array}                                             An array of the splited text parts
  *
  * @setting         {Boolean}           [splitWords=true]        If you want to split the words or not...
@@ -26,7 +26,7 @@
  * }); // => ['He','ll','o ','Wo','rl','d']
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface ISplitEverySettings {
     splitWords: boolean;

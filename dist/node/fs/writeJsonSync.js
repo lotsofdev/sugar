@@ -23,7 +23,7 @@ import __folderPath from './folderPath.js';
  * __writeJsonSync('my/cool/file.json', { hello: 'world' });
  *
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __writeJsonSync(path, data) {
     const folderPath = __folderPath(path);

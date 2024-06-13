@@ -19,7 +19,7 @@
  * __splitEvery([1,2,3,4,5,6,7,8,9], 3);
  * // [[1,2,3],[4,5,6],[7,8,9]]
  *
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __splitEvery(array: any[], every: number): any[] {
   let i: number, j: number;

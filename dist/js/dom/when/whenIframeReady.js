@@ -3,7 +3,7 @@
  * @namespace       js.dom.detect
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  * @async
  *
  * Wait until the passed iframe is ready to be used
@@ -19,13 +19,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __whenIframeReady } from '@coffeekraken/sugar/dom'
+ * import { __whenIframeReady } from '@lotsof/sugar/dom'
  * __whenIframeReady($myCoolIframe).then($iframe => {
  *      // do something...
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenIframeReady($iframe) {
     return new Promise((resolve) => {

@@ -5,7 +5,7 @@ import * as rematrix from 'rematrix';
  * @namespace   js.dom.style
  * @type        Function
  * @platform    js
- * @status      beta
+ * @status      stable
  *
  * Get a rotate properties of an HTMLElement
  *
@@ -17,7 +17,7 @@ import * as rematrix from 'rematrix';
  * @snippet         __getRotateProperties($1)
  *
  * @example  	js
- * import { __getRotateProperties } from '@coffeekraken/sugar/dom'
+ * import { __getRotateProperties } from '@lotsof/sugar/dom'
  * const props = __getRotateProperties(myCoolHTMLElement);
  * // output format
  * // {
@@ -27,7 +27,7 @@ import * as rematrix from 'rematrix';
  * // }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __getRotateProperties($elm: HTMLElement):
   | {

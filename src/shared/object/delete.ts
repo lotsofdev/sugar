@@ -21,7 +21,7 @@
  * __delete(myObject, 'my.cool.value.0');
  *
  * @since     2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __delete(
   object: any,

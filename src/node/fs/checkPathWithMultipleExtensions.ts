@@ -28,7 +28,7 @@ import __extension from './extension.js';
  * __checkPathWithMultipleExtensions('/my/cool/file.txt', ['txt','js','css']);
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __checkPathWithMultipleExtensions(
   path: string,

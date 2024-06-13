@@ -16,12 +16,12 @@ import __offsetFromViewport from './offsetFromViewport.js';
  * @todo      tests
  *
  * @example  	js
- * import { __offsetFromParent } from '@coffeekraken/sugar/dom'
+ * import { __offsetFromParent } from '@lotsof/sugar/dom'
  * const offsetFromParentElm = __offsetFromParent(myCoolElement);
  * // output : { top : 200, left : 300 }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __offsetFromParent(elm) {
     const parentOffset = __offsetFromViewport(elm.parentElement);

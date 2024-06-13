@@ -23,13 +23,13 @@ import __uniqid from '../../string/uniqid.js';
  * @todo      tests
  *
  * @example 	js
- * import { __whenVisible } from '@coffeekraken/sugar/dom'
+ * import { __whenVisible } from '@lotsof/sugar/dom'
  * __whenVisible(myCoolHTMLElement).then(($elm) => {
  * 		// do something with your element that is now visible
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IWhenVisibleSettings {

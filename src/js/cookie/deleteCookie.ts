@@ -21,7 +21,7 @@ import __setCookie from './setCookie.js';
  * __deleteCookie('myCookie');
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __deleteCookie(name: string): void {
   __setCookie(name, '', {

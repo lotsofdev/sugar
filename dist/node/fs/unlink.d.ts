@@ -16,13 +16,13 @@
  * await __unlink($1)
  *
  * @example       js
- * import { __unlink } from '@coffeekraken/sugar/fs';
+ * import { __unlink } from '@lotsof/sugar/fs';
  * await __unlink('my/cool/file.json').then(() => {
  *    // do something on complete...
  * });
  *
  * @see             https://github.com/jprichardson/node-fs-extra
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __unlink(path: string): Promise<void>;

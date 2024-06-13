@@ -19,14 +19,14 @@ import { sprintf as _sprintf } from 'sprintf-js';
  * @snippet         __sprintf($1)
  *
  * @example    js
- * import { __sprintf } from '@coffeekraken/sugar/string'
+ * import { __sprintf } from '@lotsof/sugar/string'
  * __sprintf('Hello %s', 'world') // Hello World
  * const user = { name: 'Dolly' }
  * __sprintf('Hello %(name)s', user) // Hello Dolly
  *
  * @see    https://github.com/alexei/sprintf.js
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __sprintf() {
     // @ts-ignore

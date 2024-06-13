@@ -25,7 +25,7 @@
  * __clamp(101, 0, 100); // => 100
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __clamp(num, min, max) {
     return Math.min(Math.max(num, min), max);

@@ -1,7 +1,7 @@
 import __distanceBetween from '../../../shared/math/distanceBetween.js';
 export default function __nearestElement($from, $elements, settings) {
     const finalParams = Object.assign({}, (settings !== null && settings !== void 0 ? settings : {}));
-    let $nearestElement = null, nearestDistance = Infinity;
+    let $nearestElement, nearestDistance = Infinity;
     const fromElmBound = $from.getBoundingClientRect();
     for (let [i, $elm] of Object.entries($elements)) {
         if ($elm === $from) {
@@ -37,6 +37,7 @@ export default function __nearestElement($from, $elements, settings) {
             $nearestElement = $elm;
         }
     }
+    // @ts-ignore
     return $nearestElement;
 }
 //# sourceMappingURL=nearestElement.js.map

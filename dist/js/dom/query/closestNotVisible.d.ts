@@ -16,13 +16,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __closestNotVisible } from '@coffeekraken/sugar/dom'
+ * import { __closestNotVisible } from '@lotsof/sugar/dom'
  * const closestElm =  __closestNotVisible(myCoolElement);
  * if (closestElm) {
  * 		// we have found en element that is not visible
  * }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __closestNotVisible($elm: HTMLElement): HTMLElement | undefined;

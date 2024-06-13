@@ -24,6 +24,6 @@
  *
  * @see 				https://www.npmjs.com/package/sprintf-js
  * @since       2.0.0
- * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __printf(...args: any[]): string;

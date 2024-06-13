@@ -20,7 +20,7 @@ import __expandPleasantCssClassname from './expandPleasantCssClassname.js';
  * __expandPleasantCssClassnames('...');
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __expandPleasantCssClassnames(html) {
     let reg = /class="[a-zA-Z0-9_\-:@\s]+"/gm, needClassAttr = true;

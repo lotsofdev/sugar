@@ -15,10 +15,10 @@
  * @todo      tests
  *
  * @example    js
- * import { __injectStylesheet } from '@coffeekraken/sugar/dom'
+ * import { __injectStylesheet } from '@lotsof/sugar/dom'
  * __injectStylesheet('/dist/css/style.css')
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __injectStylesheet(href: string): Promise<HTMLLinkElement>;

@@ -23,11 +23,11 @@ import __getTransitionProperties from '../style/getTransitionProperties.js';
  * @todo      tests
  *
  * @example 	js
- * import { __whenTransitionEnd } from '@coffeekraken/sugar/dom'
+ * import { __whenTransitionEnd } from '@lotsof/sugar/dom'
  * await __whenTransitionEnd(myCoolHTMLElement);
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenTransitionEnd(
   $elm: HTMLElement,

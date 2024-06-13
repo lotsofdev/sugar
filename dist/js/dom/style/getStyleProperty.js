@@ -22,12 +22,12 @@ import __parse from '../../../shared/string/parse.js';
  * @snippet         __getStyleProperty($1, $2)
  *
  * @example  	js
- * import { __getStyleProperty } from '@coffeekraken/sugar/dom'
+ * import { __getStyleProperty } from '@lotsof/sugar/dom'
  * const opacity = __getStyleProperty(myCoolHTMLElement, 'opacity');
  *
  * @see 		https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __getStyleProperty(elm, property) {
     if (!elm)

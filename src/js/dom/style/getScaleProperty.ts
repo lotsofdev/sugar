@@ -5,7 +5,7 @@ import * as rematrix from 'rematrix';
  * @namespace       js.dom.style
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  *
  * Get a scale properties of an HTMLElement
  *
@@ -17,13 +17,13 @@ import * as rematrix from 'rematrix';
  * @snippet         __getScaleProperty($1)
  *
  * @example  	js
- * import { __getScaleProperty } from '@coffeekraken/sugar/dom'
+ * import { __getScaleProperty } from '@lotsof/sugar/dom'
  * const props = __getScaleProperty(myCoolHTMLElement);
  * // output format
  * // 2
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IGetScalePropertyResult {

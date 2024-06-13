@@ -23,7 +23,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * __toPlainObject({ something: 'cool' });
  *
  * @since       2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IToPlainObjectSettings {
   deep: boolean;

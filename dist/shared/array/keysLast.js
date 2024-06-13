@@ -16,11 +16,11 @@ import __unique from './unique.js';
  * @snippet         __keysLast($1, $2)
  *
  * @example    js
- * import { __keysLast } from '@coffeekraken/sugar/array'
+ * import { __keysLast } from '@lotsof/sugar/array'
  * __keysLast(['a','b','d','g','c'], ['d','g'])
  * // ['a','b','c','d','g']
  *
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __keysLast(array, keys) {
     // all the keys has to exist in the array stack

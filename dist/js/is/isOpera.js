@@ -15,13 +15,13 @@
  * @snippet         __isOpera()
  *
  * @example 	js
- * import { __isOpera } from '@coffeekraken/sugar/is'
+ * import { __isOpera } from '@lotsof/sugar/is'
  * if ( __isOpera()) {
  *   // do something cool
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isOpera(ua = navigator.userAgent) {
     return ua.toLowerCase().indexOf('op') > -1;

@@ -28,6 +28,6 @@
  * // { coco: 'hello' }
  *
  * @since         2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __filterObject(object: any, filter: (key: string, value: any) => boolean): any;

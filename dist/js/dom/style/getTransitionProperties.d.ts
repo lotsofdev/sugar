@@ -3,7 +3,7 @@
  * @namespace       js.dom.style
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  *
  * Get the css transition properties from an HTMLElement in an object format
  *
@@ -15,7 +15,7 @@
  * @snippet         __getTransitionProperties($1)
  *
  * @example  	js
- * import { getTransitionProperties } from '@coffeekraken/sugar/dom'
+ * import { getTransitionProperties } from '@lotsof/sugar/dom'
  * const props = __getTransitionProperties(myCoolHTMLElement);
  * // output format
  * // {
@@ -27,7 +27,7 @@
  * // }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IGetTransitionPropertiesResult {
     transitions: IGetTransitionPropertiesObject[];

@@ -20,12 +20,12 @@
  * @todo      tests
  *
  * @example    js
- * import { __whenBackgroundImageLoaded } from '@coffeekraken/sugar/dom'
+ * import { __whenBackgroundImageLoaded } from '@lotsof/sugar/dom'
  *
  * // using promise
  * await __whenBackgroundImageLoaded($elm);
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenBackgroundImageLoaded($elm: HTMLElement): Promise<HTMLElement>;

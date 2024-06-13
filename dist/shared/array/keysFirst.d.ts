@@ -15,10 +15,10 @@
  * @snippet         __keysFirst($1, $2)
  *
  * @example    js
- * import { __keysFirst } from '@coffeekraken/sugar/array'
+ * import { __keysFirst } from '@lotsof/sugar/array'
  * __keysFirst(['a','b','d','g','c'], ['d','g'])
  * // ['d','g','a','b','c']
  *
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __keysFirst(array: any[], keys: any[]): any[];

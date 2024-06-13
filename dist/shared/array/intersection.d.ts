@@ -25,6 +25,6 @@ import __sameItems from './sameItems.js';
  * __intersection([1,2,3,4], [1,3,5]); // => [1,3]
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default __sameItems;

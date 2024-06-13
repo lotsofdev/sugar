@@ -19,11 +19,11 @@
  * @snippet         __toBase($1, $2)
  *
  * @example    js
- * import { __toBase } from '@coffeekraken/sugar/number'
+ * import { __toBase } from '@lotsof/sugar/number'
  * __toBase(1024, 62); // qF
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __toBase(num, base, settings) {
     settings = Object.assign({ chars: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' }, (settings !== null && settings !== void 0 ? settings : {}));

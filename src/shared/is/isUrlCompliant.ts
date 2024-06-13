@@ -24,7 +24,7 @@ import __urlCompliant from '../string/urlCompliant.js';
  * __isUrlCompliant('/something/cool'); // true
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isUrlCompliant(str: string): boolean {
   return str === __urlCompliant(str);

@@ -36,7 +36,7 @@ import type { IWhenVisibleSettings } from '../when/whenVisible.js';
  * @todo      tests
  *
  * @example         js
- * import { __when } from '@coffeekraken/sugar/dom';
+ * import { __when } from '@lotsof/sugar/dom';
  * __when($elm, 'inViewport', {
  *    whenInViewport: {
  *       offset: 50
@@ -46,7 +46,7 @@ import type { IWhenVisibleSettings } from '../when/whenVisible.js';
  * });
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IwhenSettings {
     whenInViewport?: IWhenInViewportSettings;

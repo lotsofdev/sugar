@@ -7,7 +7,7 @@ import __when from '../when/when.js';
  * @namespace       js.dom.query
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  * @async
  *
  * Observe the dom to get all the elements that matches a passed css selector at any point in time.
@@ -33,15 +33,17 @@ import __when from '../when/when.js';
  * });
  *
  * @example 	js
- * import { __querySelectorLive } from '@coffeekraken/sugar/dom'
- * __querySelectorLive('.my-cool-item', (node, api) => {
+ * import { __querySelectorLive } from '@lotsof/sugar/dom'
+ * const query = __querySelectorLive('.my-cool-item', (node, api) => {
  * 	    // do something here with the detected node
  *      // call api.cancel if you want to stop listening for this selector
  *      api.cancel();
  * });
+ * // cancel the query manually when needed
+ * query.cancel();
  *
  * @since           2.0.0
- * @author 	Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author 	Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IQuerySelectorLiveSettings {

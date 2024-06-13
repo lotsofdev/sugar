@@ -20,10 +20,10 @@ import __packageRootDir from '../path/packageRootDir.js';
  * @snippet         __packageJsonSync()
  *
  * @example         js
- * import { __packageJsonSync } from '@coffeekraken/sugar/package';
+ * import { __packageJsonSync } from '@lotsof/sugar/package';
  * const root = __packageJsonSync();
  *
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IPackageJsonSyncSettings {

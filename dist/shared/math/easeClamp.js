@@ -22,7 +22,7 @@ import __clamp from './clamp.js';
  * __easeClamp(-20, -10, 0, 100, 110); // => -10
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __easeClamp(num, minEnd, minStart, maxStart, maxEnd) {
     const diffStart = Math.abs(minStart - minEnd), diffEnd = Math.abs(maxStart - maxEnd);

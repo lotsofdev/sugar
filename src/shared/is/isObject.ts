@@ -16,13 +16,13 @@
  * @snippet         __isObject($1)
  *
  * @example    js
- * import { __isObject } from '@coffeekraken/sugar/is'
+ * import { __isObject } from '@lotsof/sugar/is'
  * if (__isObject({}) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isObject(value: any): boolean {
   return value && typeof value === 'object' && value.constructor === Object;

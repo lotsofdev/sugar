@@ -1,6 +1,7 @@
-import md5 from 'blueimp-md5';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';
+import __md5 from 'crypto-js/md5.js';
+import __utf8 from 'crypto-js/enc-utf8.js';
 
 const __encryptedMessages: any = {};
 
@@ -9,7 +10,6 @@ const __encryptedMessages: any = {};
  * @namespace         shared.crypto
  * @type              Object
  * @platform          js
- * @platform          node
  * @status            stable
  *
  * Expose two function named "encrypt" and "decrypt" that you can use to process your content using the md5 algorithm
@@ -20,11 +20,8 @@ const __encryptedMessages: any = {};
  * import { __md5 } from '@lotsof/sugar/crypto';
  * __md5.encrypt('hello world');
  *
- * @todo        interface
- * @todo        doc
- *
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default {
   /**
@@ -36,13 +33,13 @@ export default {
    * @param       {String}      message         The message to encrypt
    * @return      {String}                      The encrypted string
    *
-   * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+   * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
    */
   encrypt: function (message: any): string {
     if (typeof message !== 'string') message = toString(message);
-    const string = md5(message);
-    __encryptedMessages[string] = message;
-    return string;
+    const md5Str = __md5(message).toString();
+    __encryptedMessages[md5Str] = message;
+    return md5Str;
   },
 
   /**
@@ -54,7 +51,7 @@ export default {
    * @param       {String}        message         The message to decrypt
    * @return      {String}                        The decrypted message
    *
-   * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+   * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
    */
   decrypt: function (message: string): any {
     if (!__encryptedMessages[message]) {

@@ -16,13 +16,13 @@
  * @snippet         __isArray($1)
  *
  * @example    js
- * import { __isArray } from '@coffeekraken/sugar/is'
+ * import { __isArray } from '@lotsof/sugar/is'
  * if (__isArray([]) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isArray(value) {
     return Array.isArray(value);

@@ -19,7 +19,7 @@ import __querySelectorUp from './querySelectorUp.js';
  * @todo      tests
  *
  * @example  	js
- * import { __closest } from '@coffeekraken/sugar/dom'
+ * import { __closest } from '@lotsof/sugar/dom'
  * const closestElm =  __closest(myCoolElement, '.my-cool-class');
  * if (closestElm) {
  * 		// we have found en element that matches the selector
@@ -30,7 +30,7 @@ import __querySelectorUp from './querySelectorUp.js';
  * })
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default __querySelectorUp;
 //# sourceMappingURL=closest.js.map

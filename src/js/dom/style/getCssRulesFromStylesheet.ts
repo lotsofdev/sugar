@@ -16,12 +16,12 @@
  * @snippet         __getCssRulesFromStylesheet($1)
  *
  * @example  	js
- * import { __getCssRulesFromStylesheet } from '@coffeekraken/sugar/dom';
+ * import { __getCssRulesFromStylesheet } from '@lotsof/sugar/dom';
  * __getCssRulesFromStylesheet(myStylesheet);
  *
  * @see             https://github.com/marionebl/jogwheel/blob/master/source/library/get-css-rules.js
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __getCssRulesFromStylesheet(
   styleSheet: StyleSheet,

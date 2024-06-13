@@ -30,7 +30,7 @@
  * // and some not...
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __trimLines(string, settings = {}) {
     settings = Object.assign({ leftPadding: 0, rightPadding: 0, keepEmptyLines: true }, settings);

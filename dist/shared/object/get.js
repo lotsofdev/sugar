@@ -25,7 +25,7 @@ import __unquote from '../string/unquote.js';
  * __get(myObject, 'my.cool.value'); // => 'Hello world'
  *
  * @since     2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 function get(obj, path) {
     if (Array.isArray(path)) {

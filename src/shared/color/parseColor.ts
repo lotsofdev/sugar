@@ -28,7 +28,7 @@ import __rgbaToHsla from './rgbaToHsla.js';
  * __parseColor('rgba(10,20,30,100)'); // => { r: 10, b: 20, b: 30, a: 100 }
  *
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 interface IParseColorRgbaResult {
   r: number;

@@ -4,7 +4,7 @@
  * @type                    Function
  * @platform          js
  * @platform          node
- * @status        beta
+ * @status        stable
  *
  * Convert rem value to a px one
  *
@@ -16,10 +16,10 @@
  * @snippet         __remToPx($1)
  *
  * @example         js
- * import { __remToPx } from '@coffeekraken/sugar/convert';
+ * import { __remToPx } from '@lotsof/sugar/convert';
  * __remToPx(2);
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __remToPx(rem: number): number;

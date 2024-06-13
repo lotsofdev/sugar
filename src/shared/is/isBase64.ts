@@ -16,13 +16,13 @@
  * @snippet         __isBase64($1)
  *
  * @example    js
- * import { __isBase64 } from '@coffeekraken/sugar/is'
+ * import { __isBase64 } from '@lotsof/sugar/is'
  * if (__isBase64('wfwefwefiowjfiojwiefjwoiejfiowjfi9jef98je9f3j') {
  *   // do something
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isBase64(value: any): boolean {
   if (typeof value !== 'string') return false;

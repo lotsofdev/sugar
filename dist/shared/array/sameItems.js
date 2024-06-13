@@ -27,7 +27,7 @@ import __unique from './unique.js';
  * __sameItems([1,2,3,4], [1,3,5]); // => [1,3]
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __sameItems(...args) {
     var _a, _b, _c;

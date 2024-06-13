@@ -5,7 +5,7 @@ import __uniqid from '../../string/uniqid.js';
  * @namespace           js.dom.detect
  * @type                Function
  * @platform            js
- * @status              beta
+ * @status              stable
  * @async
  *
  * Monitor an HTMLElement to be notified when it is in the viewport
@@ -27,7 +27,7 @@ import __uniqid from '../../string/uniqid.js';
  * @todo      tests
  *
  * @example 	js
- * import { __whenInViewport } from '@coffeekraken/sugar/dom'
+ * import { __whenInViewport } from '@lotsof/sugar/dom'
  * const promise = __whenInViewport(myCoolHTMLElement).then((elm) => {
  * 		// do something with your element that has entered the viewport...
  * });
@@ -35,7 +35,7 @@ import __uniqid from '../../string/uniqid.js';
  * promise.cancel();
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IWhenInViewportSettings {

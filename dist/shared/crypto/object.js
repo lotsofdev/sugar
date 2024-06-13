@@ -17,11 +17,8 @@ import __encodeObject from 'object-encode';
  *      hello: 'world'
  * });
  *
- * @todo        interface
- * @todo        doc
- *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.io)
  */
 export default {
     /**
@@ -31,12 +28,12 @@ export default {
      * Encrypt
      *
      * @param       {Object}       object         The object to encrypt
-     * @param       {String}       [salt="coffeekraken.sugar.crypto.object"]   The salt to encode the object. Needed to decode correctly the object
+     * @param       {String}       [salt="lotsof.sugar.crypto.object"]   The salt to encode the object. Needed to decode correctly the object
      * @return      {String}                       The encrypted object
      *
-     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.io)
      */
-    encrypt: function (object, salt = 'coffeekraken.sugar.crypto.object') {
+    encrypt: function (object, salt = 'lotsof.sugar.crypto.object') {
         return __encodeObject.encode_object(object, 'base64', salt);
     },
     /**
@@ -46,12 +43,12 @@ export default {
      * Decrypt
      *
      * @param       {String}      encodedObject          The object to decrypt
-     * @param       {String}      [salt='coffeekraken.sugar.crypto.object']        The salt to decode the object
+     * @param       {String}      [salt='lotsof.sugar.crypto.object']        The salt to decode the object
      * @return      {Object}                      The decrypted object
      *
-     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+     * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.io)
      */
-    decrypt: function (encodedObject, salt = 'coffeekraken.sugar.crypto.object') {
+    decrypt: function (encodedObject, salt = 'lotsof.sugar.crypto.object') {
         return __encodeObject.decode_object(encodedObject, 'base64', salt);
     },
 };

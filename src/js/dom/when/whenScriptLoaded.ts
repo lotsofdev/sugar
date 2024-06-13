@@ -3,7 +3,7 @@
  * @namespace       js.dom.detect
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  *
  * Detect when a script has been fully loaded
  *
@@ -22,13 +22,13 @@
  * @todo      tests
  *
  * @example    js
- * import { __whenScriptLoaded } from '@coffeekraken/sugar/dom'
+ * import { __whenScriptLoaded } from '@lotsof/sugar/dom'
  * __whenScriptLoaded($script).then(($script) => {
  *   // do something here
  * })
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenScriptLoaded(
   $script: HTMLScriptElement,

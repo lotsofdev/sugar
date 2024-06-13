@@ -23,7 +23,7 @@ import __simplifySpecialChars from './simplifySpecialChars.js';
  * __namespaceCompliant('Hello world'); // => hello-world
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface InamespaceCompliantSettings {

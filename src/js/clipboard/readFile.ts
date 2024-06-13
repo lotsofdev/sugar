@@ -19,7 +19,7 @@
  * await __readFile();
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default async function __readText(): Promise<any> {
   if (navigator?.clipboard?.read) {

@@ -15,12 +15,12 @@
  * @todo      tests
  *
  * @example  	js
- * import { __parseTransformRule } from '@coffeekraken/sugar/css';
+ * import { __parseTransformRule } from '@lotsof/sugar/css';
  * __parseTransformRule('translate(-100px, 200rem));
  *
  * @see             https://github.com/marionebl/jogwheel/blob/master/source/library/get-css-rules.js
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IParseTransformRuleResult {
     scale: string | number;

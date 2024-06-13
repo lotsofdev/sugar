@@ -24,7 +24,7 @@ import __isValidPath from 'is-valid-path';
  *
  * @see         https://www.npmjs.com/package/is-valid-path
  * @since         2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isPath(path, checkExistence = false) {
     if (typeof path !== 'string')

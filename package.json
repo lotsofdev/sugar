@@ -1,6 +1,6 @@
 {
   "name": "@lotsof/sugar",
-  "description": "A toolkit that gives you access to a ton of cool and useful Node/Js/Php functions/classes like \"querySelectorLive\", \"getFreePort\", etc... ",
+  "description": "A toolkit that gives you access to \"lots of\" of cool and useful Node/Js/Php functions/classes like \"querySelectorLive\", \"getFreePort\", etc... ",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -292,6 +292,7 @@
     "fs-extra": "^11.2.0",
     "glob": "^10.3.10",
     "hash-sum": "^2.0.0",
+    "html-entities": "^2.5.2",
     "is-class": "^0.0.9",
     "is-equal": "^1.7.0",
     "is-glob": "^4.0.3",

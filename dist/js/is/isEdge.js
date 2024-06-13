@@ -15,13 +15,13 @@
  * @snippet         __isEdge()
  *
  * @example 	js
- * import { __isEdge } from '@coffeekraken/sugar/is'
+ * import { __isEdge } from '@lotsof/sugar/is'
  * if (__isEdge()) {
  *   // do something cool
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isEdge(ua = navigator.userAgent) {
     return ua.indexOf('Edg/') > -1;

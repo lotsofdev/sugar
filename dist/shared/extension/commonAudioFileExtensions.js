@@ -18,7 +18,7 @@
  * const extensions = __commonAudioFileExtensions();
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __commonAudioFileExtensions(settings = {}) {
     const finalSettings = Object.assign({ dot: false, exclude: [] }, settings);

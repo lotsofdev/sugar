@@ -27,7 +27,7 @@ import __parseHsla from './parseHsla.js';
  *
  * @see         https://www.npmjs.com/package/colors-convert
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 function HSLAToRGBA(h, s, l, a) {
     // Must be fractions of 1

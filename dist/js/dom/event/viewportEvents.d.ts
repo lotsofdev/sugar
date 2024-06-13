@@ -26,13 +26,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __viewportEvents } from '@coffeekraken/sugar/dom';
+ * import { __viewportEvents } from '@lotsof/sugar/dom';
  * __viewportEvents($1).addEventListener('viewport.enter', (e) => {
  *      // do something
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IViewportEventsSettings {
     offset: number | string;

@@ -21,7 +21,7 @@
  * __loopsCount(); // 122003
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function loopsCount(timeframe = 100) {
     let sysm = 0, start = new Date().getTime(), end = start;

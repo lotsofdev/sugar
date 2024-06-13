@@ -18,7 +18,7 @@ import __parse from '../string/parse.js';
  * @snippet         __parseTypeString($1)
  *
  * @example       js
- * import { __parseTypeString } from '@coffeekraken/sugar/type';
+ * import { __parseTypeString } from '@lotsof/sugar/type';
  * __parseTypeString('string|number');
  * //[{
  * //   type: 'string',

@@ -15,10 +15,10 @@
  * @snippet         __stylesheetToString($1)
  *
  * @example         js
- * import { __stylesheetToString } from '@coffeekraken/sugar/dom';
+ * import { __stylesheetToString } from '@lotsof/sugar/dom';
  * __stylesheetToString(document.stylesheets); // => body { ... }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __stylesheetToString(stylesheet: StyleSheet | StyleSheetList): string;

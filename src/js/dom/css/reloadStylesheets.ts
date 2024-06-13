@@ -16,11 +16,11 @@ import __uniqid from '../../string/uniqid.js';
  * @snippet         __reloadStylesheets()
  *
  * @example         js
- * import { __reloeadStylesheets } from '@coffeekraken/sugar/dom';
+ * import { __reloeadStylesheets } from '@lotsof/sugar/dom';
  * __reloadStylesheets();
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IReloadStylesheetsSettings {

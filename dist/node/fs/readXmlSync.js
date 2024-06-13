@@ -21,7 +21,7 @@ import __xmlToJson from '../../shared/convert/xmlTojson.js';
  * __readXmlSync('my-cool-xml/file.xml');
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __readXmlSync(path) {
     if (!__fs.existsSync(path)) {

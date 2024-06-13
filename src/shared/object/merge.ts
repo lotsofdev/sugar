@@ -22,7 +22,7 @@
  * __merge({a: 'hello'}, {a: 'plop', hello: 'world');
  *
  * @since       2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 function _merge(firstObj, secondObj) {
   const newObj = {};

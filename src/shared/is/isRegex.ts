@@ -16,13 +16,13 @@
  * @snippet         __isRegex($1)
  *
  * @example    js
- * import { __isRegex } from '@coffeekraken/sugar/is'
+ * import { __isRegex } from '@lotsof/sugar/is'
  * if (__isRegex(/^hello$/g) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isRegex(value: any): boolean {
   return value && typeof value === 'object' && value.constructor === RegExp;

@@ -18,13 +18,13 @@
  * @snippet         __isBoolean($1)
  *
  * @example    js
- * import { __isBoolean } from '@coffeekraken/sugar/is'
+ * import { __isBoolean } from '@lotsof/sugar/is'
  * if (__isBoolean(true) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isBoolean(value) {
     return typeof value === 'boolean';

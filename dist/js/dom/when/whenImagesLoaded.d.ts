@@ -22,7 +22,7 @@
  * @todo      tests
  *
  * @example    js
- * import { __whenImagesLoaded } from '@coffeekraken/sugar/dom'
+ * import { __whenImagesLoaded } from '@lotsof/sugar/dom'
  * __whenImagesLoaded([
  * 	$img1, $img2, $img3
  * ]).on('loaded', $img => {
@@ -32,6 +32,6 @@
  * })
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenImagesLoaded($imgs: HTMLImageElement[]): Promise<HTMLImageElement[]>;

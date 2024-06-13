@@ -16,13 +16,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __previous } from '@coffeekraken/sugar/dom'
+ * import { __previous } from '@lotsof/sugar/dom'
  * const previousElm = __previous(myCoolElement, '.my-cool-class');
  * if (previousElm) {
  * 		// we have found en element that matches the selector
  * }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __previous($elm: HTMLElement, selector: string): HTMLElement | undefined;

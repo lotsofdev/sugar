@@ -21,7 +21,7 @@
  *
  * @see       https://www.npmjs.com/package/aggregation
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 declare const _default: (...classes: any[]) => any;
 export default _default;

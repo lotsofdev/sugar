@@ -24,7 +24,7 @@
  *
  * @see             https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s07.html
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isIsoTime(value) {
     const res = value.match(/^(2[0-3]|[01][0-9]):?([0-5][0-9])$/) ||

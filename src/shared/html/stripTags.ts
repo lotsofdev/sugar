@@ -21,12 +21,12 @@ import __stripTags from 'striptags';
  * @snippet         __stripTags($1)
  *
  * @example    js
- * import { __stripTags } from '@coffeekraken/sugar/html'
+ * import { __stripTags } from '@lotsof/sugar/html'
  * __stripTags('<p><span>Hello</span> world</p>', '<span>') // <span>Hello</span> world
  *
  * @see       https://www.npmjs.com/package/striptags
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function stripTags(
   html: string,

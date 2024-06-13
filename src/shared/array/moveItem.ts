@@ -20,7 +20,7 @@
  * const myArray = ['hello','world','something'];
  * __moveItem(myArray, 0, 1); // ['world','hello','something']
  *
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __moveItem(
   arr: any[],

@@ -15,12 +15,12 @@
  * @snippet         __isSafari()
  *
  * @example 	js
- * import { __isSafari } from '@coffeekraken/sugar/is'
+ * import { __isSafari } from '@lotsof/sugar/is'
  * if (__isSafari()) {
  *   // do something cool
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isSafari(ua?: string): boolean;

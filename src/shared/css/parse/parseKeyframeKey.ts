@@ -17,12 +17,12 @@
  * @snippet         __parseKeyframeKey($1)
  *
  * @example  	js
- * import { __parseKeyframeKey } from '@coffeekraken/sugar/css';
+ * import { __parseKeyframeKey } from '@lotsof/sugar/css';
  * __parseKeyframeKey('from');
  *
  * @see             https://github.com/marionebl/jogwheel/blob/master/source/library/get-css-rules.js
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __parseKeyframeKey(keyText: string) {
   // Split multivalue key,

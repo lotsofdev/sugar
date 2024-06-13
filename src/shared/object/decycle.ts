@@ -27,7 +27,7 @@ import { decycle as __decycle } from 'json-cyclic';
  *
  * @see         https://www.npmjs.com/package/json-cyclic
  * @since       2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function decycle(obj: any): any {
   return __decycle(obj);

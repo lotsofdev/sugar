@@ -11,7 +11,7 @@ __chalk.level = 3;
  * Store the tag->function map used in ```parseHtml``` function for example
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 const tagsMap = {
     black: (tag, content) => __chalk.black(content),

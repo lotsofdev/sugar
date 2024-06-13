@@ -22,6 +22,6 @@
  *
  * @see         https://www.npmjs.com/package/js-ago
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __timeAgo(timestamp: number, format?: 'short' | 'medium' | 'long'): string;

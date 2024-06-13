@@ -27,7 +27,7 @@ import __parseHsla from './parseHsla.js';
  *
  * @see         https://www.npmjs.com/package/colors-convert
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 function HSLAToHexA(h, s, l, a) {
   s /= 100;

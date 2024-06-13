@@ -19,14 +19,14 @@ import __fs from 'fs-extra';
  * await __emptyDir($1)
  *
  * @example       js
- * import { __emptyDir } from '@coffeekraken/sugar/fs';
+ * import { __emptyDir } from '@lotsof/sugar/fs';
  * await __emptyDir('my/cool/directory').then(() => {
  *    // do something...
  * });
  *
  * @see             https://github.com/jprichardson/node-fs-extra
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __emptyDir(dir: string): Promise<void> {
   return __fs.emptyDir(dir);

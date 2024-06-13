@@ -4,7 +4,7 @@ import __fileHashSync from './fileHashSync.js';
 
 import { BinaryToTextEncoding } from 'crypto';
 import * as __fs from 'fs';
-import __sha256 from '../crypto/sha256.js';
+import __sha256 from '../../shared/crypto/sha256.js';
 
 /**
  * @name            folderHashSync
@@ -32,7 +32,7 @@ import __sha256 from '../crypto/sha256.js';
  * __folderHashSync('my/cool/folder'); // => YZOrKDx9LCLd8X39PoFTflXGpRU=,
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IFolderHashIncludeSettings {

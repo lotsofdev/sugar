@@ -22,7 +22,7 @@ import { kebabCase } from 'change-case';
  *
  * @see             https://www.npmjs.com/package/change-case
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __kebabCase(text) {
     return kebabCase(text);

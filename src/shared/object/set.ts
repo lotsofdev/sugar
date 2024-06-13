@@ -29,7 +29,7 @@ import __get from './get.js';
  *  __set('myObject.cool.value', 'Hello world'); // => Hello world
  *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface ISetSettings {

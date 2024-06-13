@@ -6,7 +6,7 @@
  * @platform                node
  * @status                  stable
  *
- * This function simply take an author string like "Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)" and
+ * This function simply take an author string like "Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)" and
  * transform it into a plain object with these properties: name, email and url
  *
  * @param       {String}          string          The string to parse
@@ -18,7 +18,7 @@
  *
  * @example       js
  * import { __parseAuthorString } from '@lotsof/sugar/package';
- *  __parseAuthorString("Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)")
+ *  __parseAuthorString("Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)")
  * // => {
  *   "name": "Olivier Bossel",
  *   "email": "olivier.bossel@gmail.com",
@@ -26,7 +26,7 @@
  * }
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 interface IParseAuthorStringResult {
   name: string;

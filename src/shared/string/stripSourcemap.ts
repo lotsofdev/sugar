@@ -22,7 +22,7 @@
  * __stripSourcemap('...');
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __stripSourcemap(str: string): string {
   str = str.replace(/\/\/#\s?sourceMappingURL=[\w\W]+/gm, '');

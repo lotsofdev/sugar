@@ -17,13 +17,13 @@
  * @snippet         __isFunction($1)
  *
  * @example    js
- * import { __isFunction } from '@coffeekraken/sugar/is'
+ * import { __isFunction } from '@lotsof/sugar/is'
  * if (__isFunction(function() {})) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isFunction(value) {
     return value && {}.toString.call(value) === '[object Function]';

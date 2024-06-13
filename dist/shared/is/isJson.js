@@ -16,13 +16,13 @@
  * @snippet         __isJson($1)
  *
  * @example    js
- * import { __isJson } from '@coffeekraken/sugar/is'
+ * import { __isJson } from '@lotsof/sugar/is'
  * if (__isJson('[{id:10}]')) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isJson(value) {
     try {

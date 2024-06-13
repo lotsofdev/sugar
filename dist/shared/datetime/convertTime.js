@@ -21,7 +21,7 @@
  * __convertTime('10s', 'ms'); // => 10000
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __convertTime(from, to = 'ms') {
     // @ts-ignore

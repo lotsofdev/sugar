@@ -46,7 +46,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  *
  * @see       https://www.npmjs.com/package/is-equal
  * @since       2.0.0
- * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 interface IDiffSettings {

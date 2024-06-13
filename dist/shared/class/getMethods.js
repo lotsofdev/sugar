@@ -26,7 +26,7 @@
  * __getMethods(myInstance); // => ['hello','world']
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __getMethods(toCheck) {
     let props = [];

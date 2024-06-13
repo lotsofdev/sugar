@@ -24,7 +24,7 @@ import __isEsm from './isEsm.js';
  * __isModuleSystem('cjs'); // => false
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isModuleSystem(
   systemNames: ('esm' | 'cjs')[],

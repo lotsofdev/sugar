@@ -23,7 +23,7 @@ import __isGlob from 'is-glob';
  *
  * @see       https://www.npmjs.com/package/is-glob
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function (string: string): boolean {
   return __isGlob(string);

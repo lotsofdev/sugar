@@ -16,11 +16,11 @@ import __offsetFromViewport from '../offset/offsetFromViewport.js';
  * @snippet         __distanceFromElementTopToViewportTop($1)
  *
  * @example         js
- * import { __distanceFromElementTopToViewportTop } from '@coffeekraken/sugar/dom';
+ * import { __distanceFromElementTopToViewportTop } from '@lotsof/sugar/dom';
  * __distanceFromElementTopToViewportTop(myElement); // => 23
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __distanceFromElementTopToViewportTop(elm) {
     const offsets = __offsetFromViewport(elm);

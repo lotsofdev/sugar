@@ -25,7 +25,7 @@
  * const root = __packageRootDir();
  *
  * @see       https://www.npmjs.com/package/find-package-json
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IPackageRootSettings {
     highest: boolean;

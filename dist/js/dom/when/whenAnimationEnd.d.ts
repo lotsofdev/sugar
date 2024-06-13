@@ -19,12 +19,12 @@
  * @todo      tests
  *
  * @example    js
- * import { __whenAnimationEnd } from '@coffeekraken/sugar/dom'
+ * import { __whenAnimationEnd } from '@lotsof/sugar/dom'
  * __whenAnimationEnd(myCoolElm).then(($elm) => {
  *      // do something...
  * });
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenAnimationEnd($elm: HTMLElement): Promise<HTMLElement>;

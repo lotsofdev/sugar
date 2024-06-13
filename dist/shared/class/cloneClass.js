@@ -22,7 +22,7 @@ import { cloneClass } from 'clone-class';
  *
  * @see             https://www.npmjs.com/package/clone-class
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function (cls) {
     return cloneClass(cls);

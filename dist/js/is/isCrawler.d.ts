@@ -15,13 +15,13 @@
  * @snippet         __isCrawler()
  *
  * @example 	js
- * import { __isCrawler } from '@coffeekraken/sugar/is'
+ * import { __isCrawler } from '@lotsof/sugar/is'
  * if (__isCrawler()) {
  *   // do something cool
  * }
  *
  * @see            https://www.npmjs.com/package/isbot
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isCrawler(ua?: string): boolean;

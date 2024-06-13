@@ -17,11 +17,11 @@ import __path from 'path';
  * @todo        tests
  *
  * @example             js
- * import { __dirname } from '@coffeekraken/sugar/fs';
+ * import { __dirname } from '@lotsof/sugar/fs';
  * __dirname();
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __dirname() {
     const error = new Error();

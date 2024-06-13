@@ -16,13 +16,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __next } from '@coffeekraken/sugar/dom'
+ * import { __next } from '@lotsof/sugar/dom'
  * const nextElm =  __next(myCoolElement, '.my-cool-class');
  * if (nextElm) {
  * 		// we have found en element that matches the selector
  * }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __next($elm: HTMLElement, selector: string): HTMLElement | undefined;

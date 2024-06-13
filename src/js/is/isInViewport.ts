@@ -16,13 +16,13 @@
  * @todo      tests
  *
  * @example  	js
- * import { __isInViewport } from '@coffeekraken/sugar/dom'
+ * import { __isInViewport } from '@lotsof/sugar/dom'
  * if (__isInViewport(myCoolHTMLElement) {
  * 		// i'm in the viewport
  * }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IInViewport {}

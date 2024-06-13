@@ -4,7 +4,7 @@
  * @type            Function
  * @platform        js
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * Transform a style string to an object representation
  *
@@ -16,7 +16,7 @@
  * @snippet         __styleStringToObject($1)
  *
  * @example 	js
- * import { __styleStringToObject } from '@coffeekraken/sugar/css'
+ * import { __styleStringToObject } from '@lotsof/sugar/css'
  * const styleString =  __styleStringToObject('padding-left:20px; display:block;');
  * // output => {
  * //		paddingLeft : '20px',
@@ -24,6 +24,6 @@
  * // }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __styleStringToObject(style: string): any;

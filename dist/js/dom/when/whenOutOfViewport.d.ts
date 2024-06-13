@@ -25,13 +25,13 @@
  * @todo      tests
  *
  * @example 	js
- * import { __whenOutOfViewport } from '@coffeekraken/sugar/dom'
+ * import { __whenOutOfViewport } from '@lotsof/sugar/dom'
  * __whenOutOfViewport(myCoolHTMLElement).then(($elm) => {
  * 		// do something with your element that has exit the viewport...
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IWhenOutOfViewportSettings {
     offset: string | number;

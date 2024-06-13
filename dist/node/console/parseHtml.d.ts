@@ -15,6 +15,6 @@
  * @snippet         __parseHtml($1)
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __parseHtml(message: any): any;

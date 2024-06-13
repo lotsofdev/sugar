@@ -16,12 +16,12 @@
  * @snippet         __isOdd($1)
  *
  * @example    js
- * import { __isOdd } from '@coffeekraken/sugar/is'
+ * import { __isOdd } from '@lotsof/sugar/is'
  * __isOdd(1) // true
  * __isOdd(2) // false
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isOdd(value) {
     return value % 2 === 1;

@@ -24,7 +24,7 @@ import __toString from '../string/toString.js';
  * });
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __replaceTags(text, tags) {
     if (!text)

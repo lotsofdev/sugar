@@ -4,7 +4,7 @@
  * @type            Function
  * @platform        js
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * Remove vendor prefixes from CSSPropertyNames
  *
@@ -16,14 +16,14 @@
  * @snippet         __removeVendorPrefix($1)
  *
  * @example  	js
- * import { __removeVendorPrefix } from '@coffeekraken/sugar/css';
+ * import { __removeVendorPrefix } from '@lotsof/sugar/css';
  * __removeVendorPrefix('moz-something'); // 'something'
  *
  * @see            https://github.com/marionebl/jogwheel/blob/master/source/library/remove-vendor-prefix.js
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-const prefixes = ['ms', 'webkit', 'moz', '0'];
+const prefixes = ['ms', 'webkit', 'moz', 'o'];
 export default function __removeVendorPrefix(propertyName = '') {
     const fragments = propertyName.split('-');
     if (prefixes.indexOf(fragments[1]) > -1) {

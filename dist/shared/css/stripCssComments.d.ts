@@ -4,7 +4,7 @@
  * @type                Function
  * @platform            js
  * @platform            node
- * @status              beta
+ * @status              stable
  *
  * This function simply remove all the css comments like:
  * - Multiline blocks css comments begining with /* *, ending with * /
@@ -22,7 +22,7 @@
  * @snippet         __stripCssComments($1)
  *
  * @example       js
- * import { __stripCssComments } from '@coffeekraken/sugar/css';
+ * import { __stripCssComments } from '@lotsof/sugar/css';
  * __stripCssComments(`
  * // something cool
  * body { background-color: red; }
@@ -31,7 +31,7 @@
  *
  * @see         https://www.npmjs.com/package/strip-css-comments
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IStripCssCommentsSettings {
     block: boolean;

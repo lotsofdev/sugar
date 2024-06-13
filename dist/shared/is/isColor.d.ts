@@ -23,6 +23,6 @@
  *
  * @see 		http://stackoverflow.com/questions/6386090/validating-css-color-names
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isColor(value: any): boolean;

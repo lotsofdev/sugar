@@ -14,14 +14,14 @@
  * @todo      tests
  *
  * @example    js
- * import { __isHover } from '@coffeekraken/sugar/dom'
+ * import { __isHover } from '@lotsof/sugar/dom'
  * const $myElm = document.querySelector('.my-elm')
  * if (__isHover($myElm)) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isHover($elm: HTMLElement): boolean {
   return $elm.parentElement?.querySelector(':isHover') === $elm;

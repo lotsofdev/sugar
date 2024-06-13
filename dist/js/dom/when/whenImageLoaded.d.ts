@@ -22,12 +22,12 @@
  * @todo      tests
  *
  * @example  	js
- * import { __whenImageLoaded } from '@coffeekraken/sugar/dom'
+ * import { __whenImageLoaded } from '@lotsof/sugar/dom'
  *  __whenImageLoaded(myCoolHTMLImageElement).then(($img) => {
  * 		// do something when the image is loaded
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __whenImageLoaded($img: HTMLImageElement): Promise<HTMLImageElement>;

@@ -48,7 +48,7 @@ import __unique from '../array/unique.js';
  * const extensions = __commonFileExtensions(); // => ['avi','mp3',...]
  *
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export type Types = (

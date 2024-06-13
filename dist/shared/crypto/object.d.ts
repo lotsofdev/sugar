@@ -16,11 +16,8 @@
  *      hello: 'world'
  * });
  *
- * @todo        interface
- * @todo        doc
- *
  * @since       2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.io)
  */
 declare const _default: {
     encrypt: (object: any, salt?: string) => string;

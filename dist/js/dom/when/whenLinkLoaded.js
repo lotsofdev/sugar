@@ -3,7 +3,7 @@
  * @namespace       js.dom.detect
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  *
  * Wait until the passed HTMLLinkElement is fully loaded
  *
@@ -22,13 +22,13 @@
  * });
  *
  * @example  	js
- * import { __whenLinkLoaded } from '@coffeekraken/sugar/dom'
+ * import { __whenLinkLoaded } from '@lotsof/sugar/dom'
  * __whenLinkLoaded(myCoolHTMLLinlElement).then($link => {
  * 		// do something when the link is loaded
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 function alreadyLoaded(link) {
     var _a;

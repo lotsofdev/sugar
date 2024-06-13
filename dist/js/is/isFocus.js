@@ -14,14 +14,14 @@
  * @todo      tests
  *
  * @example    js
- * import { __isFocus } from '@coffeekraken/sugar/dom'
+ * import { __isFocus } from '@lotsof/sugar/dom'
  * const $myElm = document.querySelector('.my-elm')
  * if (__isFocus($myElm)) {
  *   // do something
  * }
  *
  * @since           2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __isFocus($elm) {
     var _a;

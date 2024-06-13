@@ -15,7 +15,7 @@
  * @todo        tests
  *
  * @example       js
- * import { __proxyArray } from '@coffeekraken/sugar/array';
+ * import { __proxyArray } from '@lotsof/sugar/array';
  * const myArray = __proxyArray([1,2,3]);
  * myArray.watch(['push','pop'], (watchObj) => {
  *    // check the watchObj action
@@ -26,6 +26,6 @@
  *    }
  * });
  *
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __proxyArray(array: any): any;

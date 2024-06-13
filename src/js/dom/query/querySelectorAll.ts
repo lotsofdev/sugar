@@ -28,7 +28,7 @@ import __closestNotVisible from './closestNotVisible.js';
  * @snippet         __querySelectorAll($1)
  *
  * @example 	js
- * import { __querySelectorAll } from '@coffeekraken/sugar/dom';
+ * import { __querySelectorAll } from '@lotsof/sugar/dom';
  * // simple query
  * const elms = __querySelectorAll('.a-cool-css-selector');
  *
@@ -38,7 +38,7 @@ import __closestNotVisible from './closestNotVisible.js';
  * });
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IQuerySelectorAllSettings {

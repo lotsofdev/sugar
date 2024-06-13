@@ -22,7 +22,7 @@ import __stripAnsi from 'strip-ansi';
  *
  * @see         https://www.npmjs.com/package/strip-ansi
  * @since       2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function stripAnsi(string) {
     return __stripAnsi(string);

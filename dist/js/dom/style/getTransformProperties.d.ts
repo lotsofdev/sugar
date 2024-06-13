@@ -3,7 +3,7 @@
  * @namespace       js.dom.style
  * @type            Function
  * @platform        js
- * @status          beta
+ * @status          stable
  *
  * Get a translate properties of an HTMLElement
  *
@@ -15,7 +15,7 @@
  * @snippet         __getTransformProperties($1)
  *
  * @example  	js
- * import { __getTransformProperties } from '@coffeekraken/sugar/dom'
+ * import { __getTransformProperties } from '@lotsof/sugar/dom'
  * const props = getTransformProperties(myCoolHTMLElement);
  * // output format
  * // {
@@ -28,7 +28,7 @@
  * // }
  *
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export interface IGetTransformPropertiesResult {
     translateX: number;

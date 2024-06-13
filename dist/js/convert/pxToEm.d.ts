@@ -4,7 +4,7 @@
  * @type                    Function
  * @platform          js
  * @platform          node
- * @status        beta
+ * @status        stable
  *
  * Convert rem value to a px one
  *
@@ -21,6 +21,6 @@
  * __pxToEm(36);
  *
  * @since     2.0.0
- * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __pxToEm(px: number, $elm?: HTMLElement): number;

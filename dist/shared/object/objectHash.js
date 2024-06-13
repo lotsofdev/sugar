@@ -5,7 +5,7 @@ import __hashSum from 'hash-sum';
  * @type            Function
  * @platform        js
  * @platform        node
- * @status          beta
+ * @status          stable
  *
  * This function allows you to get back an integrity hash passed object.
  *
@@ -23,7 +23,7 @@ import __hashSum from 'hash-sum';
  *
  * @see             https://www.npmjs.com/package/hash-sum
  * @since           2.0.0
- * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://coffeekraken.io)
+ * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function objectHash(obj) {
     return __hashSum(obj);
