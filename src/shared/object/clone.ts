@@ -17,8 +17,6 @@ import __deepClone from 'lodash.clonedeep';
  *
  * @setting     {Boolean}       [deep=false]      Specify if you want to clone the object deeply
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __clone($1)

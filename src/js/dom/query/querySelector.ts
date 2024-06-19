@@ -1,6 +1,6 @@
 import __isInViewport from '../../is/isInViewport.js';
 import __isVisible from '../../is/isVisible.js';
-import __closestNotVisible from './closestNotVisible.js';
+import __closestNotVisibleElement from './closestNotVisibleElement.js';
 
 /**
  * @name            querySelector
@@ -66,9 +66,9 @@ export default function __querySelector(
 
   // check finalSettings
   if (finalSettings.visible === false) {
-    if (__isVisible($elm) || __closestNotVisible($elm)) return;
+    if (__isVisible($elm) || __closestNotVisibleElement($elm)) return;
   } else if (finalSettings.visible === true) {
-    if (!__isVisible($elm) || !__closestNotVisible($elm)) return;
+    if (!__isVisible($elm) || !__closestNotVisibleElement($elm)) return;
   }
   if (finalSettings.inViewport === false) {
     if (__isInViewport($elm)) return;

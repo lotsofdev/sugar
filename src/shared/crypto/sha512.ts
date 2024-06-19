@@ -20,8 +20,7 @@ const __encryptedMessages = {};
  * import { __sha512 } from '@lotsof/sugar/crypto';
  * __sha512.encrypt('hello world');
  *
- * @todo        interface
- * @todo        doc
+ * @todo        tests
  *
  * @since         2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

@@ -8,6 +8,9 @@ function replaceTokens(string, tokensObj, settings = {}) {
             return '';
         string = string.replace(tokens[0], tokensObj[tokens[1]] || '');
     }
+    if (settings.stripUndefined) {
+        string = string.replace(reg, '');
+    }
     return string;
 }
 export default replaceTokens;

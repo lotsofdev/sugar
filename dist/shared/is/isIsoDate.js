@@ -11,8 +11,6 @@
  * @param 		{Mixed} 		value 		The value to check
  * @return 		{Boolean} 					The check result
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __isIsoDate($1)

@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import __packageRootDir from '../path/packageRootDir.js';
+import __packageRootDir from '../package/packageRootDir.js';
 import __fs from 'fs';
 import __path from 'path';
 import __parseTypeString from '../../shared/type/parseTypeString.js';

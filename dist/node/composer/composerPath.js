@@ -8,7 +8,7 @@ export default function composerPath(name, settings) {
     }, settings !== null && settings !== void 0 ? settings : {});
     let monoDir;
     monoDir = `${__packageRootDir(set.cwd, {
-        highest: true,
+        highest: set.monorepo,
     })}/vendor`;
     // if the package.json exists in rootDir node_modules folder
     if (__fs.existsSync(`${set.cwd}/vendor/${name}/composer.json`)) {

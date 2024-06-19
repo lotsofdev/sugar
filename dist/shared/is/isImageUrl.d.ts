@@ -11,8 +11,6 @@
  * @param                 {String}        string             The string to check
  * @return              {Boolean}           true if is an image url/path, false if not
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __isImageUrl($1)

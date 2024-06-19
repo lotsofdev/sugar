@@ -1,4 +1,4 @@
 import __composerJsonSync from './composerJsonSync.js';
-import __composerPath from './composerPath.js';
-export { __composerJsonSync, __composerPath };
+import __composerVendorDir from './composerVendorDir.js';
+export { __composerJsonSync, __composerVendorDir };
 //# sourceMappingURL=_exports.js.map

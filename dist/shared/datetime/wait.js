@@ -12,8 +12,6 @@
  * @param         {Number}        timeout       The timeout to wait in ms
  * @return        {Promise}                     A simple promise resolved once the timeout is finished
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __wait($1)

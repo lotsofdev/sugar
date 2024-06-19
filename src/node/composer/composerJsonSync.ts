@@ -1,6 +1,5 @@
 import __fs from 'fs';
-import type { IComposerPathSettings } from './composerPath.js';
-import __composerPath from './composerPath.js';
+import __composerPackageDir from './composerPackageDir.js';
 
 /**
  * @name                    composerJsonSync
@@ -9,45 +8,46 @@ import __composerPath from './composerPath.js';
  * @platform                node
  * @status                  beta
  *
- * This function simply take a package name as parameter, and return the corresponding
+ * This function simply take a package name (or "." for the current package) as parameter, and return the corresponding
  * composer.json JSON content
  *
  * @param       {String}        [nameOrPath=process.cwd()]        the package name or path wanted
- * @param       {IPackageJson}      [settings={}]       Some settings to configure your process
- * @return      {JSON}                      The package.json content
+ * @param       {IComposerVendorDirSettings}      [settings={}]       Some settings to configure your process
+ * @return      {JSON}                      The composer.json content
+ *
+ * @setting     {String}        [cwd=process.cwd()]        The directory in which you want to start the research
+ * @setting     {Boolean}       [monorepo=false]         Specify if you are in a monorepo context
+ * @setting     {Boolean}       [checkExistence=true]    Specify if you want to check if the vendor dir exists
  *
  * @snippet         __composerJsonSync($1)
  *
  * @example         js
  * import { __composerJsonSync } from '@lotsof/sugar/composer`;
- * __composerJsonSync('lodash');
+ * __composerJsonSync('lotsof/sugar');
  *
  * @todo        Implement a cache strategy to avoid making same process again and again
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
+
+export interface IComposerJsonSyncSettings {
+  cwd: string;
+  monorepo: boolean;
+  checkExistence: boolean;
+}
+
 export default function composerJsonSync(
   nameOrPath: string,
-  settings?: Partial<IComposerPathSettings>,
+  settings?: Partial<IComposerJsonSyncSettings>,
 ): any {
-  if (nameOrPath.match(/^\//)) {
-    if (!__fs.existsSync(`${nameOrPath}/composer.json`)) {
-      return;
-    }
-    return JSON.parse(
-      __fs.readFileSync(`${nameOrPath}/composer.json`).toString(),
-    );
-  }
+  settings = {
+    cwd: process.cwd(),
+    monorepo: false,
+    checkExistence: true,
+    ...(settings ?? {}),
+  };
 
-  // get package path from name
-  const path = __composerPath(nameOrPath, settings);
-  if (path) {
-    const json = JSON.parse(
-      __fs.readFileSync(`${path}/composer.json`, 'utf8').toString(),
-    );
-    return json;
-  }
-
-  return {};
+  const packageDir = __composerPackageDir(nameOrPath, settings);
+  return JSON.parse(__fs.readFileSync(`${packageDir}/composer.json`, 'utf8'));
 }

@@ -11,8 +11,6 @@
  * @param           {Object}            object              The object to check
  * @return          {String|false}                              false if all is ok, a string that tells where the circular dep has been found if not
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __isCyclic($1)

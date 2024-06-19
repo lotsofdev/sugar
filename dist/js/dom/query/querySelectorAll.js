@@ -1,6 +1,6 @@
 import __isInViewport from '../../is/isInViewport.js';
 import __isVisible from '../../is/isVisible.js';
-import __closestNotVisible from './closestNotVisible.js';
+import __closestNotVisible from './closestNotVisibleElement.js';
 export default function __querySelectorAll(selector, settings = {}) {
     // extend settings
     const finalSettings = Object.assign({ visible: null, inViewport: null, rootNode: document.body }, settings);

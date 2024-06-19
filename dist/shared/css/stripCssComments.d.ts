@@ -17,7 +17,7 @@
  * @setting     {Boolean}     [block=true]       Remove the blocks comments
  * @setting     {Boolean}     [line=true]       Remove the line comments
  *
- * @todo        doc
+ * @todo        tests
  *
  * @snippet         __stripCssComments($1)
  *

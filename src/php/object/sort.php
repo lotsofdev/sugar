@@ -15,8 +15,6 @@ namespace Sugar\object;
  * @param                 {Function}                sort                  The sort function to use
  * @return                {Object}                                        The sorted object
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet             \Sugar\object\sort($1, $2);

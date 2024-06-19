@@ -1,11 +1,8 @@
-import __readJsonSync from '../fs/readJsonSync.js';
-import __packageRootDir from '../path/packageRootDir.js';
-export default function __packageJsonSync(settings = {}) {
-    settings = Object.assign({ cwd: process.cwd() }, settings);
-    const packageRootDir = __packageRootDir(settings.cwd, {
-        highest: false,
-    });
-    const packageJsonFilePath = `${packageRootDir}/package.json`;
-    return __readJsonSync(packageJsonFilePath);
+import __fs from 'fs';
+import __packageDir from './packageDir.js';
+export default function __packageJsonSync(nameOrPath, settings) {
+    settings = Object.assign({ cwd: process.cwd(), monorepo: false, checkExistence: true }, (settings !== null && settings !== void 0 ? settings : {}));
+    const packageDir = __packageDir(nameOrPath, settings);
+    return JSON.parse(__fs.readFileSync(`${packageDir}/package.json`, 'utf8'));
 }
 //# sourceMappingURL=packageJsonSync.js.map

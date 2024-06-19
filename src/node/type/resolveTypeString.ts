@@ -1,4 +1,4 @@
-import __packageRootDir from '../path/packageRootDir.js';
+import __packageRootDir from '../package/packageRootDir.js';
 
 import __fs from 'fs';
 import __path from 'path';

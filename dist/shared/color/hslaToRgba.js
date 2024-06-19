@@ -15,8 +15,6 @@ import __parseHsla from './parseHsla.js';
  * @param	        {Number}        	a 	        	The alpha value between 0-100|0-1
  * @return 	      {object} 		                  	The rgba object representation
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __hslaToRgba($1)

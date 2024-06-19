@@ -15,5 +15,7 @@
       "homepage": "https://lotsof.dev"
     }
   ],
-  "require": {}
+  "require": {
+    "psr/log": "^3.0"
+  }
 }

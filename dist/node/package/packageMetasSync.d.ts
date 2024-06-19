@@ -12,8 +12,6 @@
  * @param     {String}      [path=process.cwd()]      The path of the package to search metas for
  * @return    {Object}          The metas object information containing these data: name, description, version, author and license
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __packageMetasSync($1)

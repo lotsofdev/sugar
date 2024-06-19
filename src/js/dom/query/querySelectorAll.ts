@@ -1,6 +1,6 @@
 import __isInViewport from '../../is/isInViewport.js';
 import __isVisible from '../../is/isVisible.js';
-import __closestNotVisible from './closestNotVisible.js';
+import __closestNotVisible from './closestNotVisibleElement.js';
 
 /**
  * @name            querySelectorAll

@@ -1,7 +1,7 @@
 import __isScrollable from '../../is/isScrollable.js';
 import __querySelectorUp from './querySelectorUp.js';
 /**
- * @name                closestScrollable
+ * @name                closestScrollableElement
  * @namespace           js.dom.query
  * @type                Function
  * @platform            js
@@ -13,18 +13,18 @@ import __querySelectorUp from './querySelectorUp.js';
  * @param 		{HTMLElement} 					$elm  		The element to start on
  * @return 		{HTMLElement|undefined} 								The element found or undefined
  *
- * @snippet         __closestScrollable($1)
+ * @snippet         __closestScrollableElement($1)
  *
  * @todo      tests
  *
  * @example  	js
- * import { __closestScrollable } from '@lotsof/sugar/dom';
- * __closestScrollable($myElement);
+ * import { __closestScrollableElement } from '@lotsof/sugar/dom';
+ * __closestScrollableElement($myElement);
  *
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export default function __closestScrollable($elm) {
+export default function __closestScrollableElement($elm) {
     const res = __querySelectorUp($elm, ($e) => __isScrollable($e));
     return res;
 }

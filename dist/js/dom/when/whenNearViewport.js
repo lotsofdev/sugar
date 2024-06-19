@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import __closestScrollable from '../query/closestScrollable.js';
+import __closestScrollableElement from '../query/closestScrollableElement.js';
 export default function __whenNearViewport(elm, settings) {
     function getRootMargin() {
         return [
@@ -22,7 +22,7 @@ export default function __whenNearViewport(elm, settings) {
     const rootMargin = finalSettings.offset
         ? `${finalSettings.offset}`
         : getRootMargin();
-    let $closest = __closestScrollable(elm);
+    let $closest = __closestScrollableElement(elm);
     if (($closest === null || $closest === void 0 ? void 0 : $closest.tagName) === 'HTML')
         $closest = undefined;
     return new Promise((resolve) => __awaiter(this, void 0, void 0, function* () {

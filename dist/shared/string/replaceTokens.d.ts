@@ -9,12 +9,6 @@
  * This function takes as parameter a tokened string like "something [cool]", an object
  * of arguments/values and return the processed string with the tokens replaced by the arguments values.
  *
- * @todo      interface
- * @todo      doc
- * @todo      tests
- * @todo      Add setting to define tokens delimiter
- * @todo      Support multi level tokens like [something.cool]
- *
  * @param       {String}          string          The string to process
  * @param       {Object}          tokensObj         The arguments/value object
  * @param       {Object}          [settings={}]   A settings object to configure the parsing process
@@ -26,6 +20,8 @@
  * @snippet         (string) __replaceTokens($1, $2)
  * __replaceTokens($1, $2)
  *
+ * @todo      Add setting to define tokens delimiter
+ * @todo      Support multi level tokens like [something.cool]
  * @todo      tests
  *
  * @example     js

@@ -15,8 +15,6 @@ namespace Sugar\fs;
  * @param       {Function|null}              callback            The callback function to call on each folder path. It this returns true, the process stops and the current folder path is returned
  * @return 		{String}                                    The folder path on which the callback has returned true, or null if not
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         \Sugar\fs\traverseUp($1, $2)

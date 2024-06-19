@@ -1,6 +1,6 @@
 import __querySelectorUp from './querySelectorUp.js';
 /**
- * @name                closest
+ * @name                closestElement
  * @namespace           js.dom.query
  * @type                Function
  * @platform            js
@@ -14,13 +14,11 @@ import __querySelectorUp from './querySelectorUp.js';
  *
  * @snippet         __closest($1, $2)
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @example  	js
- * import { __closest } from '@lotsof/sugar/dom'
- * const closestElm =  __closest(myCoolElement, '.my-cool-class');
+ * import { __closestElement } from '@lotsof/sugar/dom'
+ * const closestElm =  __closestElement(myCoolElement, '.my-cool-class');
  * if (closestElm) {
  * 		// we have found en element that matches the selector
  * }

@@ -1,45 +1,53 @@
-import __readJsonSync from '../fs/readJsonSync.js';
-import __packageRootDir from '../path/packageRootDir.js';
+import __fs from 'fs';
+import __packageDir from './packageDir.js';
 
 /**
  * @name                    packageJsonSync
  * @namespace               node.package
  * @type                    Function
  * @platform                node
- * @status                  stable
+ * @status                  beta
  *
- * Returns the package.json file depending on the passed cwd.
- * It will go up the directories tree and get the first package.json found.
+ * This function simply take a package name (or "." for the current package) as parameter, and return the corresponding
+ * package.json JSON content
  *
- * @param       {IPackageJsonSyncSettings}          [settings={}]           Some settings like cwd, etc...
+ * @param       {String}        [nameOrPath=process.cwd()]        the package name or path wanted
+ * @param       {IComposerVendorDirSettings}      [settings={}]       Some settings to configure your process
+ * @return      {JSON}                      The composer.json content
  *
- * @setting       {String}        [cwd=process.cwd()]       The working directory to start from
+ * @setting     {String}        [cwd=process.cwd()]        The directory in which you want to start the research
+ * @setting     {Boolean}       [monorepo=false]         Specify if you are in a monorepo context
+ * @setting     {Boolean}       [checkExistence=true]    Specify if you want to check if the vendor dir exists
  *
- * @todo      tests
- *
- * @snippet         __packageJsonSync()
+ * @snippet         __packageJsonSync($1)
  *
  * @example         js
- * import { __packageJsonSync } from '@lotsof/sugar/package';
- * const root = __packageJsonSync();
+ * import { __packageJsonSync } from '@lotsof/sugar/package`;
+ * __packageJsonSync('lotsof/sugar');
  *
+ * @todo        Implement a cache strategy to avoid making same process again and again
+ *
+ * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
 export interface IPackageJsonSyncSettings {
-  cwd?: string;
+  cwd: string;
+  monorepo: boolean;
+  checkExistence: boolean;
 }
 
 export default function __packageJsonSync(
-  settings: IPackageJsonSyncSettings = {},
+  nameOrPath: string,
+  settings?: Partial<IPackageJsonSyncSettings>,
 ): any {
   settings = {
     cwd: process.cwd(),
-    ...settings,
+    monorepo: false,
+    checkExistence: true,
+    ...(settings ?? {}),
   };
-  const packageRootDir = __packageRootDir(settings.cwd, {
-    highest: false,
-  });
-  const packageJsonFilePath = `${packageRootDir}/package.json`;
-  return __readJsonSync(packageJsonFilePath);
+
+  const packageDir = __packageDir(nameOrPath, settings);
+  return JSON.parse(__fs.readFileSync(`${packageDir}/package.json`, 'utf8'));
 }

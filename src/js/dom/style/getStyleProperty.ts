@@ -16,8 +16,6 @@ import __parse from '../../../shared/string/parse.js';
  * @param 		{String} 						property 	The css property to get
  * @return 		{Mixed} 									The style value
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __getStyleProperty($1, $2)

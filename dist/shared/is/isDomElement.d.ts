@@ -11,8 +11,6 @@
  * @param       {any}           element             The element to check
  * @return      {Boolean}                           true if is a DOM element, false if not
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __isDomElement($1)

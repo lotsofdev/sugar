@@ -17,8 +17,6 @@
  *      $2
  * });
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @example  	js

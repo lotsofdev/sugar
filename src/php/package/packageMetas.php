@@ -16,8 +16,6 @@ namespace Sugar\package;
  * @param     {String}      [path=$_SERVER['DOCUMENT_ROOT']]      The path of the package to search metas for
  * @return    {Object}          The metas object information containing these data: name, description, version, author and license
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         \Sugar\package\packageMetas($1)

@@ -11,8 +11,6 @@
  * @param    {Mixed}    value    The value to check
  * @return   {Boolean}   true if it's a Boolean, false if not
  *
- * @todo      interface
- * @todo      doc
  * @todo      tests
  *
  * @snippet         __isBoolean($1)
