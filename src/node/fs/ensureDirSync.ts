@@ -1,4 +1,6 @@
 import __fs from 'fs-extra';
+import __path from 'path';
+import __isDirectory from '../is/isDirectory.js';
 
 /**
  * @name                ensureDirSync
@@ -25,5 +27,16 @@ import __fs from 'fs-extra';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __ensureDirSync(dir: string): void {
-  __fs.ensureDirSync(dir);
+  // check if the directory already exists
+  if (__fs.existsSync(dir) && __isDirectory(dir)) return;
+
+  // if the passed path is a file
+  if (!__isDirectory(dir)) {
+    dir = __path.dirname(dir);
+  }
+
+  // create the directory
+  if (!__fs.existsSync(dir)) {
+    __fs.ensureDirSync(dir);
+  }
 }

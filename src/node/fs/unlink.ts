@@ -1,4 +1,5 @@
-import __fs from 'fs-extra';
+import __fs from 'fs';
+import __isDirectory from '../is/isDirectory.js';
 
 /**
  * @name            unlink
@@ -28,5 +29,10 @@ import __fs from 'fs-extra';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __unlink(path: string): Promise<void> {
-  return __fs.remove(path);
+  if (!__fs.existsSync(path)) return Promise.resolve();
+  if (__isDirectory(path)) {
+    return __fs.promises.rmdir(path, { recursive: true });
+  } else {
+    return __fs.promises.unlink(path);
+  }
 }

@@ -2,6 +2,7 @@
   "name": "lotsof/sugar",
   "description": "A toolkit that gives you access to \"lots of\" of cool and useful PHP functions/classes like \\\\Sugar\\network\\ipAddress, \\Sugar\\object\\deepMerge, \\Sugar\\string\\replaceTokens, and a lot more...",
   "type": "library",
+  "version": "1.0.0",
   "autoload": {
     "files": [
       "src/php/autoload.php"
@@ -16,6 +17,7 @@
     }
   ],
   "require": {
-    "psr/log": "^3.0"
+    "psr/log": "^3.0",
+    "fakerphp/faker": "^1.23"
   }
 }

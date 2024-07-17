@@ -1,4 +1,5 @@
-import __fs from 'fs-extra';
+import __fs from 'fs';
+import __isDirectory from '../is/isDirectory.js';
 
 /**
  * @name            unlinkSync
@@ -24,5 +25,10 @@ import __fs from 'fs-extra';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __unlinkSync(path: string): void {
-  __fs.removeSync(path);
+  if (!__fs.existsSync(path)) return;
+  if (__isDirectory(path)) {
+    __fs.rmdirSync(path, { recursive: true });
+  } else {
+    __fs.unlinkSync(path);
+  }
 }

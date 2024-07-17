@@ -30,6 +30,7 @@ import __readJsonSync from './readJsonSync.js';
 import __readXmlSync from './readXmlSync.js';
 import __remove from './remove.js';
 import __removeSync from './removeSync.js';
+import __renameSync from './renameSync.js';
 import __unlink from './unlink.js';
 import __unlinkSync from './unlinkSync.js';
 import __writeFile from './writeFile.js';
@@ -73,6 +74,7 @@ export {
   __readXmlSync,
   __remove,
   __removeSync,
+  __renameSync,
   __unlink,
   __unlinkSync,
   __writeFile,

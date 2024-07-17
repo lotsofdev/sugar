@@ -29,5 +29,8 @@ import __fs from 'fs-extra';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __move(src: string, dest: string): Promise<void> {
+  if (src === dest) {
+    return Promise.resolve();
+  }
   return __fs.move(src, dest);
 }

@@ -23,5 +23,8 @@ import __fs from 'fs-extra';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function __moveSync(src: string, dest: string): void {
+  if (src === dest) {
+    return;
+  }
   __fs.moveSync(src, dest);
 }

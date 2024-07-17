@@ -19,7 +19,7 @@ import { camelCase } from 'change-case';
  *
  * @example     js
  * import { __camelCase } from '@lotsof/sugar/string';
- * __camelCase('hello world'); // => HELLO WORLD
+ * __camelCase('hello world'); // => helloWorld
  *
  * @see             https://www.npmjs.com/package/change-case
  * @since       2.0.0

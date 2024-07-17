@@ -1,10 +1,9 @@
+import __childProcess from 'child_process';
 import __fs from 'fs';
-import __path from 'path';
+import * as __semver from 'semver';
 import __readJsonSync from '../fs/readJsonSync.js';
 import __writeJsonSync from '../fs/writeJsonSync.js';
 import __packageRootDir from './packageRootDir.js';
-import * as __semver from 'semver';
-import __childProcess from 'child_process';
 
 /**
  * @name                    addPackageDependencies
@@ -110,10 +109,13 @@ export default function __addPackageDependencies(
 
     // check if we need to install the dependencies
     if (settings.install) {
-      __childProcess.execSync('npm install', {
+      const res = __childProcess.spawnSync('npm install', [], {
         cwd: __packageRootDir(settings.cwd),
-        stdio: 'inherit',
+        shell: true,
       });
+      if (res.stderr.toString() !== '') {
+        throw new Error(res.stderr.toString());
+      }
     }
 
     // resolve the promise with the new package.json content
