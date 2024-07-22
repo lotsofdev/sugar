@@ -10,10 +10,12 @@ import __unlinkSync from './unlinkSync.js';
  * @platform        node
  * @status          stable
  *
- * Moves a file or directory, even across devices (sync)
+ * This method allows you to rename a file or directory synchronously.
  *
  * @param       {String}              src           The source path to moveSync
  * @param       {String}              dest          The destination path
+ * @param       {IRenameSyncSettings} [settings={}] The settings for the operation
+ * @return      {String}                          The new path
  *
  * @snippet         __renameSync($1, $2)
  *
@@ -28,15 +30,17 @@ import __unlinkSync from './unlinkSync.js';
 
 export interface IRenameSyncSettings {
   override: boolean;
+  dry: boolean;
 }
 
 export default function __renameSync(
   src: string,
   newName: string,
   settings?: Partial<IRenameSyncSettings>,
-): void {
+): string {
   const finalSettings: IRenameSyncSettings = {
     override: true,
+    dry: false,
     ...(settings ?? {}),
   };
 
@@ -46,26 +50,39 @@ export default function __renameSync(
   // remove the file name
   const currentName = parts.pop() as string;
   const currentNameParts = currentName.split('.');
-  const currentNameWithoutExt = currentNameParts.shift();
+  currentNameParts.shift();
   const currentExt = currentNameParts.join('.');
+
+  let newPath = src;
 
   // handle the case where the new name has an extension
   if (newName.includes('.')) {
     ext = src.split('.').pop() as string;
+    newPath = parts.join('/') + '/' + newName;
   } else {
     ext = currentExt;
-  }
-  const newPath = parts.join('/') + '/' + newName + (ext ? '.' + ext : '');
-
-  // if want to override and file exists,
-  // remove it
-  if (finalSettings.override && __fs.existsSync(newPath)) {
-    __unlinkSync(newPath);
+    newPath = parts.join('/') + '/' + newName + (ext ? '.' + ext : '');
   }
 
-  // make sure we have the folder to write in
-  __ensureDirSync(newPath);
+  // if already the same name
+  if (src === newPath) {
+    return newPath;
+  }
 
-  // move the file to his new destination
-  __moveSync(src, newPath);
+  // only execute if not dry
+  if (!finalSettings.dry) {
+    // if want to override and file exists,
+    // remove it
+    if (finalSettings.override && __fs.existsSync(newPath)) {
+      __unlinkSync(newPath);
+    }
+
+    // make sure we have the folder to write in
+    __ensureDirSync(newPath);
+
+    // move the file to his new destination
+    __moveSync(src, newPath);
+  }
+
+  return newPath;
 }

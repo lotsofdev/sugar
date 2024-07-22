@@ -5,10 +5,12 @@
  * @platform        node
  * @status          stable
  *
- * Moves a file or directory, even across devices (sync)
+ * This method allows you to rename a file or directory synchronously.
  *
  * @param       {String}              src           The source path to moveSync
  * @param       {String}              dest          The destination path
+ * @param       {IRenameSyncSettings} [settings={}] The settings for the operation
+ * @return      {String}                          The new path
  *
  * @snippet         __renameSync($1, $2)
  *
@@ -22,5 +24,6 @@
  */
 export interface IRenameSyncSettings {
     override: boolean;
+    dry: boolean;
 }
-export default function __renameSync(src: string, newName: string, settings?: Partial<IRenameSyncSettings>): void;
+export default function __renameSync(src: string, newName: string, settings?: Partial<IRenameSyncSettings>): string;
