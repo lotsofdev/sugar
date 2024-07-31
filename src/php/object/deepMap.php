@@ -15,7 +15,7 @@ namespace Sugar\object;
  * @param       {Function}      $callback       The function to run on each values. Must return the new value to set
  * @return      {Array}                         The processed array
  *
- * @snippet     \Sugar\ar\deepMap($1, $2);
+ * @snippet     \Sugar\object\deepMap($1, $2);
  * \Sugar\ar\deepMap($1, function(\$prop, \$value, \$object) {
  *      $0
  * });
@@ -36,7 +36,7 @@ namespace Sugar\object;
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-function deepMap(&$value, $callback, $prop = null, &$object = null)
+function deepMap(mixed &$value, $callback, $prop = null, &$object = null)
 {
     if (is_array($value)) {
         foreach ($value as $index => $item) {
@@ -53,10 +53,15 @@ function deepMap(&$value, $callback, $prop = null, &$object = null)
             );
         }
     } else {
+        $currentArgs = array_keys((array) $object);
         $value = call_user_func_array($callback, [$prop, &$value, &$object]);
-        if (is_int($value) && $value == -1) {
-            $object->$prop = 'CCCC';
-            unset($object->$prop);
+        $recentArgs = array_keys((array) $object);
+        $newArgs = array_diff($recentArgs, $currentArgs);
+
+        if (count($newArgs) > 0) {
+            foreach ($newArgs as $newArg) {
+                $object->$newArg = deepMap($object->$newArg, $callback, $newArg, $object);
+            }
         }
     }
 

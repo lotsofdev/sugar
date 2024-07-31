@@ -16,7 +16,7 @@ namespace Sugar\ar;
  * @return      {Array}                         The processed array
  *
  * @snippet     \Sugar\ar\deepMap($1, $2);
- * \Sugar\ar\deepMap($1, function(\$prop, \$value, \$object) {
+ * \Sugar\ar\deepMap($1, function(\$prop, \$value, \$array) {
  *      $0
  * });
  *
@@ -24,7 +24,7 @@ namespace Sugar\ar;
  * \Sugar\ar\deepMap([
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
- * ], function($prop, $value, $object) {
+ * ], function($prop, $value, $array) {
  *      return 'Hello ' . $value;
  * });
  * // [
@@ -36,15 +36,15 @@ namespace Sugar\ar;
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-function deepMap(&$value, $callback, $prop = null, &$object = null)
+function deepMap(mixed &$value, $callback, $prop = null, &$array = null)
 {
     if (is_array($value)) {
         foreach ($value as $index => $item) {
             $value[$index] = deepMap($item, $callback, $index, $value);
         }
     } elseif (is_object($value)) {
-        $object_vars = get_object_vars($value);
-        foreach ($object_vars as $propertyName => $propertyValue) {
+        $array_vars = get_object_vars($value);
+        foreach ($array_vars as $propertyName => $propertyValue) {
             $value->$propertyName = deepMap(
                 $propertyValue,
                 $callback,
@@ -53,10 +53,15 @@ function deepMap(&$value, $callback, $prop = null, &$object = null)
             );
         }
     } else {
-        $value = call_user_func_array($callback, [$prop, &$value, &$object]);
-        if (is_int($value) && $value == -1) {
-            $object->$prop = 'CCCC';
-            unset($object->$prop);
+        $currentArgs = array_keys($array);
+        $value = call_user_func_array($callback, [$prop, &$value, &$array]);
+        $recentArgs = array_keys($array);
+        $newArgs = array_diff($recentArgs, $currentArgs);
+
+        if (count($newArgs) > 0) {
+            foreach ($newArgs as $newArg) {
+                $array->$newArg = deepMap($array->$newArg, $callback, $newArg, $array);
+            }
         }
     }
 

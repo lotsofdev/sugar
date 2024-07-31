@@ -31,16 +31,10 @@ export default async function __isCommandExists(
   const isWin = process.platform === 'win32';
   const where = isWin ? 'where' : 'whereis';
 
-  // check by version
-  const versionOut = spawnSync(`${command} --version`, [], {
-    encoding: 'utf-8',
-    shell: true,
-  });
-  if (versionOut.stdout) return versionOut.stdout;
-
   const out = spawnSync(where + ' ' + command, [], {
     encoding: 'utf8',
     shell: true,
   });
-  return out.stdout !== '';
+  if (!out.stdout) return false;
+  return out.stdout.replace(`${command}:`, '').trim() !== '';
 }

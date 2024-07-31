@@ -10,8 +10,8 @@ import { camelCase } from 'change-case';
  *
  * Capital case a string
  *
- * @param         {String}          text        The string to snakeCase
- * @return        {String}                      The snakeCased string
+ * @param         {String}          text        The string to camelCase
+ * @return        {String}                      The camelCased string
  *
  * @todo      tests
  *
