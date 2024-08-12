@@ -1,5 +1,5 @@
 // @ts-ignore
-import sha256 from 'crypto-js/sha256';
+import sha256 from 'crypto-js/sha256.js';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';
 const __encryptedMessages = {};

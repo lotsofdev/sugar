@@ -37,7 +37,7 @@ function get($object, $dotpath, $separator = '.')
     } elseif (is_array($object)) {
         $array = $object;
     } else {
-        throw new Error(
+        throw new \Exception(
             'The "get" function accepts only object and array as source...'
         );
     }

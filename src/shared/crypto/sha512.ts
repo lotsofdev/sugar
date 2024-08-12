@@ -1,5 +1,5 @@
 // @ts-ignore
-import sha512 from 'crypto-js/sha512';
+import sha512 from 'crypto-js/sha512.js';
 import parse from '../../shared/string/parse.js';
 import toString from '../../shared/string/toString.js';
 
