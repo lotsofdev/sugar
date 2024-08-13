@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\string;
+namespace Sugar\String;
 
 /**
  * @name            randomString
@@ -16,10 +16,10 @@ namespace Sugar\string;
  * @param       {String}            [$characters='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ']         The characters you want to use to generate the string
  * @return      {String}                        The generated string
  *
- * @snippet             \Sugar\string\randomString($1);
+ * @snippet             \Sugar\String\randomString($1);
  *
  * @example         php
- * Sugar\string\randomString(10); // => ak93mdkaod
+ * Sugar\String\randomString(10); // => ak93mdkaod
  *
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

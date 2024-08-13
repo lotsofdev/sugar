@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 function set(&$arr, $path, $value, $separator = '.')
 {

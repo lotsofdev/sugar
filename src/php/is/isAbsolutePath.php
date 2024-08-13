@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\is;
+namespace Sugar\Is;
 
 /**
  * @name            isAbsolutePath
@@ -14,12 +14,12 @@ namespace Sugar\is;
  * @param       {String}        $path           The path to check
  * @return      {Boolean}                       true if absolute, false if not
  *
- * @snippet             \Sugar\is\absolutePath($1);
+ * @snippet             \Sugar\Is\absolutePath($1);
  *
  * @example      php
- * Sugar\is\absolutePath('my/cool/path'); // => false
- * Sugar\is\absolutePath('http://something.com/my/cool/path'); // => true
- * Sugar\is\absolutePath('/my/cool/path'); // => true
+ * Sugar\Is\absolutePath('my/cool/path'); // => false
+ * Sugar\Is\absolutePath('http://something.com/my/cool/path'); // => true
+ * Sugar\Is\absolutePath('/my/cool/path'); // => true
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

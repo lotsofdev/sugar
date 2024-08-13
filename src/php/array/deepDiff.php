@@ -1,10 +1,10 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 /**
  * @name            deepDiff
- * @namespace       php.array
+ * @namespace       php.Sugar.Array
  * @type            Function
  * @platform        php
  * @status          beta
@@ -15,10 +15,10 @@ namespace Sugar\ar;
  * @param       {Array}         $array2         The array you want to deepDiff the first one
  * @return      {Array}                         The array with all the differences
  *
- * @snippet         \Sugar\ar\deepDiff($1, $2);
+ * @snippet         \Sugar\Arrayray\deepDiff($1, $2);
  *
  * @example         php
- * \Sugar\ar\deepDiff([
+ * \Sugar\Array\deepDiff([
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
  * ], [

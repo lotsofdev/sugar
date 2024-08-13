@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 /**
  * @name            deepFilter
@@ -16,13 +16,13 @@ namespace Sugar\ar;
  * @param       {Function}      $callback       The function to run on each values. If return true, the item is kept, if false, it is removed
  * @return      {Array}                         The processed array/object
  *
- * @snippet             \Sugar\ar\deepFilter($1, $2);
- * \Sugar\ar\deepFilter($1, function(\$prop, \$value) {
+ * @snippet             \Sugar\Arrayray\deepFilter($1, $2);
+ * \Sugar\Array\deepFilter($1, function(\$prop, \$value) {
  *      $0
  * });
  *
  * @example         php
- * \Sugar\ar\deepFilter((object) [
+ * \Sugar\Array\deepFilter((object) [
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
  * ], function($prop, $value) {

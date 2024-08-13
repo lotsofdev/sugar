@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\is;
+namespace Sugar\Is;
 
 /**
  * @name                isUrl
@@ -14,11 +14,11 @@ namespace Sugar\is;
  * @param       {String}        $url            The url to check
  * @return      {Boolean}                       true if a valid url, false if not
  *
- * @snippet             \Sugar\is\url($1);
+ * @snippet             \Sugar\Is\url($1);
  *
  * @example         php
- * Sugar\is\url('something'); // => false
- * Sugar\is\url('http://hello.com'); // => true
+ * Sugar\Is\url('something'); // => false
+ * Sugar\Is\url('http://hello.com'); // => true
  *
  * @see                 https://www.php.net/manual/en/function.preg-match.php#93824
  * @since           2.0.0

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\string;
+namespace Sugar\String;
 
 /**
  * @name            simplifySpecialChars
@@ -12,13 +12,13 @@ namespace Sugar\string;
  * This function take a string and replace all the special chars like "é", "à", etc...
  * with their simple version like "a", "e", etc...
  *
- * @snippet             \Sugar\string\simplifySpecialChars($1);
+ * @snippet             \Sugar\String\simplifySpecialChars($1);
  *
  * @param       {String}        $string         The string to process
  * @return      {String}                        The processed string
  *
  * @example         php
- * Sugar\string\simplifySpecialChars('Hellô world'); // => Hello world
+ * Sugar\String\simplifySpecialChars('Hellô world'); // => Hello world
  *
  * @see             https://stackoverflow.com/questions/14114411/remove-all-special-characters-from-a-string/14114443
  * @since       2.0.0

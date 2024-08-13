@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\string;
+namespace Sugar\String;
 
 /**
  * @name            toString
@@ -15,10 +15,10 @@ namespace Sugar\string;
  * @param       {Any}               $value                  The value to convert into a string
  * @return      {String}                        The generated string
  *
- * @snippet             \Sugar\string\toString($1);
+ * @snippet             \Sugar\String\toString($1);
  *
  * @example         php
- * Sugar\string\toString(['hello','world']); // => "['hello','world']"
+ * Sugar\String\toString(['hello','world']); // => "['hello','world']"
  *
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\object;
+namespace Sugar\Object;
 
 /**
  * @name                                sort
@@ -17,8 +17,8 @@ namespace Sugar\object;
  *
  * @todo      tests
  *
- * @snippet             \Sugar\object\sort($1, $2);
- * \Sugar\object\sort($1, function(\$a, \$b) {
+ * @snippet             \Sugar\Object\sort($1, $2);
+ * \Sugar\Object\sort($1, function(\$a, \$b) {
  *      $0
  * });
  *

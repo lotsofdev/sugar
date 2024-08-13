@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\string;
+namespace Sugar\String;
 
 /**
  * @name                camelCase
@@ -16,10 +16,10 @@ namespace Sugar\string;
  *
  * @todo      tests
  *
- * @snippet         \Sugar\string\camelCase($1)
+ * @snippet         \Sugar\String\camelCase($1)
  *
  * @example     php
- * \Sugar\string\camelCase('hello world'); // => helloWorld
+ * \Sugar\String\camelCase('hello world'); // => helloWorld
  *
  * @see             https://www.npmjs.com/package/change-case
  * @since       2.0.0

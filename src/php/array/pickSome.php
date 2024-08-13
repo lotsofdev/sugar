@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 /**
  * @name            pickSome
@@ -16,10 +16,10 @@ namespace Sugar\ar;
  * @param       {Integer}       [$max=null]        The maximum number of items to pick
  * @return      {Any}                         The random array item(s)
  *
- * @snippet         \Sugar\ar\pickSome($1,$2,$3);
+ * @snippet         \Sugar\Array\pickSome($1,$2,$3);
  *
  * @example         php
- * \Sugar\ar\pickSome(['hello','world','test'], 1, 2);
+ * \Sugar\Array\pickSome(['hello','world','test'], 1, 2);
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

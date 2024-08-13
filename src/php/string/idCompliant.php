@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\string;
+namespace Sugar\String;
 
 /**
  * @name            idCompliant
@@ -16,10 +16,10 @@ namespace Sugar\string;
  * @param       {String}        $string         The string to process
  * @return      {String}                        The processed string
  *
- * @snippet             \Sugar\string\idCompliant($1);
+ * @snippet             \Sugar\String\idCompliant($1);
  *
  * @example         php
- * Sugar\string\idCompliant('Hello world'); // => hello-world
+ * Sugar\String\idCompliant('Hello world'); // => hello-world
  *
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
@@ -33,32 +33,32 @@ function idCompliant($string)
     // replace characters like /, etc...
     $dict = [
         '/' => '-',
-    '@' => '',
-    '.' => '-',
-    ',' => '-',
-    '\\' => '-',
-    '(' => '-',
-    ')' => '-',
-    '{' => '-',
-    '}' => '-',
-    '[' => '-',
-    ']' => '-',
-    '=' => '-',
-    '?' => '-',
-    '!' => '-',
-    '&' => '-',
-    '%' => '-',
-    '*' => '-',
-    '"' => '-',
-    "'" => '-',
-    '`' => '-',
-    '+' => '-',
-    '°' => '-',
-    '$' => '-',
-    '<' => '-',
-    '>' => '-',
-    ' =>' => '-',
-    '#' => '-',
+        '@' => '',
+        '.' => '-',
+        ',' => '-',
+        '\\' => '-',
+        '(' => '-',
+        ')' => '-',
+        '{' => '-',
+        '}' => '-',
+        '[' => '-',
+        ']' => '-',
+        '=' => '-',
+        '?' => '-',
+        '!' => '-',
+        '&' => '-',
+        '%' => '-',
+        '*' => '-',
+        '"' => '-',
+        "'" => '-',
+        '`' => '-',
+        '+' => '-',
+        '°' => '-',
+        '$' => '-',
+        '<' => '-',
+        '>' => '-',
+        ' =>' => '-',
+        '#' => '-',
     ];
     $string = str_replace(array_keys($dict), array_values($dict), $string);
     // first and last characters + multiple ---

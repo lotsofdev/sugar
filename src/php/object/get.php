@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\object;
+namespace Sugar\Object;
 
 /**
  * @name            get
@@ -17,7 +17,7 @@ namespace Sugar\object;
  * @param       {String}        [$separator='.']        The dotpath separator
  * @return      {Any}                           The getted value
  *
- * @snippet             \Sugar\object\get($1, $2);
+ * @snippet             \Sugar\Object\get($1, $2);
  *
  * @example         php
  * $obj = (object) [
@@ -25,7 +25,7 @@ namespace Sugar\object;
  *      "world" => "plop"
  *   ]
  * ];
- * \Sugar\object\get($obj, 'hello.world'); // "plop"
+ * \Sugar\Object\get($obj, 'hello.world'); // "plop"
  *
  * @since       2.0.0
  * @author 	                Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

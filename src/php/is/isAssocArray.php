@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\is;
+namespace Sugar\Is;
 
 /**
  * @name            isAssocArray
@@ -14,11 +14,11 @@ namespace Sugar\is;
  * @param       {Array}        $ar           The array to check
  * @return      {Boolean}                       true if associative, false if not
  *
- * @snippet             \Sugar\is\assoc($1);
+ * @snippet             \Sugar\Is\assoc($1);
  *
  * @example      php
- * Sugar\is\assocArray(['hello' => 'world']); // => true
- * Sugar\is\assocArray('hello', 'world'); // => false
+ * Sugar\Is\assocArray(['hello' => 'world']); // => true
+ * Sugar\Is\assocArray('hello', 'world'); // => false
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

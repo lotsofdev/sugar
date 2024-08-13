@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\package;
+namespace Sugar\Package;
 
 /**
  * @name            packageMetas
@@ -18,10 +18,10 @@ namespace Sugar\package;
  *
  * @todo      tests
  *
- * @snippet         \Sugar\package\packageMetas($1)
+ * @snippet         \Sugar\Package\packageMetas($1)
  *
  * @example     php
- * $metas = \Sugar\package\packageMetas();
+ * $metas = \Sugar\Package\packageMetas();
  *
  * @since       2.0.0
  * @author 		Olivier Bossel<olivier.bossel@gmail.com>

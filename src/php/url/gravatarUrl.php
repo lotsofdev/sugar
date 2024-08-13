@@ -24,13 +24,14 @@ namespace Sugar\gravatar;
  * @snippet             \Sugar\gravatar\url($1, $2);
  *
  * @example         php
- * \Sugar\url\gravatarUrl('olivier.bossel@gmail.com');
+ * \Sugar\Url\gravatarUrl('olivier.bossel@gmail.com');
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-class GravatarUrlSettings {
+class GravatarUrlSettings
+{
     public $s = 80;
     public $d = 'mp';
     public $r = 'g';

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\object;
+namespace Sugar\Object;
 
 /**
  * @name            firstItem
@@ -14,10 +14,10 @@ namespace Sugar\object;
  * @param       {Array|Object}      $object         The object to get value from
  * @return      {Any}                               The first object value
  *
- * @snippet     \Sugar\object\firstItem($1);
+ * @snippet     \Sugar\Object\firstItem($1);
  *
  * @example         php
- * \Sugar\object\firstItem((object) [
+ * \Sugar\Object\firstItem((object) [
  *  'hello' => 'world',
  *  'something' => 'cool'
  * ]); // world

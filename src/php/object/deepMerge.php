@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\object;
+namespace Sugar\Object;
 
 /**
  * @name            deepMerge
@@ -15,10 +15,10 @@ namespace Sugar\object;
  * @param       {Object}        $object2        The second object
  * @return      {Object}                        The merged object
  *
- * @snippet             \Sugar\object\deepMerge($1, $2);
+ * @snippet             \Sugar\Object\deepMerge($1, $2);
  *
  * @example         php
- * \Sugar\object\deepMerge((object) [
+ * \Sugar\Object\deepMerge((object) [
  *  'hello' => 'world'
  * ], (object) [
  *  'plop' => true
@@ -40,13 +40,13 @@ function _deepMerge($obj1, $obj2)
         }
 
         $isSourceMergeable =
-            is_object($obj1[$key]) || \Sugar\is\assocArray($obj1[$key]);
+            is_object($obj1[$key]) || \Sugar\Is\assocArray($obj1[$key]);
         if (!$isSourceMergeable) {
             $obj1[$key] = $value;
             continue;
         }
 
-        if (is_object($value) || \Sugar\is\assocArray($value)) {
+        if (is_object($value) || \Sugar\Is\assocArray($value)) {
             $obj1[$key] = _deepMerge($obj1[$key], $value);
             continue;
         }

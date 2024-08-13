@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\is;
+namespace Sugar\Is;
 
 /**
  * @name            isRequestFromIframe
@@ -13,10 +13,10 @@ namespace Sugar\is;
  *
  * @return      {Boolean}                       true if from iframe, false if not
  *
- * @snippet             \Sugar\is\requestFromIframe($1);
+ * @snippet             \Sugar\Is\requestFromIframe($1);
  *
  * @example         php
- * \Sugar\is\requestFromIframe();
+ * \Sugar\Is\requestFromIframe();
  *
  * @see                 https://www.php.net/manual/en/function.preg-match.php#93824
  * @since           2.0.0

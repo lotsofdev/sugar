@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 /**
  * @name            deepMerge
@@ -12,14 +12,14 @@ namespace Sugar\ar;
  * This function take two arrays and merge them deeply by keeping distinct
  * property keys.
  *
- * @snippet         \Sugar\ar\deepMerge($1, $2);
+ * @snippet         \Sugar\Array\deepMerge($1, $2);
  *
  * @param       {Array}         $array1         The base array on which to merge the second
  * @param       {Array}         $array2         The array you want to merge in the first one
  * @return      {Array}                         The resulting array
  *
  * @example         php
- * \Sugar\ar\merge_deep([
+ * \Sugar\Array\merge_deep([
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
  * ], [

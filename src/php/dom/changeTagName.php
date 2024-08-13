@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\dom;
+namespace Sugar\Dom;
 
 /**
  * @name            changeTagName
@@ -15,10 +15,10 @@ namespace Sugar\dom;
  * @param      {String}        $name           The new tag name 
  * @return      {DOMElement}                    The new element
  * 
- * @snippet         \Sugar\dom\changeTagName($1, $2);
+ * @snippet         \Sugar\Dom\changeTagName($1, $2);
  *
  * @example         php
- * print \Sugar\dom\changeTagName($element, 'a');
+ * print \Sugar\Dom\changeTagName($element, 'a');
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

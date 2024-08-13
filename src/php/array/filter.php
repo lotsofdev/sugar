@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 /**
  * @name            filter
@@ -14,8 +14,8 @@ namespace Sugar\ar;
  * - `...$`: The keys that ends with the passed string
  * - `function($key, $value) { retur true; }`: A function that must return true or false
  *
- * @snippet        \Sugar\ar\filter($1, $2);
- * \Sugar\ar\filter($1, function(\$key, \$value) {
+ * @snippet        \Sugar\Array\filter($1, $2);
+ * \Sugar\Array\filter($1, function(\$key, \$value) {
  *      $0
  * });
  *
@@ -29,8 +29,8 @@ namespace Sugar\ar;
  *   "yop" => 'plop',
  *   "helloPlop" => true
  * ];
- * \Sugar\ar\filter($obj, '^hel'); // ["hello" => 'world', "helloPlop" => true]
- * \Sugar\ar\filter($obj, function($key, $value) {
+ * \Sugar\Array\filter($obj, '^hel'); // ["hello" => 'world', "helloPlop" => true]
+ * \Sugar\Array\filter($obj, function($key, $value) {
  *   return false;
  * }); // []
  *
@@ -39,5 +39,5 @@ namespace Sugar\ar;
  */
 function filter($array, $filter)
 {
-    return (array) \Sugar\object\filter($array, $filter);
+    return (array) \Sugar\Object\filter($array, $filter);
 }

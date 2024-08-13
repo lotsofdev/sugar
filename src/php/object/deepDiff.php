@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\object;
+namespace Sugar\Object;
 
 /**
  * @name            deepDiff
@@ -15,10 +15,10 @@ namespace Sugar\object;
  * @param       {Object}         $object2         The object you want to deepDiff the first one
  * @return      {Object}                         The object with all the differences
  *
- * @snippet             \Sugar\object\deepDiff($1, $2);
+ * @snippet             \Sugar\Object\deepDiff($1, $2);
  *
  * @example         php
- * \Sugar\object\deepDiff((object) [
+ * \Sugar\Object\deepDiff((object) [
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
  * ], (object) [

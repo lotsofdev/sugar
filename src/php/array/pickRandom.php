@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\ar;
+namespace Sugar\Array;
 
 /**
  * @name            pickRandom
@@ -14,10 +14,10 @@ namespace Sugar\ar;
  * @param       {Array}         $array          The array in which you want to pick a random item
  * @return      {Any}                         The random array item
  *
- * @snippet         \Sugar\ar\pickRandom($1);
+ * @snippet         \Sugar\Array\pickRandom($1);
  *
  * @example         php
- * \Sugar\ar\pickRandom(['hello','world','test']);
+ * \Sugar\Array\pickRandom(['hello','world','test']);
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

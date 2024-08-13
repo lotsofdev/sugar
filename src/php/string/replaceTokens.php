@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\string;
+namespace Sugar\String;
 
 /**
  * @name            replaceTokens
@@ -20,10 +20,10 @@ namespace Sugar\string;
  * @param       {Array}        [$tokens=[]]    The tokens to replace
  * @return      {String}                        The processed string
  *
- * @snippet             \Sugar\string\replaceTokens($1, $2);
+ * @snippet             \Sugar\String\replaceTokens($1, $2);
  *
  * @example         php
- * Sugar\string\replaceTokens('Hello $hello %externalIp, how are you?', [
+ * Sugar\String\replaceTokens('Hello $hello %externalIp, how are you?', [
  *  'hello' => 'world'
  * ]); // => Hello world 156.436.56.75, how are you?
  *
@@ -34,8 +34,8 @@ namespace Sugar\string;
 function replaceTokens($string, $tokens = [])
 {
     $builtInTokens = [
-        'localIp' => \Sugar\network\ipAddress('local'),
-        'externalIp' => \Sugar\network\ipAddress('external'),
+        'localIp' => \Sugar\Network\ipAddress('local'),
+        'externalIp' => \Sugar\Network\ipAddress('external'),
     ];
     $tokens = array_merge((array) $tokens, $builtInTokens);
     foreach ($tokens as $key => $value) {

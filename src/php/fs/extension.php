@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\fs;
+namespace Sugar\Fs;
 
 /**
  * @name            extension
@@ -14,10 +14,10 @@ namespace Sugar\fs;
  * @param     {String}      The path to parse and get the extension from
  * @return    {String}    The extension of the passed path
  *
- * @snippet             \Sugar\path\extension($1);
+ * @snippet             \Sugar\Fs\extension($1);
  *
  * @example    php
- * \Sugar\path\extension('/path/to/file.ext'); // => ext
+ * \Sugar\Fs\extension('/path/to/file.ext'); // => ext
  *
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

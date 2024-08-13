@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\network;
+namespace Sugar\Network;
 
 /**
  * @name            ipAddress
@@ -15,11 +15,11 @@ namespace Sugar\network;
  * @param       {"local"|"external"}        [$type="local"]         Specify which ip address you want
  * @return      {String}                                            Your local or external ip address
  *
- * @snippet             \Sugar\network\ipAddress();
+ * @snippet             \Sugar\Network\ipAddress();
  *
  * @example         php
- * Sugar\network\ipAddress(); // => 192.168.1.23
- * Sugar\network\ipAddress('external'); // => 23.45.322.67
+ * Sugar\Network\ipAddress(); // => 192.168.1.23
+ * Sugar\Network\ipAddress('external'); // => 23.45.322.67
  *
  * @since           2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)

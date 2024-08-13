@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\object;
+namespace Sugar\Object;
 
 /**
  * @name            filter
@@ -18,8 +18,8 @@ namespace Sugar\object;
  * @param       {String|Function}       $filter         The filter to use
  * @return      {Object}                        The filtered object
  *
- * @snippet             \Sugar\object\filter($1, $2);
- * \Sugar\object\filter($1, funciton(\$key, \$value) {
+ * @snippet             \Sugar\Object\filter($1, $2);
+ * \Sugar\Object\filter($1, funciton(\$key, \$value) {
  *      $0
  * });
  *
@@ -29,8 +29,8 @@ namespace Sugar\object;
  *   "yop" => 'plop',
  *   "helloPlop" => true
  * ];
- * \Sugar\object\filter($obj, '^hel'); // (object) ["hello" => 'world', "helloPlop" => true]
- * \Sugar\object\filter($obj, function($key, $value) {
+ * \Sugar\Object\filter($obj, '^hel'); // (object) ["hello" => 'world', "helloPlop" => true]
+ * \Sugar\Object\filter($obj, function($key, $value) {
  *   return false;
  * }); // (object) []
  *

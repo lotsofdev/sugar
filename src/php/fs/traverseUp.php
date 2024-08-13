@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\fs;
+namespace Sugar\Fs;
 
 /**
  * @name        traverseUp
@@ -17,13 +17,13 @@ namespace Sugar\fs;
  *
  * @todo      tests
  *
- * @snippet         \Sugar\fs\traverseUp($1, $2)
- * \Sugar\fs\traverseUp($1, function(\$path) {
+ * @snippet         \Sugar\Fs\traverseUp($1, $2)
+ * \Sugar\Fs\traverseUp($1, function(\$path) {
  *      $2
  * });
  *
  * @example  	php
- * const finalPath = \Sugar\fs\traverseUp('/Users/something/cool', function($path) {
+ * const finalPath = \Sugar\Fs\traverseUp('/Users/something/cool', function($path) {
  *    if (count(explode('/', $path)) <= 2) {
  *      return true;
  *    }

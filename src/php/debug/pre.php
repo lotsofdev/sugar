@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\debug;
+namespace Sugar\Debug;
 
 /**
  * @name            pre
@@ -14,10 +14,10 @@ namespace Sugar\debug;
  * @param       {Array}         $toPrint        The data to print
  * @return      {String}                        The printed data
  *
- * @snippet         \Sugar\debug\pre($1);
+ * @snippet         \Sugar\Debug\pre($1);
  *
  * @example         php
- * print \Sugar\debug\pre([
+ * print \Sugar\Debug\pre([
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
  * ]);
@@ -25,10 +25,13 @@ namespace Sugar\debug;
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-function pre($data)
+function pre($data, $print = true): mixed
 {
     ob_start();
     print_r($data);
     $str = ob_get_clean();
+    if ($print) {
+        print '<pre>' . $str . '</pre>';
+    }
     return '<pre>' . $str . '</pre>';
 }

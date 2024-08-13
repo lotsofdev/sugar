@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\convert;
+namespace Sugar\Convert;
 
 /**
  * @name            toArray
@@ -14,10 +14,10 @@ namespace Sugar\convert;
  * @param       {Object}         $object         The base object to convert to an array
  * @return      {Array}                         The resulting associative array
  *
- * @snippet         \Sugar\convert\toArray($1);
+ * @snippet         \Sugar\Convert\toArray($1);
  *
  * @example         php
- * \Sugar\convert\toArray((object) [
+ * \Sugar\Convert\toArray((object) [
  *    'prop1' => 'Hello',
  *    'prop2' => 'World'
  * ]);

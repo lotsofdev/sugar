@@ -1,6 +1,6 @@
 <?php
 
-namespace Sugar\faker;
+namespace Sugar\Faker;
 
 /**
  * @name            richText
@@ -17,10 +17,10 @@ namespace Sugar\faker;
  * @param      {String}        $name           The new tag name 
  * @return      {DOMElement}                    The new element
  * 
- * @snippet         \Sugar\dom\changeTagName($1, $2);
+ * @snippet         \Sugar\Faker\richText($1);
  *
  * @example         php
- * print \Sugar\dom\changeTagName($element, 'a');
+ * print \Sugar\Faker\richText();
  *
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
