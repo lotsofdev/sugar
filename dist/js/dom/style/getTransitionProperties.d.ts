@@ -29,15 +29,15 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IGetTransitionPropertiesResult {
-    transitions: IGetTransitionPropertiesObject[];
+export type TGetTransitionPropertiesResult = {
+    transitions: TGetTransitionPropertiesObject[];
     totalDuration: number;
-}
-export interface IGetTransitionPropertiesObject {
+};
+export type TGetTransitionPropertiesObject = {
     property: string;
     duration: number;
     delay: number;
     timingFunction: string;
-}
-declare function getTransitionProperties(elm: HTMLElement): IGetTransitionPropertiesResult;
+};
+declare function getTransitionProperties(elm: HTMLElement): TGetTransitionPropertiesResult;
 export default getTransitionProperties;

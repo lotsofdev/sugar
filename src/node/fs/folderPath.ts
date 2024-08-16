@@ -27,15 +27,15 @@ import __isPath from '../../shared/is/isPath.js';
  * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IFolderPathSettings {
+export type TFolderPathSettings = {
   checkExistence: boolean;
-}
+};
 
 export default function __folderPath(
   path: string,
-  settings?: Partial<IFolderPathSettings>,
+  settings?: Partial<TFolderPathSettings>,
 ): string {
-  const finalSettings: IFolderPathSettings = {
+  const finalSettings: TFolderPathSettings = {
     checkExistence: false,
     ...(settings ?? {}),
   };

@@ -31,15 +31,15 @@
  * @since     2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IReplaceTokensSettings {
+export type TReplaceTokensSettings = {
   regexp?: string;
   stripUndefined?: boolean;
-}
+};
 
 function replaceTokens(
   string: string,
   tokensObj: any,
-  settings: IReplaceTokensSettings = {},
+  settings: TReplaceTokensSettings = {},
 ): string {
   settings = {
     regexp: '\\[([a-zA-Z0-9-_]+)\\]',

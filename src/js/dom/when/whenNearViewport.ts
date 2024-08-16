@@ -14,7 +14,7 @@ import __closestScrollableElement from '../query/closestScrollableElement.js';
  * @feature       Some settings available to tweak the behavior
  *
  * @param 		{HTMLElement} 				elm 					The element to monitor
- * @param 		{Partial<IWhenNearViewportSettings>} 					[settings={}] 		Some settings to tweak the detection behavior
+ * @param 		{Partial<TWhenNearViewportSettings>} 					[settings={}] 		Some settings to tweak the detection behavior
  * @return 		(Promise<HTMLElement>) 											The promise that will be resolved when the element is in the viewport
  *
  * @setting         {String}            [offset=`${window.innerHeight}px ${window.innerWidth}px`]           Some offset
@@ -36,13 +36,13 @@ import __closestScrollableElement from '../query/closestScrollableElement.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IWhenNearViewportSettings {
+export type TWhenNearViewportSettings = {
   offset: string | number | undefined;
-}
+};
 
 export default function __whenNearViewport(
   elm: HTMLElement,
-  settings?: Partial<IWhenNearViewportSettings>,
+  settings?: Partial<TWhenNearViewportSettings>,
 ): Promise<HTMLElement> {
   function getRootMargin() {
     return [
@@ -53,7 +53,7 @@ export default function __whenNearViewport(
     ].join(' ');
   }
 
-  const finalSettings: IWhenNearViewportSettings = {
+  const finalSettings: TWhenNearViewportSettings = {
     offset: undefined,
     ...settings,
   };

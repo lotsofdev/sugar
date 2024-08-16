@@ -24,7 +24,7 @@
  * @since           2.0.0
  * @author 	        Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IFolderPathSettings {
+export type TFolderPathSettings = {
     checkExistence: boolean;
-}
-export default function __folderPath(path: string, settings?: Partial<IFolderPathSettings>): string;
+};
+export default function __folderPath(path: string, settings?: Partial<TFolderPathSettings>): string;

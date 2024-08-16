@@ -28,18 +28,18 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IParseAuthorStringResult {
+export type TParseAuthorStringResult = {
   name: string;
   email: string;
   url: string;
-}
+};
 
 export default function __parseAuthorString(
   string: string,
-): IParseAuthorStringResult {
+): TParseAuthorStringResult {
   const reg = /(.*)\s?<(.*)>\s?\((.*)\)/gm;
   const matches = reg.exec(string.trim());
-  const authorObj: IParseAuthorStringResult = {
+  const authorObj: TParseAuthorStringResult = {
     name: matches?.[1]?.trim() ?? '',
     email: matches?.[2]?.trim() ?? '',
     url: matches?.[3]?.trim() ?? '',

@@ -23,7 +23,7 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface InamespaceCompliantSettings {
+export type TNamespaceCompliantSettings = {
     exclude: string[];
-}
-export default function __namespaceCompliant(str: string, settings?: InamespaceCompliantSettings): string;
+};
+export default function __namespaceCompliant(str: string, settings?: TNamespaceCompliantSettings): string;

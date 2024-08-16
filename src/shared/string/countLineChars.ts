@@ -35,15 +35,15 @@ import __deepMerge from '../object/deepMerge.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface ICountLineCharsSettings {
+export type TCountLineCharsSettings = {
   htmlTags?: boolean;
   terminalSpecialChars?: boolean;
   newLineChars?: boolean;
-}
+};
 
 export default function __countLineChars(
   line: string,
-  count: ICountLineCharsSettings = {},
+  count: TCountLineCharsSettings = {},
 ): number {
   count = __deepMerge(
     {

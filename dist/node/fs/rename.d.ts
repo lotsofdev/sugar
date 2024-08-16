@@ -21,7 +21,7 @@
  * @since         2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IRenameSettings {
+export type TRenameSettings = {
     override: boolean;
-}
-export default function __rename(src: string, newName: string, settings?: Partial<IRenameSettings>): Promise<void>;
+};
+export default function __rename(src: string, newName: string, settings?: Partial<TRenameSettings>): Promise<void>;

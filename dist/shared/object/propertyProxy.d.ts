@@ -39,11 +39,10 @@
  * @since         2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IPropertyProxyDescriptor {
+export type TPropertyProxyDescriptor = {
     get: (value: any) => any;
     set: (value: any) => any;
     configurable: boolean;
     enumarable: boolean;
-}
-export default function __propertyProxy(obj: any, property: string, descriptor: IPropertyProxyDescriptor, applySetterAtStart?: boolean): void;
-export {};
+};
+export default function __propertyProxy(obj: any, property: string, descriptor: TPropertyProxyDescriptor, applySetterAtStart?: boolean): void;

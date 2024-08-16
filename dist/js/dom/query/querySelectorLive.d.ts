@@ -42,7 +42,7 @@ import type { TWhenTrigger } from '../when/when.js';
  * @since           2.0.0
  * @author 	Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IQuerySelectorLiveSettings {
+export type TQuerySelectorLiveSettings = {
     rootNode: HTMLElement | Document;
     once: boolean;
     afterFirst?: Function;
@@ -50,10 +50,10 @@ export interface IQuerySelectorLiveSettings {
     firstOnly: boolean;
     when?: TWhenTrigger<string>;
     attributes: string[];
-}
-export interface IQuerySelectorLiveApi {
+};
+export type TQuerySelectorLiveApi = {
     cancel: Function;
-}
-type TQuerySelectorLiveCallback = ($elm: HTMLElement, api: IQuerySelectorLiveApi) => void;
-export default function __querySelectorLive(selector: string, cb: TQuerySelectorLiveCallback, settings?: Partial<IQuerySelectorLiveSettings>, _isFirstLevel?: boolean): IQuerySelectorLiveApi;
+};
+type TQuerySelectorLiveCallback = ($elm: HTMLElement, api: TQuerySelectorLiveApi) => void;
+export default function __querySelectorLive(selector: string, cb: TQuerySelectorLiveCallback, settings?: Partial<TQuerySelectorLiveSettings>, _isFirstLevel?: boolean): TQuerySelectorLiveApi;
 export {};

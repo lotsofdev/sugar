@@ -32,15 +32,15 @@
  * @since         2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IDeepFilterSettings {
+export type TDeepFilterSettings = {
     clone: boolean;
-}
-export interface IDeepFilterFilter {
-    (item: IDeepFilterItem): undefined | boolean;
-}
-export interface IDeepFilterItem {
+};
+export type TDeepFilterFilter = {
+    (item: TDeepFilterItem): undefined | boolean;
+};
+export type TDeepFilterItem = {
     key: string;
     value: any;
     isObject: boolean;
-}
-export default function __deepFilter(object: any, filter: IDeepFilterFilter, settings?: Partial<IDeepFilterSettings>): any;
+};
+export default function __deepFilter(object: any, filter: TDeepFilterFilter, settings?: Partial<TDeepFilterSettings>): any;

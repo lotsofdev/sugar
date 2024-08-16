@@ -36,9 +36,9 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IQuerySelectorSettings {
+export type TQuerySelectorSettings = {
     visible: boolean | null;
     inViewport: boolean | null;
     rootNode: HTMLElement;
-}
-export default function __querySelector(selector: string, settings?: Partial<IQuerySelectorSettings>): HTMLElement | undefined;
+};
+export default function __querySelector(selector: string, settings?: Partial<TQuerySelectorSettings>): HTMLElement | undefined;

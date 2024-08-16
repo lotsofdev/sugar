@@ -34,9 +34,8 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface ICircleConstrainPoint {
+export type TCircleConstrainPoint = {
     x: number;
     y: number;
-}
-export default function __circleConstrain(center: ICircleConstrainPoint, radius: number, point: ICircleConstrainPoint): ICircleConstrainPoint;
-export {};
+};
+export default function __circleConstrain(center: TCircleConstrainPoint, radius: number, point: TCircleConstrainPoint): TCircleConstrainPoint;

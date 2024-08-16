@@ -26,15 +26,15 @@ import * as rematrix from 'rematrix';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IGetScalePropertyResult {
+export type TGetScalePropertyResult = {
   x: number;
   y: number;
   z: number;
-}
+};
 
 export default function __getScaleProperty(
   $elm: HTMLElement,
-): IGetScalePropertyResult | undefined {
+): TGetScalePropertyResult | undefined {
   if (!window.getComputedStyle) return;
   const style = getComputedStyle($elm);
   const transform =

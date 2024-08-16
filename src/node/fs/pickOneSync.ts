@@ -11,7 +11,7 @@ import __micromatch from 'micromatch';
  * This function allows you to specify multiple files to check and pick one of them
  *
  * @param       {String[]}      filesNames          The names of the files you want to check
- * @param       {IPickOneSyncSettings}       [settings={}]       An object of settings to configure your research
+ * @param       {TPickOneSyncSettings}       [settings={}]       An object of settings to configure your research
  * @return     {SFile|String}                   Either an SFile instance if set in the config, or the path of the file found
  *
  * @todo        tests
@@ -29,15 +29,15 @@ import __micromatch from 'micromatch';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IPickOneSyncSettings {
+export type TPickOneSyncSettings = {
   cwd: string;
-}
+};
 
 export default function __pickOneSync(
   filesNames: string[],
-  settings?: Partial<IPickOneSyncSettings>,
+  settings?: Partial<TPickOneSyncSettings>,
 ): string {
-  const finalSettings: IPickOneSyncSettings = {
+  const finalSettings: TPickOneSyncSettings = {
     cwd: process.cwd(),
     ...(settings ?? {}),
   };

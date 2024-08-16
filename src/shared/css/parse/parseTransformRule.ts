@@ -12,7 +12,7 @@ import __parse from '../../../shared/string/parse.js';
  * Parse the transform rule of an element and returns a simple object with each properties separated.
  *
  * @param 		 {string}		 transformStr	            The transform string to parse
- * @return        {IParseTransformRuleResult}               An object with all the parsed transform properties
+ * @return        {TParseTransformRuleResult}               An object with all the parsed transform properties
  *
  * @todo      tests
  *
@@ -25,7 +25,7 @@ import __parse from '../../../shared/string/parse.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IParseTransformRuleResult {
+export type TParseTransformRuleResult = {
   scale: string | number;
   scaleX: string | number;
   scaleY: string | number;
@@ -40,14 +40,14 @@ export interface IParseTransformRuleResult {
   skew: string | number;
   skewX: string | number;
   skewY: string | number;
-}
+};
 
 export default function __parseTransformRule(
   transformStr: string,
-): IParseTransformRuleResult {
+): TParseTransformRuleResult {
   const transforms = transformStr.trim().split(/\) |\)/);
 
-  const result: IParseTransformRuleResult = {
+  const result: TParseTransformRuleResult = {
     scale: 1,
     scaleX: 1,
     scaleY: 1,

@@ -1,4 +1,4 @@
-export interface IDeepProxyActionObj {
+export type TDeepProxyActionObj = {
     object: any;
     target: string;
     key: string;
@@ -7,12 +7,12 @@ export interface IDeepProxyActionObj {
     fullAction: string;
     oldValue: any;
     value: any;
-}
-export interface IDeepProxySettings {
+};
+export type TDeepProxySettings = {
     deep: boolean;
     handleSet: boolean;
     handleGet: boolean;
     handleDelete: boolean;
     domElements: boolean;
-}
-export default function __deepProxy(object: any, handlerFn: any, settings?: Partial<IDeepProxySettings>): any;
+};
+export default function __deepProxy(object: any, handlerFn: any, settings?: Partial<TDeepProxySettings>): any;

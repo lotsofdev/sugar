@@ -31,9 +31,9 @@
  * @since     2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IReplaceTokensSettings {
+export type TReplaceTokensSettings = {
     regexp?: string;
     stripUndefined?: boolean;
-}
-declare function replaceTokens(string: string, tokensObj: any, settings?: IReplaceTokensSettings): string;
+};
+declare function replaceTokens(string: string, tokensObj: any, settings?: TReplaceTokensSettings): string;
 export default replaceTokens;

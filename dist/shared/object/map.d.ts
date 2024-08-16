@@ -38,12 +38,11 @@
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IMapObjProcessorArg {
+export type TMapObjProcessorArg = {
     value: any;
     key: string;
     prop: string;
     i: number;
     idx: number;
-}
-export default function __map(object: any, processor: (item: IMapObjProcessorArg) => any): any;
-export {};
+};
+export default function __map(object: any, processor: (item: TMapObjProcessorArg) => any): any;

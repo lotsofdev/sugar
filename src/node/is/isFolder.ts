@@ -23,13 +23,13 @@ import * as __fs from 'fs';
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IIsFolderSettings {
+export type TIsFolderSettings = {
   symlink?: boolean;
-}
+};
 
 export default function __isfolder(
   path: string,
-  settings: IIsFolderSettings = {},
+  settings: TIsFolderSettings = {},
 ) {
   settings = {
     symlink: true,

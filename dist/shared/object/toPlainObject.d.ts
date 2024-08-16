@@ -23,7 +23,7 @@
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IToPlainObjectSettings {
+export type TToPlainObjectSettings = {
     deep: boolean;
-}
-export default function __toPlainObject(object: any, settings?: Partial<IToPlainObjectSettings>): any;
+};
+export default function __toPlainObject(object: any, settings?: Partial<TToPlainObjectSettings>): any;

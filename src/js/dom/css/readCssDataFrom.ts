@@ -19,13 +19,13 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IReadCssDaraSettings {}
+export type TReadCssDaraSettings = {};
 
 export default function readCssDataFrom(
   $elm: HTMLElement,
-  settings?: Partial<IReadCssDaraSettings>,
+  settings?: Partial<TReadCssDaraSettings>,
 ): void {
-  // const finalSettings: IReadCssDaraSettings = {
+  // const finalSettings: TReadCssDaraSettings = {
   //     ...(settings ?? {}),
   // };
 

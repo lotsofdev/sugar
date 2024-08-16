@@ -12,7 +12,7 @@
  * @feature       Some settings to tweak the detection behavior
  *
  * @param 		{HTMLElement} 				$elm 				The element to monitor
- * @param 		{Partial<IWhenOutOfViewportSettings>} 					[settings={}]       Some settings to tweak the detection behavior
+ * @param 		{Partial<TWhenOutOfViewportSettings>} 					[settings={}]       Some settings to tweak the detection behavior
  * @return 		(Promise<HTMLElement>) 										The promise that will be resolved when the element exit the viewport
  *
  * @setting       {String}      [offset=10px]     An offset to detect sooner or later the element exits the viewport
@@ -33,7 +33,7 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IWhenOutOfViewportSettings {
+export type TWhenOutOfViewportSettings = {
     offset: string | number;
-}
-export default function __whenOutOfViewport($elm: HTMLElement, settings?: Partial<IWhenOutOfViewportSettings>): Promise<unknown>;
+};
+export default function __whenOutOfViewport($elm: HTMLElement, settings?: Partial<TWhenOutOfViewportSettings>): Promise<unknown>;

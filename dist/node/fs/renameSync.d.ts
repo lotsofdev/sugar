@@ -9,7 +9,7 @@
  *
  * @param       {String}              src           The source path to moveSync
  * @param       {String}              dest          The destination path
- * @param       {IRenameSyncSettings} [settings={}] The settings for the operation
+ * @param       {TRenameSyncSettings} [settings={}] The settings for the operation
  * @return      {String}                          The new path
  *
  * @snippet         __renameSync($1, $2)
@@ -22,8 +22,8 @@
  * @since         2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IRenameSyncSettings {
+export type TRenameSyncSettings = {
     override: boolean;
     dry: boolean;
-}
-export default function __renameSync(src: string, newName: string, settings?: Partial<IRenameSyncSettings>): string;
+};
+export default function __renameSync(src: string, newName: string, settings?: Partial<TRenameSyncSettings>): string;

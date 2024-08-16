@@ -27,9 +27,9 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IGetTranslatePropertiesResult {
+export type TGetTranslatePropertiesResult = {
     x: number;
     y: number;
     z: number;
-}
-export default function __getTranslateProperties($elm: HTMLElement): IGetTranslatePropertiesResult;
+};
+export default function __getTranslateProperties($elm: HTMLElement): TGetTranslatePropertiesResult;

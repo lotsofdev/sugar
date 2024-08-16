@@ -28,9 +28,9 @@
  * @since     2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IToStringSettings {
+export type TToStringSettings = {
     beautify?: boolean;
     verbose?: boolean;
-}
-declare function fn(value: any, settings?: IToStringSettings): string;
+};
+declare function fn(value: any, settings?: TToStringSettings): string;
 export default fn;

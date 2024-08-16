@@ -30,24 +30,24 @@ import __rgbaToHsla from './rgbaToHsla.js';
  * @since         2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IParseColorRgbaResult {
+export type TParseColorRgbaResult = {
   r: number;
   g: number;
   b: number;
   a: number;
-}
+};
 
-interface IParseColorHslaResult {
+export type TParseColorHslaResult = {
   h: number;
   s: number;
   l: number;
   a: number;
-}
+};
 
 export default function __parseColor(
   color: string,
   format = 'rgba',
-): IParseColorHslaResult | IParseColorRgbaResult {
+): TParseColorHslaResult | TParseColorRgbaResult {
   color = color.replace(/\s/g, '');
 
   let parsedColor: any;

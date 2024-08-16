@@ -15,7 +15,7 @@ import __deepMerge from '../../shared/object/deepMerge.js';
  * has not been updated...
  *
  * @param           {String}            filePath      The folder path you want to get the hash back
- * @param           {IFileHashSettings}       [settings={}]       Some settings to configure your hash generation process
+ * @param           {TFileHashSettings}       [settings={}]       Some settings to configure your hash generation process
  * @return          {String}                            The calculated folder hash
  *
  * @setting         {String}            [algo='sha356']             The algorithm to use
@@ -33,21 +33,21 @@ import __deepMerge from '../../shared/object/deepMerge.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IFileHashIncludeSettings {
+export type TFileHashIncludeSettings = {
   ctime: boolean;
-}
+};
 
-export interface IFileHashSettings {
+export type TFileHashSettings = {
   algo: string;
   digest: BinaryToTextEncoding;
-  include: Partial<IFileHashIncludeSettings>;
-}
+  include: Partial<TFileHashIncludeSettings>;
+};
 
 export default function __fileHashSync(
   filePath: string,
-  settings: Partial<IFileHashSettings> = {},
+  settings: Partial<TFileHashSettings> = {},
 ): string {
-  settings = <IFileHashSettings>__deepMerge(
+  settings = <TFileHashSettings>__deepMerge(
     {
       algo: 'sha256',
       digest: 'base64',

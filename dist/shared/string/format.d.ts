@@ -25,6 +25,6 @@ import { format } from 'fecha';
  * @since     2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-type tFormat = 'isoDate' | 'isoDateTime' | 'isoTime' | 'integer' | 'number' | 'alphanum' | 'hex' | 'hexa' | 'creditCard';
-declare function format(string: string, format: tFormat): string;
+export type TFormat = 'isoDate' | 'isoDateTime' | 'isoTime' | 'integer' | 'number' | 'alphanum' | 'hex' | 'hexa' | 'creditCard';
+declare function format(string: string, format: TFormat): string;
 export default format;

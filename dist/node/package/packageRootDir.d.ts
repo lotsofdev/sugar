@@ -27,9 +27,9 @@
  * @see       https://www.npmjs.com/package/find-package-json
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IPackageRootSettings {
+export type TPackageRootSettings = {
     highest: boolean;
     upCount: number | undefined;
     requiredProperties: string[];
-}
-export default function __packageRootDir(from?: string, settings?: Partial<IPackageRootSettings>): any;
+};
+export default function __packageRootDir(from?: string, settings?: Partial<TPackageRootSettings>): any;

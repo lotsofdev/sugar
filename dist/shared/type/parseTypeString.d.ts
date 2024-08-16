@@ -10,7 +10,7 @@
  * an object defining this type string
  *
  * @param     {String}        typeString      The type string to parse
- * @return    {ITypeStringObject[]}             An array of object(s) describing the type string passed
+ * @return    {TTypeStringObject[]}             An array of object(s) describing the type string passed
  *
  * @snippet         __parseTypeString($1)
  *
@@ -28,11 +28,10 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com>
  */
-export interface ITypeStringObject {
+export type TTypeStringObject = {
     type: string;
     of: string[] | undefined;
     value?: any;
-}
-export interface IParseTypeStringSingleResultObj {
-}
-export default function __parseTypeString(typeString: string): ITypeStringObject[];
+};
+export type TParseTypeStringSingleResultObj = {};
+export default function __parseTypeString(typeString: string): TTypeStringObject[];

@@ -21,9 +21,9 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface ITransformedKeyframeDeclaration {
+export type TTransformedKeyframeDeclaration = {
     percentage: number;
     offset: number;
     rules: Record<string, any>;
-}
-export default function transformKeyframeDeclaration(keyFrameRule: any): ITransformedKeyframeDeclaration[];
+};
+export default function transformKeyframeDeclaration(keyFrameRule: any): TTransformedKeyframeDeclaration[];

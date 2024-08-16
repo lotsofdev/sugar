@@ -37,19 +37,19 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IEscapeQueueSettings {
+export type TEscapeQueueSettings = {
     id?: string;
     rootNode?: HTMLElement | Document | HTMLElement[] | Document[];
-}
-export interface IEscapeQueueApi {
+};
+export type TEscapeQueueApi = {
     cancel: Function;
-}
-export interface IEscapeQueueItem {
+};
+export type TEscapeQueueItem = {
     id: string;
     callback?: Function;
     resolve: Function;
-}
-export interface IEscapeQueueResult extends Promise<void> {
+};
+export type TEscapeQueueResult = Promise<void> & {
     cancel: Function;
-}
-export default function escapeQueue(callback?: Function, settings?: IEscapeQueueSettings): IEscapeQueueResult;
+};
+export default function escapeQueue(callback?: Function, settings?: TEscapeQueueSettings): TEscapeQueueResult;

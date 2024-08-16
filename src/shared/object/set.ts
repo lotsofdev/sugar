@@ -32,17 +32,17 @@ import __get from './get.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface ISetSettings {
+export type TSetSettings = {
   preferAssign: boolean;
-}
+};
 
 export default function __set(
   obj: any,
   path: string | string[],
   value: any,
-  settings?: ISetSettings,
+  settings?: TSetSettings,
 ): void {
-  const finalSettings: ISetSettings = {
+  const finalSettings: TSetSettings = {
     preferAssign: false,
     ...(settings ?? {}),
   };

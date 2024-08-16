@@ -29,9 +29,9 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IWhenVisibleSettings {
+export type TWhenVisibleSettings = {
     whenVisible?: Function;
     whenInvisible?: Function;
     once: boolean;
-}
-export default function __whenVisible($elm: HTMLElement, settings?: Partial<IWhenVisibleSettings>): Promise<HTMLElement>;
+};
+export default function __whenVisible($elm: HTMLElement, settings?: Partial<TWhenVisibleSettings>): Promise<HTMLElement>;

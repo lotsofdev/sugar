@@ -12,7 +12,7 @@
  * @feature       Some settings to tweak the detection behavior
  *
  * @param 		{HTMLElement} 				$elm 				The element to monitor
- * @param 		{Partial<IWhenOutOfViewportSettings>} 					[settings={}]       Some settings to tweak the detection behavior
+ * @param 		{Partial<TWhenOutOfViewportSettings>} 					[settings={}]       Some settings to tweak the detection behavior
  * @return 		(Promise<HTMLElement>) 										The promise that will be resolved when the element exit the viewport
  *
  * @setting       {String}      [offset=10px]     An offset to detect sooner or later the element exits the viewport

@@ -25,7 +25,7 @@
  * @since           2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IToBaseSettings {
+export type TToBaseSettings = {
     chars: string;
-}
-export default function __toBase(num: number, base: number, settings?: IToBaseSettings): string;
+};
+export default function __toBase(num: number, base: number, settings?: TToBaseSettings): string;

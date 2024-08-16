@@ -32,14 +32,14 @@ import __camelCase from '../string/camelCase.js';
  * @since           2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface ICamelCasePropsSettings {
+export type TCamelCasePropsSettings = {
   deep: boolean;
-}
+};
 export default function __camelCaseProps(
   object: any,
-  settings?: Partial<ICamelCasePropsSettings>,
+  settings?: Partial<TCamelCasePropsSettings>,
 ): any {
-  const finalSettings: ICamelCasePropsSettings = {
+  const finalSettings: TCamelCasePropsSettings = {
     deep: true,
     ...(settings ?? {}),
   };

@@ -33,9 +33,9 @@
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IDeepCleanSettings {
+export type TDeepCleanSettings = {
     array?: boolean;
     clone?: boolean;
     cleaner(value: any): boolean;
-}
-export default function __deepClean(objectOrArray: any, settings?: IDeepCleanSettings): any;
+};
+export default function __deepClean(objectOrArray: any, settings?: TDeepCleanSettings): any;

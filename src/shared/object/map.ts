@@ -39,17 +39,17 @@
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IMapObjProcessorArg {
+export type TMapObjProcessorArg = {
   value: any;
   key: string;
   prop: string;
   i: number;
   idx: number;
-}
+};
 
 export default function __map(
   object: any,
-  processor: (item: IMapObjProcessorArg) => any,
+  processor: (item: TMapObjProcessorArg) => any,
 ): any {
   for (let i = 0; i < Object.keys(object).length; i++) {
     const prop = Object.keys(object)[i];

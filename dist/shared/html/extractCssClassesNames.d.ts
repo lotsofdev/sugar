@@ -24,8 +24,8 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IExtractCssClassesNamesSettings {
+export type TExtractCssClassesNamesSettings = {
     expandPleasantCssClassname?: boolean;
     includeIds?: boolean;
-}
-export default function __extractCssClassesNames(html: string, settings?: Partial<IExtractCssClassesNamesSettings>): string[];
+};
+export default function __extractCssClassesNames(html: string, settings?: Partial<TExtractCssClassesNamesSettings>): string[];

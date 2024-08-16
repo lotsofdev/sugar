@@ -25,12 +25,12 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IToPlainObjectSettings {
+export type TToPlainObjectSettings = {
   deep: boolean;
-}
+};
 export default function __toPlainObject(
   object: any,
-  settings?: Partial<IToPlainObjectSettings>,
+  settings?: Partial<TToPlainObjectSettings>,
 ): any {
   const finalSettings = {
     deep: true,

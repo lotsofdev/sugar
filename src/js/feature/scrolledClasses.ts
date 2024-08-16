@@ -10,7 +10,7 @@
  * 1. Passing some offsets through the settings
  * 2. Setting the `--s-scrolled-classes-{setting}` css variable in your style
  *
- * @param           {IScrolledClassesSettings}          [settings={}]           The settings you want to override
+ * @param           {TScrolledClassesSettings}          [settings={}]           The settings you want to override
  *
  * @setting         {number}        [offset=100]        The offset you want before adding the classes
  * @setting         {number}        [offsetX=null]             The offset x you want before adding the classes
@@ -30,15 +30,15 @@
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IScrolledClassesSettings {
+export type TScrolledClassesSettings = {
   offset: number;
   offsetX: number;
   offsetY: number;
   class: string;
-}
+};
 
 export default function __scrolledClasses(
-  settings?: IScrolledClassesSettings,
+  settings?: TScrolledClassesSettings,
 ): void {
   const style = window.getComputedStyle(document.body);
 

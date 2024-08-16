@@ -29,11 +29,10 @@
  * @since     2.0.0
  * @author    João Filipe Ventura Coelho <joaoventura93@outlook.com>
  */
-interface ISimplifySettings {
+export type TSimplifySettings = {
     specialChars?: boolean;
     lowerCase?: boolean;
     dashSpace?: boolean;
     trim?: boolean;
-}
-export default function __simplify(string: string, settings?: ISimplifySettings): string;
-export {};
+};
+export default function __simplify(string: string, settings?: TSimplifySettings): string;

@@ -35,10 +35,10 @@
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IDeepMapSettings {
+export type TDeepMapSettings = {
     classInstances?: boolean;
     array?: boolean;
     clone?: boolean;
     privateProps?: boolean;
-}
-export default function __deepMap(objectOrArray: any, processor?: Function, settings?: IDeepMapSettings, _path?: never[]): any;
+};
+export default function __deepMap(objectOrArray: any, processor?: Function, settings?: TDeepMapSettings, _path?: never[]): any;

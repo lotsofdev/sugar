@@ -10,7 +10,7 @@
  * You can specify what you want to take care of using the settings object
  *
  * @param       {String}        path        The path you want to check
- * @param       {IExistsSettings}       [settings={}]       Some settings for what you want to take care of
+ * @param       {TExistsSettings}       [settings={}]       Some settings for what you want to take care of
  * @return      {Boolean}                       true if exists, false if not
  *
  * @setting       {Boolean}       [directory=true]      Specify if you want to take care of directories
@@ -29,9 +29,9 @@
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IExistsSettings {
+export type TExistsSettings = {
     directory: boolean;
     file: boolean;
     symlink: boolean;
-}
-export default function __exists(path: string, settings?: Partial<IExistsSettings>): Promise<boolean>;
+};
+export default function __exists(path: string, settings?: Partial<TExistsSettings>): Promise<boolean>;

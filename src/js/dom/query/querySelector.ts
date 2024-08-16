@@ -41,18 +41,18 @@ import __closestNotVisibleElement from './closestNotVisibleElement.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IQuerySelectorSettings {
+export type TQuerySelectorSettings = {
   visible: boolean | null;
   inViewport: boolean | null;
   rootNode: HTMLElement;
-}
+};
 
 export default function __querySelector(
   selector: string,
-  settings: Partial<IQuerySelectorSettings> = {},
+  settings: Partial<TQuerySelectorSettings> = {},
 ): HTMLElement | undefined {
   // extend settings
-  const finalSettings: IQuerySelectorSettings = {
+  const finalSettings: TQuerySelectorSettings = {
     visible: null,
     inViewport: null,
     rootNode: document.body,

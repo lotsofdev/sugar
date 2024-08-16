@@ -36,15 +36,15 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IDeepCleanSettings {
+export type TDeepCleanSettings = {
   array?: boolean;
   clone?: boolean;
   cleaner(value: any): boolean;
-}
+};
 
 export default function __deepClean(
   objectOrArray: any,
-  settings?: IDeepCleanSettings,
+  settings?: TDeepCleanSettings,
 ) {
   settings = {
     array: true,

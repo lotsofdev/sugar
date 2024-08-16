@@ -7,7 +7,7 @@
  *
  * This function simply returns the "node_modules" directory path
  *
- * @param       {InodeModulesDirSettings}      [settings={}]       Some settings to configure your process
+ * @param       {TNodeModulesDirSettings}      [settings={}]       Some settings to configure your process
  * @return      {String}                      The package path
  *
  * @setting     {String}        [cwd=process.cwd()]        The directory in which you want to start the research
@@ -23,9 +23,9 @@
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface InodeModulesDirSettings {
+export type TNodeModulesDirSettings = {
     cwd: string;
     monorepo: boolean;
     checkExistence: boolean;
-}
-export default function nodeModulesDir(settings?: Partial<InodeModulesDirSettings>): any;
+};
+export default function nodeModulesDir(settings?: Partial<TNodeModulesDirSettings>): any;

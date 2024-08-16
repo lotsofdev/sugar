@@ -15,7 +15,7 @@ import __isPlainObject from '../is/isPlainObject.js';
  * Note that by default the resulting object is a clone and do not have the same reference that the first passed object.
  *
  * @param           {Object}            args...        Pass all the objects you want to merge
- * @param           {IDeepMergeSettings}            [settings={}]       Pass as last object the settings one that can contain these properties:
+ * @param           {TDeepMergeSettings}            [settings={}]       Pass as last object the settings one that can contain these properties:
  * @return          {Object}                              The merged object result
  *
  * @setting         {Boolean}           [array=false]      Merge or not arrays
@@ -36,13 +36,13 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IDeepMergeSettings {
+export type TDeepMergeSettings = {
   array?: boolean;
   clone?: boolean;
-}
+};
 
 export default function __deepMerge(...args: any[]): any {
-  let settings: IDeepMergeSettings = {},
+  let settings: TDeepMergeSettings = {},
     hasSettings = false;
   const potentialSettings = args[args.length - 1] ?? {};
   if (
@@ -55,7 +55,7 @@ export default function __deepMerge(...args: any[]): any {
     settings = potentialSettings;
   }
 
-  let finalSettings: IDeepMergeSettings = {
+  let finalSettings: TDeepMergeSettings = {
     array: false,
     clone: true,
     ...settings,

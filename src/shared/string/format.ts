@@ -27,7 +27,7 @@ import { format } from 'fecha';
  * @since     2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-type tFormat =
+export type TFormat =
   | 'isoDate'
   | 'isoDateTime'
   | 'isoTime'
@@ -38,7 +38,7 @@ type tFormat =
   | 'hexa'
   | 'creditCard';
 
-function format(string: string, format: tFormat): string {
+function format(string: string, format: TFormat): string {
   let schema = [];
 
   switch (format) {

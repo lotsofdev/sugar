@@ -32,9 +32,8 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IDistanceBetweenPoint {
+export type TDistanceBetweenPoint = {
     x: number;
     y: number;
-}
-export default function __distanceBetween(point1: IDistanceBetweenPoint, point2: IDistanceBetweenPoint): number;
-export {};
+};
+export default function __distanceBetween(point1: TDistanceBetweenPoint, point2: TDistanceBetweenPoint): number;

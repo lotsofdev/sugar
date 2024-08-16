@@ -36,14 +36,14 @@ import __flatten from './flatten.js';
  * @since     2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IGetGlobSettings {
+export type TGetGlobSettings = {
   deepize?: boolean;
-}
+};
 
 export default function __getGlob(
   obj: any,
   glob: string,
-  settings: IGetGlobSettings = {},
+  settings: TGetGlobSettings = {},
 ): any {
   settings = {
     deepize: true,

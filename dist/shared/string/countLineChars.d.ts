@@ -31,10 +31,9 @@
  * @since     2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface ICountLineCharsSettings {
+export type TCountLineCharsSettings = {
     htmlTags?: boolean;
     terminalSpecialChars?: boolean;
     newLineChars?: boolean;
-}
-export default function __countLineChars(line: string, count?: ICountLineCharsSettings): number;
-export {};
+};
+export default function __countLineChars(line: string, count?: TCountLineCharsSettings): number;

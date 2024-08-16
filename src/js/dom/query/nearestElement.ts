@@ -13,7 +13,7 @@ import __distanceBetween from '../../../shared/math/distanceBetween.js';
  *
  * @param           {HTMLElement}           $from            The element from which to start the search
  * @param           {HTMLElement[]}          $elements       The elements list to search in
- * @param           {INearestElementSettings}         [settings={}]       Some settings to configure your search
+ * @param           {TNearestElementSettings}         [settings={}]       Some settings to configure your search
  * @return        {HTMLElement}                           The nearest element found
  *
  * @todo      tests
@@ -29,16 +29,16 @@ import __distanceBetween from '../../../shared/math/distanceBetween.js';
  * @since           2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivier.bossel@gmail.com)
  */
-export interface INearestElementSettings {
+export type TNearestElementSettings = {
   direction?: 'top' | 'right' | 'bottom' | 'left';
-}
+};
 
 export default function __nearestElement(
   $from: HTMLElement,
   $elements: HTMLElement[],
-  settings?: INearestElementSettings,
+  settings?: TNearestElementSettings,
 ): HTMLElement | undefined {
-  const finalParams: INearestElementSettings = {
+  const finalParams: TNearestElementSettings = {
     ...(settings ?? {}),
   };
 

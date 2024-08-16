@@ -36,16 +36,16 @@ import __stripCssComments from 'strip-css-comments';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IStripCssCommentsSettings {
+export type TStripCssCommentsSettings = {
   block: boolean;
   line: boolean;
-}
+};
 
 export default function stripCssComments(
   css,
-  settings?: IStripCssCommentsSettings,
+  settings?: TStripCssCommentsSettings,
 ): string {
-  const finalSettings: IStripCssCommentsSettings = {
+  const finalSettings: TStripCssCommentsSettings = {
     block: true,
     line: true,
     ...(settings ?? {}),

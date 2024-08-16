@@ -19,7 +19,7 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 export default function readCssDataFrom($elm, settings) {
-    // const finalSettings: IReadCssDaraSettings = {
+    // const finalSettings: TReadCssDaraSettings = {
     //     ...(settings ?? {}),
     // };
     let data;

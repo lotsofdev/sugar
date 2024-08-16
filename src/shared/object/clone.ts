@@ -31,11 +31,11 @@ import __deepClone from 'lodash.clonedeep';
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface ICloneSettings {
+export type TCloneSettings = {
   deep?: boolean;
-}
+};
 
-export default function clone(object: any, settings: ICloneSettings = {}): any {
+export default function clone(object: any, settings: TCloneSettings = {}): any {
   settings = {
     deep: false,
     ...settings,

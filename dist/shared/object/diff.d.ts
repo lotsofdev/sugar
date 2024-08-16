@@ -45,13 +45,12 @@
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IDiffSettings {
+export type TDiffSettings = {
     deep?: boolean;
     added?: boolean;
     deleted?: boolean;
     equals?: boolean;
     emptyObject?: boolean;
     updated?: boolean;
-}
-export default function __diff(object1: any, object2: any, settings?: IDiffSettings): any;
-export {};
+};
+export default function __diff(object1: any, object2: any, settings?: TDiffSettings): any;

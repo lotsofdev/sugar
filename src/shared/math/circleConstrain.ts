@@ -37,16 +37,16 @@ import distanceBetween from './distanceBetween.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface ICircleConstrainPoint {
+export type TCircleConstrainPoint = {
   x: number;
   y: number;
-}
+};
 
 export default function __circleConstrain(
-  center: ICircleConstrainPoint,
+  center: TCircleConstrainPoint,
   radius: number,
-  point: ICircleConstrainPoint,
-): ICircleConstrainPoint {
+  point: TCircleConstrainPoint,
+): TCircleConstrainPoint {
   const dist = distanceBetween(center, point);
   if (dist <= radius) {
     return point;

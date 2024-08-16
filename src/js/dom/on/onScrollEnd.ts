@@ -11,7 +11,7 @@
  *
  * @param       {HTMLElement}           $elm        The element to listen on
  * @param       {Function}              callback        The function to call when scroll end is detected
- * @param       {IOnScrollEndSettings}      [settings={}]       Some settings like offset, etc...
+ * @param       {TOnScrollEndSettings}      [settings={}]       Some settings like offset, etc...
  *
  * @setting         {Number}        [offset=20]             An offset to detect earlier the end of the scroll
  * @setting         {boolean}       [once=false]            true if you want to detect the scroll end just once
@@ -35,18 +35,18 @@
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IOnScrollEndSettings {
+export type TOnScrollEndSettings = {
   offset: number;
   once: boolean;
   times: number;
-}
+};
 
 export default function __onScrollEnd(
   $elm: HTMLElement,
   callback: Function,
-  settings?: IOnScrollEndSettings,
+  settings?: TOnScrollEndSettings,
 ): void {
-  const finalSettings: IOnScrollEndSettings = {
+  const finalSettings: TOnScrollEndSettings = {
     offset: 20,
     once: false,
     times: -1,

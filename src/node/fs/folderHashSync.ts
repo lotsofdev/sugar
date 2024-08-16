@@ -18,7 +18,7 @@ import __sha256 from '../../shared/crypto/sha256.js';
  * has not been updated...
  *
  * @param           {String}            folderPath      The folder path you want to get the hash back
- * @param           {IFolderHashSettings}       [settings={}]       Some settings to configure your hash generation process
+ * @param           {TFolderHashSettings}       [settings={}]       Some settings to configure your hash generation process
  * @return          {String}                            The calculated folder hash
  *
  * @setting         {Boolean}           [recursive=true]            Specify if you want to generate a hash using also the children or not
@@ -35,19 +35,19 @@ import __sha256 from '../../shared/crypto/sha256.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IFolderHashIncludeSettings {
+export type TFolderHashIncludeSettings = {
   ctime: boolean;
-}
-export interface IFolderHashSettings {
+};
+export type TFolderHashSettings = {
   recursive: boolean;
   algo: string;
   digest: BinaryToTextEncoding;
-  include: Partial<IFolderHashIncludeSettings>;
-}
+  include: Partial<TFolderHashIncludeSettings>;
+};
 
 export default function __folderHashSync(
   folderPath: string,
-  settings: Partial<IFolderHashSettings> = {},
+  settings: Partial<TFolderHashSettings> = {},
 ): string {
   settings = __deepMerge(
     {

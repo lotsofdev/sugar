@@ -23,16 +23,16 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IIsScrollableSettings {
+export type TIsScrollableSettings = {
   x: boolean;
   y: boolean;
-}
+};
 
 export default function __isScrollable(
   $elm: HTMLElement,
-  settings?: Partial<IIsScrollableSettings>,
+  settings?: Partial<TIsScrollableSettings>,
 ): boolean {
-  settings = <IIsScrollableSettings>{
+  settings = <TIsScrollableSettings>{
     x: true,
     y: true,
     ...(settings ?? {}),

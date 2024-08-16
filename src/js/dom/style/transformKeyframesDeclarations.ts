@@ -27,11 +27,11 @@ import __getDefinedStyles from './getDefinedStyles.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface ITransformedKeyframeDeclaration {
+export type TTransformedKeyframeDeclaration = {
   percentage: number;
   offset: number;
   rules: Record<string, any>;
-}
+};
 
 function normalizePropertyName(propertyName) {
   return __camelCase(__removeVendorPrefix(propertyName));
@@ -39,7 +39,7 @@ function normalizePropertyName(propertyName) {
 
 export default function transformKeyframeDeclaration(
   keyFrameRule,
-): ITransformedKeyframeDeclaration[] {
+): TTransformedKeyframeDeclaration[] {
   // Convert keyFrame.keyText to integers holding percentage of keyframe
   const percentages = __parseKeyframeKey(keyFrameRule.keyText);
   const style = __getDefinedStyles(keyFrameRule.style);

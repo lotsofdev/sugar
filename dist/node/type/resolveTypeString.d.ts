@@ -1,4 +1,4 @@
-import { ITypeStringObject } from '../../shared/type/parseTypeString.js';
+import { TTypeStringObject } from '../../shared/type/parseTypeString.js';
 /**
  * @name            resolveTypeString
  * @namespace       node.type
@@ -11,8 +11,8 @@ import { ITypeStringObject } from '../../shared/type/parseTypeString.js';
  * an object defining the resolved type with interface if defined, etc...
  *
  * @param     {String}        typeString      The type string to parse
- * @param       {Partial<IResolveTypeStringSettings>}       [settings={}]     A setting object to configure your resolve process
- * @return    {Promise<IResolveTypeStringResult>}             A promise resolved once the type string has been resolved
+ * @param       {Partial<TResolveTypeStringSettings>}       [settings={}]     A setting object to configure your resolve process
+ * @return    {Promise<TResolveTypeStringResult>}             A promise resolved once the type string has been resolved
  *
  * @setting         {String}       [cwd=process.cwd()]          The cwd to use to resolve the type string when they are path
  *
@@ -32,11 +32,11 @@ import { ITypeStringObject } from '../../shared/type/parseTypeString.js';
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com>
  */
-export interface IResolveTypeStringResult {
-    types: ITypeStringObject[];
+export type TResolveTypeStringResult = {
+    types: TTypeStringObject[];
     raw: string;
-}
-export interface IResolveTypeStringSettings {
+};
+export type TResolveTypeStringSettings = {
     cwd: string;
-}
-export default function __resolveTypeString(typeString: string, settings?: Partial<IResolveTypeStringSettings>): Promise<IResolveTypeStringResult>;
+};
+export default function __resolveTypeString(typeString: string, settings?: Partial<TResolveTypeStringSettings>): Promise<TResolveTypeStringResult>;

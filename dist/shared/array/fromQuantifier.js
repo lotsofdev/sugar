@@ -11,7 +11,7 @@
  * s-postcss-sugar-plugin for the `@s.lod(&gt;2)` mixin.
  *
  * @param       {String|Number}     quantifier          The quantifier to generate
- * @param       {IFromQuantifierSettings}       [settings={}]           Some settings to configure your array generation
+ * @param       {TFromQuantifierSettings}       [settings={}]           Some settings to configure your array generation
  * @return    {Array}                                   The generated array
  *
  * @setting         {Number}        max             The maximum wanted when using > and >= quantifiers

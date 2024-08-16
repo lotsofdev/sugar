@@ -11,7 +11,7 @@
  * - `"`, `'`, `”`, '`'
  *
  * @param    {String}    string    The string to process
- * @param    {IUnquoteSettings}    [settings={}]    Some settings to configure your unquoting process
+ * @param    {TUnquoteSettings}    [settings={}]    Some settings to configure your unquoting process
  * @return    {String}    The unquoted string
  *
  * @todo      tests

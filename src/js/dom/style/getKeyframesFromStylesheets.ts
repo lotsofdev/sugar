@@ -2,10 +2,10 @@ import __getCssRulesFromStylesheet from './getCssRulesFromStylesheet.js';
 
 import __getKeyframesDeclarations from './getKeyframesDeclarations.js';
 import __transformKeyframeDeclaration, {
-  ITransformedKeyframeDeclaration,
+  TTransformedKeyframeDeclaration,
 } from './transformKeyframesDeclarations.js';
 
-export interface IKeyframe {
+export type TKeyframe = {
   delay?: number;
   direction:
     | 'normal'
@@ -36,7 +36,7 @@ export interface IKeyframe {
     | 'revert-layer'
     | 'unset'
     | number;
-  keyframes: ITransformedKeyframeDeclaration[];
+  keyframes: TTransformedKeyframeDeclaration[];
   name: string;
   playState:
     | 'paused'
@@ -47,12 +47,12 @@ export interface IKeyframe {
     | 'revert-layer'
     | 'unset';
   timingFunction: string;
-}
+};
 
 export default function getKeyframesFromStylesheets(
   animationName,
   styleSheets,
-): IKeyframe[] {
+): TKeyframe[] {
   // Collect CSSRules present in the document
   const CSSRules = [].slice
     .call(styleSheets)

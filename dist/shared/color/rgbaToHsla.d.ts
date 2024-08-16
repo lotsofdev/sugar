@@ -1,8 +1,7 @@
-interface IRgbaToHslaResult {
+export type TRgbaToHslaResult = {
     h: number;
     s: number;
     l: number;
     a: number;
-}
-export default function __rgbaToHsla(r: string | number | any, g: number, b: number, a?: number): IRgbaToHslaResult;
-export {};
+};
+export default function __rgbaToHsla(r: string | number | any, g: number, b: number, a?: number): TRgbaToHslaResult;

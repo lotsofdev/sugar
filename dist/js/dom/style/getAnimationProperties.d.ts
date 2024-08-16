@@ -31,7 +31,7 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IGetAnimationPropertiesObject {
+export type TGetAnimationPropertiesObject = {
     name: string;
     duration: number;
     delay: number;
@@ -40,9 +40,9 @@ export interface IGetAnimationPropertiesObject {
     direction: string;
     fillMode: string;
     playState: string;
-}
-export interface IGetAnimationPropertiesResult {
+};
+export type TGetAnimationPropertiesResult = {
     totalDuration: number;
-    animations: IGetAnimationPropertiesObject[];
-}
-export default function __getAnimationProperties(elm: HTMLElement): IGetAnimationPropertiesResult;
+    animations: TGetAnimationPropertiesObject[];
+};
+export default function __getAnimationProperties(elm: HTMLElement): TGetAnimationPropertiesResult;

@@ -15,7 +15,7 @@
  *
  * @param       {HTMLElement}         elm         The HTMLElement on which to detect the swipe
  * @param       {Function}            cb          The function to call on swipe. The callback function has as parameter an object that containthe swipe direction like left, right, up and down
- * @param       {Partial<IOnSwipeSettings>}     [settings={}]           Some settings to configure your swipe detection
+ * @param       {Partial<TOnSwipeSettings>}     [settings={}]           Some settings to configure your swipe detection
  *
  * @setting       {Number}              [threshold=100]       The swipe threshold
  *
@@ -44,15 +44,15 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IOnSwipeSettings {
+export type TOnSwipeSettings = {
     threshold: number;
-}
-export interface IOnSwipeResult {
+};
+export type TOnSwipeResult = {
     distanceX: number;
     distanceY: number;
     left: boolean;
     right: boolean;
     up: boolean;
     down: boolean;
-}
-export default function __onSwipe(elm: HTMLElement, cb: Function, settings?: Partial<IOnSwipeSettings>): void;
+};
+export default function __onSwipe(elm: HTMLElement, cb: Function, settings?: Partial<TOnSwipeSettings>): void;

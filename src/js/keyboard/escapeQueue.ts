@@ -40,26 +40,26 @@ import __uniqid from '../string/uniqid.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IEscapeQueueSettings {
+export type TEscapeQueueSettings = {
   id?: string;
   rootNode?: HTMLElement | Document | HTMLElement[] | Document[];
-}
+};
 
-export interface IEscapeQueueApi {
+export type TEscapeQueueApi = {
   cancel: Function;
-}
+};
 
-export interface IEscapeQueueItem {
+export type TEscapeQueueItem = {
   id: string;
   callback?: Function;
   resolve: Function;
-}
+};
 
-export interface IEscapeQueueResult extends Promise<void> {
+export type TEscapeQueueResult = Promise<void> & {
   cancel: Function;
-}
+};
 
-const _escapeQueue: IEscapeQueueItem[] = [];
+const _escapeQueue: TEscapeQueueItem[] = [];
 const _escapeQueueMap = new WeakMap();
 let _isEscaping = false;
 
@@ -69,10 +69,10 @@ class CancelablePromise extends Promise<void> {
 
 export default function escapeQueue(
   callback?: Function,
-  settings?: IEscapeQueueSettings,
-): IEscapeQueueResult {
+  settings?: TEscapeQueueSettings,
+): TEscapeQueueResult {
   const pro = new CancelablePromise((resolve) => {
-    const finalSettings: IEscapeQueueSettings = {
+    const finalSettings: TEscapeQueueSettings = {
       rootNode: document,
       ...(settings ?? {}),
     };
@@ -101,14 +101,14 @@ export default function escapeQueue(
           _isEscaping = false;
         });
 
-        const queueItem = <IEscapeQueueItem>_escapeQueue.pop();
+        const queueItem = <TEscapeQueueItem>_escapeQueue.pop();
         queueItem.callback?.();
         queueItem.resolve();
       });
     });
 
     // create the queue item to register
-    const queueItem: IEscapeQueueItem = {
+    const queueItem: TEscapeQueueItem = {
       id: finalSettings.id ?? __uniqid(),
       callback,
       resolve,
@@ -122,7 +122,7 @@ export default function escapeQueue(
     });
 
     if (finalSettings.id) {
-      const existing = <IEscapeQueueItem>(
+      const existing = <TEscapeQueueItem>(
         _escapeQueue.find((i) => i.id === finalSettings.id)
       );
       if (existing) {

@@ -10,7 +10,7 @@
  * to it.
  *
  * @param       {Any}              data          The data to write in the file
- * @param       {IWriteTmpFileSettings}         [settings={}]           Some settings to customize your temp file creation
+ * @param       {TWriteTmpFileSettings}         [settings={}]           Some settings to customize your temp file creation
  * @return      {Promise<String>}                           A promise that will be resolved when the writeTmpFile is completed with the path to it
  *
  * @todo        tests
@@ -29,7 +29,7 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IWriteTmpFileSettings {
+export type TWriteTmpFileSettings = {
     path: string;
-}
-export default function __writeTmpFile(data: any, settings?: Partial<IWriteTmpFileSettings>): Promise<String>;
+};
+export default function __writeTmpFile(data: any, settings?: Partial<TWriteTmpFileSettings>): Promise<String>;

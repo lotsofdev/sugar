@@ -11,7 +11,7 @@ import * as __fs from 'fs';
  * You can specify what you want to take care of using the settings object
  *
  * @param       {String}        path        The path you want to check
- * @param       {IExistsSettings}       [settings={}]       Some settings for what you want to take care of
+ * @param       {TExistsSettings}       [settings={}]       Some settings for what you want to take care of
  * @return      {Boolean}                       true if exists, false if not
  *
  * @setting       {Boolean}       [directory=true]      Specify if you want to take care of directories
@@ -29,16 +29,16 @@ import * as __fs from 'fs';
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IExistsSettings {
+export type TExistsSettings = {
   directory: boolean;
   file: boolean;
   symlink: boolean;
-}
+};
 export default function __existsSync(
   path: string,
-  settings?: Partial<IExistsSettings>,
+  settings?: Partial<TExistsSettings>,
 ): boolean {
-  const set: IExistsSettings = {
+  const set: TExistsSettings = {
     directory: true,
     file: true,
     symlink: true,

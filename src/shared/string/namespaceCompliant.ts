@@ -26,13 +26,13 @@ import __simplifySpecialChars from './simplifySpecialChars.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface InamespaceCompliantSettings {
+export type TNamespaceCompliantSettings = {
   exclude: string[];
-}
+};
 
 export default function __namespaceCompliant(
   str: string,
-  settings?: InamespaceCompliantSettings,
+  settings?: TNamespaceCompliantSettings,
 ): string {
   settings = {
     exclude: [],

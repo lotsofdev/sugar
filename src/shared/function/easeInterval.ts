@@ -15,7 +15,7 @@ import __easeInOutQuart from '../easing/easeInOutQuart.js';
  *
  * @param       {Number}            duration            The duration of your interval process you want
  * @param       {Function}          [cb=null]           A callback function to call at each interval
- * @param       {IEaseIntervalSettings}     [settings={}]       Some settings to customize your interval process
+ * @param       {TEaseIntervalSettings}     [settings={}]       Some settings to customize your interval process
  * @return      {SPromise}                              An SPromise that will be resolved once the process is complete, and through which you can subscribe to the "interval" event that is the same as the "cb" parameter
  *
  * @setting         {Number}        [inteval=1000/25]           An interval in ms to call your callback function
@@ -44,18 +44,18 @@ import __easeInOutQuart from '../easing/easeInOutQuart.js';
  * @author 		Olivier Bossel<olivier.bossel@gmail.com>
  */
 
-export interface IEaseIntervalSettings {
+export type TEaseIntervalSettings = {
   interval?: number;
   easing?: Function;
   from?: number;
   to?: number;
   onEnd?: Function;
-}
+};
 
 export default function __easeInterval(
   duration: number,
   cb: Function,
-  settings: IEaseIntervalSettings = {},
+  settings: TEaseIntervalSettings = {},
 ) {
   let cleared = false,
     animationFrame;

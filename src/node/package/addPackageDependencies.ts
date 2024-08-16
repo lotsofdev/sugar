@@ -16,7 +16,7 @@ import __packageRootDir from './packageRootDir.js';
  * This function allows you to add some dependencies to a package.json file
  *
  * @param       {Object}        deps                    The dependencies to add
- * @param       {IAddPackageDependenciesSettings}     [settings={}]       Some settings to configure your process
+ * @param       {TAddPackageDependenciesSettings}     [settings={}]       Some settings to configure your process
  * @return      {Promise<any>}                      A promise with the package.json content as object
  *
  * @setting     {String}        [cwd=process.cwd()]        The directory in which you want to start the research
@@ -35,17 +35,17 @@ import __packageRootDir from './packageRootDir.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IAddPackageDependenciesSettings {
+export type TAddPackageDependenciesSettings = {
   cwd: string;
   dev: boolean;
   global: boolean;
   install: boolean;
   override: boolean;
-}
+};
 
 export default function __addPackageDependencies(
   deps: Record<string, string>,
-  settings: Partial<IAddPackageDependenciesSettings>,
+  settings: Partial<TAddPackageDependenciesSettings>,
 ): any {
   settings = {
     cwd: process.cwd(),

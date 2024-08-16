@@ -28,10 +28,9 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IParseAuthorStringResult {
+export type TParseAuthorStringResult = {
     name: string;
     email: string;
     url: string;
-}
-export default function __parseAuthorString(string: string): IParseAuthorStringResult;
-export {};
+};
+export default function __parseAuthorString(string: string): TParseAuthorStringResult;

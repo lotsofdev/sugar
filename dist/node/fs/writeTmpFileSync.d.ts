@@ -10,7 +10,7 @@
  * to it.
  *
  * @param       {Any}              data          The data to write in the file
- * @param       {IWriteTmpFileSyncSettings}         [settings={}]           Some settings to customize your temp file creation
+ * @param       {TWriteTmpFileSyncSettings}         [settings={}]           Some settings to customize your temp file creation
  * @return      {Promise}                           A promise that will be resolved when the writeTmpFileSync is completed with the path to it
  *
  * @setting         {String}            [path=null]         A path relative to the temp folder to store your file
@@ -26,7 +26,7 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IWriteTmpFileSyncSettings {
+export type TWriteTmpFileSyncSettings = {
     path: string;
-}
-export default function __writeTmpFileSync(data: any, settings?: Partial<IWriteTmpFileSyncSettings>): string;
+};
+export default function __writeTmpFileSync(data: any, settings?: Partial<TWriteTmpFileSyncSettings>): string;

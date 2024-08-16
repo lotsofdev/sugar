@@ -30,12 +30,12 @@
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IAsyncForEach {
+export type TAsyncForEach = {
   (value: any, index: number, array: any[]): void;
-}
+};
 export default async function __asyncForEach(
   array: any[],
-  asyncFn: IAsyncForEach,
+  asyncFn: TAsyncForEach,
 ): Promise<void> {
   return new Promise(async (resolve) => {
     for (let index = 0; index < array.length; index++) {

@@ -1,4 +1,4 @@
-import type { IRichTextSettings } from './richText.js';
+import type { TRichTextSettings } from './richText.js';
 import __richText from './richText.js';
 export { __richText };
-export type { IRichTextSettings };
+export type { TRichTextSettings };

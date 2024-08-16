@@ -23,14 +23,14 @@
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IParseHslaResult {
+export type TParseHslaResult = {
   h: number;
   s: number;
   l: number;
   a: number;
-}
+};
 
-export default function __parseHsla(hslaString: string): IParseHslaResult {
+export default function __parseHsla(hslaString: string): TParseHslaResult {
   hslaString = hslaString.toLowerCase();
   const string = hslaString
     .replace('hsla(', '')

@@ -27,16 +27,16 @@ import __expandPleasantCssClassname from './expandPleasantCssClassname.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IExtractCssClassesNamesSettings {
+export type TExtractCssClassesNamesSettings = {
   expandPleasantCssClassname?: boolean;
   includeIds?: boolean;
-}
+};
 
 export default function __extractCssClassesNames(
   html: string,
-  settings?: Partial<IExtractCssClassesNamesSettings>,
+  settings?: Partial<TExtractCssClassesNamesSettings>,
 ): string[] {
-  const finalSettings: IExtractCssClassesNamesSettings = {
+  const finalSettings: TExtractCssClassesNamesSettings = {
     expandPleasantCssClassname: true,
     includeIds: false,
     ...(settings ?? {}),

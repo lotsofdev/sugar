@@ -24,17 +24,16 @@
  * @since         2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IParseColorRgbaResult {
+export type TParseColorRgbaResult = {
     r: number;
     g: number;
     b: number;
     a: number;
-}
-interface IParseColorHslaResult {
+};
+export type TParseColorHslaResult = {
     h: number;
     s: number;
     l: number;
     a: number;
-}
-export default function __parseColor(color: string, format?: string): IParseColorHslaResult | IParseColorRgbaResult;
-export {};
+};
+export default function __parseColor(color: string, format?: string): TParseColorHslaResult | TParseColorRgbaResult;

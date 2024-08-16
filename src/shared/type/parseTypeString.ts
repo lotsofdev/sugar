@@ -13,7 +13,7 @@ import __parse from '../string/parse.js';
  * an object defining this type string
  *
  * @param     {String}        typeString      The type string to parse
- * @return    {ITypeStringObject[]}             An array of object(s) describing the type string passed
+ * @return    {TTypeStringObject[]}             An array of object(s) describing the type string passed
  *
  * @snippet         __parseTypeString($1)
  *
@@ -32,15 +32,15 @@ import __parse from '../string/parse.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com>
  */
 
-export interface ITypeStringObject {
+export type TTypeStringObject = {
   type: string;
   of: string[] | undefined;
   value?: any;
-}
+};
 
-export interface IParseTypeStringSingleResultObj {}
+export type TParseTypeStringSingleResultObj = {};
 
-function parseSingleTypeString(typeString: string): ITypeStringObject {
+function parseSingleTypeString(typeString: string): TTypeStringObject {
   let ofStr = '',
     typeStr: string = typeString,
     ofTypes: string[] = [];
@@ -102,7 +102,7 @@ function parseSingleTypeString(typeString: string): ITypeStringObject {
 }
 export default function __parseTypeString(
   typeString: string,
-): ITypeStringObject[] {
+): TTypeStringObject[] {
   const originalTypeString = typeString;
 
   typeString = typeString.trim();
@@ -150,7 +150,7 @@ export default function __parseTypeString(
     type: typeStr,
   });
 
-  let finalTypes: IParseTypeStringSingleResultObj[] = [];
+  let finalTypes: TParseTypeStringSingleResultObj[] = [];
   firstTypes.forEach((type) => {
     if (type.areSubLevels) {
       finalTypes = [...finalTypes, ...__parseTypeString(type.type)];

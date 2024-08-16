@@ -24,7 +24,7 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IurlCompliantSettings {
+export type TUrlCompliantSettings = {
     exclude: string[];
-}
-export default function __urlCompliant(str: string, settings?: IurlCompliantSettings): string;
+};
+export default function __urlCompliant(str: string, settings?: TUrlCompliantSettings): string;

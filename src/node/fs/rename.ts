@@ -24,14 +24,14 @@ import __renameSync from './renameSync.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IRenameSettings {
+export type TRenameSettings = {
   override: boolean;
-}
+};
 
 export default async function __rename(
   src: string,
   newName: string,
-  settings?: Partial<IRenameSettings>,
+  settings?: Partial<TRenameSettings>,
 ): Promise<void> {
   __renameSync(src, newName, settings);
 }

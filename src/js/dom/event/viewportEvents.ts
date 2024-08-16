@@ -9,7 +9,7 @@
  * Monitor when the passed element enter or exit the viewport
  *
  * @param 		{HTMLElement} 						$elm  		The element to monitor
- * @param       {Partial<IViewportEventsSettings>}      [$settings={}]      Some settings to configure your detector
+ * @param       {Partial<TViewportEventsSettings>}      [$settings={}]      Some settings to configure your detector
  * @return 		{HTMLElement} 		                    The passed HTMLElement
  *
  * @setting         {String}        [offset='10px']             An offset to detect the in/out earlier or later
@@ -34,16 +34,16 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IViewportEventsSettings {
+export type TViewportEventsSettings = {
   offset: number | string;
   once: boolean;
-}
+};
 
 const _viewportEventsInited = new WeakMap();
 
 export default function __viewportEvents(
   $elm: HTMLElement,
-  settings?: Partial<IViewportEventsSettings>,
+  settings?: Partial<TViewportEventsSettings>,
 ): HTMLElement {
   let observer,
     status = 'out';
@@ -53,7 +53,7 @@ export default function __viewportEvents(
   }
   _viewportEventsInited.set($elm, true);
 
-  const finalSettings: IViewportEventsSettings = {
+  const finalSettings: TViewportEventsSettings = {
     offset: 25,
     once: false,
     ...(settings ?? {}),

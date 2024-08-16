@@ -10,7 +10,7 @@
  * and returns you the first finded
  *
  * @param       {IFindUpSearch}         search          The name of the file you search
- * @param       {IFindUpSettings}       [settings={}]       An object of settings to configure your research
+ * @param       {TFindUpSettings}       [settings={}]       An object of settings to configure your research
  * @return      {SFile|null}                                 An SFile instance or null if nothings founded
  *
  * @todo            tests
@@ -26,9 +26,9 @@
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IFindUpSettings {
+export type TFindUpSettings = {
     symlinks?: boolean;
     cwd?: string;
     stopWhenFound?: boolean;
-}
-export default function __findUp(search: string, settings: IFindUpSettings): Promise<string[]>;
+};
+export default function __findUp(search: string, settings: TFindUpSettings): Promise<string[]>;

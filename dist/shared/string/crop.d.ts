@@ -29,9 +29,8 @@
  * @since       2.0.0
  * @author 	Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface ICropSettings {
+export type TCropSettings = {
     chars?: string;
     splitWords?: boolean;
-}
-export default function __crop(text: string, length: number, settings?: ICropSettings): string;
-export {};
+};
+export default function __crop(text: string, length: number, settings?: TCropSettings): string;

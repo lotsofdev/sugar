@@ -23,8 +23,7 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IIsDirectorySettings {
+export type TIsDirectorySettings = {
     symlink?: boolean;
-}
-export default function __isDirectory(path: string, settings?: IIsDirectorySettings): boolean;
-export {};
+};
+export default function __isDirectory(path: string, settings?: TIsDirectorySettings): boolean;

@@ -11,7 +11,7 @@ import { BinaryToTextEncoding } from 'crypto';
  * has not been updated...
  *
  * @param           {String}            filePath      The folder path you want to get the hash back
- * @param           {IFileHashSettings}       [settings={}]       Some settings to configure your hash generation process
+ * @param           {TFileHashSettings}       [settings={}]       Some settings to configure your hash generation process
  * @return          {String}                            The calculated folder hash
  *
  * @setting         {String}            [algo='sha356']             The algorithm to use
@@ -28,12 +28,12 @@ import { BinaryToTextEncoding } from 'crypto';
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IFileHashIncludeSettings {
+export type TFileHashIncludeSettings = {
     ctime: boolean;
-}
-export interface IFileHashSettings {
+};
+export type TFileHashSettings = {
     algo: string;
     digest: BinaryToTextEncoding;
-    include: Partial<IFileHashIncludeSettings>;
-}
-export default function __fileHashSync(filePath: string, settings?: Partial<IFileHashSettings>): string;
+    include: Partial<TFileHashIncludeSettings>;
+};
+export default function __fileHashSync(filePath: string, settings?: Partial<TFileHashSettings>): string;

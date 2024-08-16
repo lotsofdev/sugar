@@ -30,8 +30,7 @@
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IAsyncForEach {
+export type TAsyncForEach = {
     (value: any, index: number, array: any[]): void;
-}
-export default function __asyncForEach(array: any[], asyncFn: IAsyncForEach): Promise<void>;
-export {};
+};
+export default function __asyncForEach(array: any[], asyncFn: TAsyncForEach): Promise<void>;

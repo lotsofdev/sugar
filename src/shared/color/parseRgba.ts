@@ -23,14 +23,14 @@
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IParseRgbaResult {
+export type TParseRgbaResult = {
   r: number;
   g: number;
   b: number;
   a: number;
-}
+};
 
-export default function __parseRgba(rgbaString: string): IParseRgbaResult {
+export default function __parseRgba(rgbaString: string): TParseRgbaResult {
   rgbaString = rgbaString.toLowerCase();
   const string = rgbaString
     .replace('rgba(', '')

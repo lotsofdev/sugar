@@ -23,7 +23,7 @@ import { faker } from '@faker-js/faker';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IRichTextSettings {
+export type TRichTextSettings = {
   p?: boolean;
   ul?: boolean;
   ol?: boolean;
@@ -42,9 +42,9 @@ export interface IRichTextSettings {
   h4?: boolean;
   h5?: boolean;
   h6?: boolean;
-}
+};
 
-export default function richText(settings?: IRichTextSettings): string {
+export default function richText(settings?: TRichTextSettings): string {
   const str: string[] = [];
 
   const finalSettings = {

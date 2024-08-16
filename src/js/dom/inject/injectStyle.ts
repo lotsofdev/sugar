@@ -10,7 +10,7 @@ import __uniqid from '../../../js/string/uniqid.js';
  * Inject a passed style string in the DOM
  *
  * @param         {String}          style         The style to inject in DOM
- * @param           {Partial<IInjectStyleSettings>}     [settings=null]         Some settings to configure your injection
+ * @param           {Partial<TInjectStyleSettings>}     [settings=null]         Some settings to configure your injection
  * @return                          {HTMLStyleElement}      The injected HTMLStyleElement node
  *
  * @setting         {String}        id          An id for the injected style tag
@@ -28,16 +28,16 @@ import __uniqid from '../../../js/string/uniqid.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IInjectStyleSettings {
+export type TInjectStyleSettings = {
   id: string;
   rootNode: HTMLElement;
-}
+};
 
 export default function __injectStyle(
   style: any,
-  settings?: Partial<IInjectStyleSettings>,
+  settings?: Partial<TInjectStyleSettings>,
 ) {
-  const finalSettings = <IInjectStyleSettings>{
+  const finalSettings = <TInjectStyleSettings>{
     id: `injected-style-${__uniqid()}`,
     rootNode: undefined,
     ...(settings ?? {}),

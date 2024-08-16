@@ -30,15 +30,15 @@ import * as __rematrix from 'rematrix';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IGetTranslatePropertiesResult {
+export type TGetTranslatePropertiesResult = {
   x: number;
   y: number;
   z: number;
-}
+};
 
 export default function __getTranslateProperties(
   $elm: HTMLElement,
-): IGetTranslatePropertiesResult {
+): TGetTranslatePropertiesResult {
   if (!window.getComputedStyle)
     return {
       x: 0,

@@ -26,16 +26,16 @@ import __isInViewport from '../../is/isInViewport.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IElementsInViewportSettings {
+export type TElementsInViewportSettings = {
   rootNode: HTMLElement;
   threshold: number;
-}
+};
 
 export default function __elementsInViewport(
-  settings: Partial<IElementsInViewportSettings> = {},
+  settings: Partial<TElementsInViewportSettings> = {},
 ): HTMLElement[] {
   // extend settings
-  const finalSettings: IElementsInViewportSettings = {
+  const finalSettings: TElementsInViewportSettings = {
     rootNode: document.body,
     threshold: 10,
     ...settings,

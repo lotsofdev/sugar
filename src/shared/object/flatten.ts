@@ -36,18 +36,18 @@ import __isPlain from '../is/isPlainObject.js';
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IFlattenSettings {
+export type TFlattenSettings = {
   separator?: string;
   array?: boolean;
   quoteSeparatedProperties?: boolean;
   quoteCharacter?: string;
   excludeProps?: string[];
   keepLastIntact?: boolean;
-}
+};
 
 export default function __flatten(
   object: any,
-  settings: IFlattenSettings = {},
+  settings: TFlattenSettings = {},
 ): any {
   const toReturn = {};
 

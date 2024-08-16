@@ -39,12 +39,12 @@ import __deepMap from '../object/deepMap.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IToStringSettings {
+export type TToStringSettings = {
   beautify?: boolean;
   verbose?: boolean;
-}
+};
 
-function fn(value: any, settings: IToStringSettings = {}): string {
+function fn(value: any, settings: TToStringSettings = {}): string {
   settings = {
     beautify: true,
     verbose: true,

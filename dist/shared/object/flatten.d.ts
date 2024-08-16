@@ -33,13 +33,12 @@
  * @since       2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IFlattenSettings {
+export type TFlattenSettings = {
     separator?: string;
     array?: boolean;
     quoteSeparatedProperties?: boolean;
     quoteCharacter?: string;
     excludeProps?: string[];
     keepLastIntact?: boolean;
-}
-export default function __flatten(object: any, settings?: IFlattenSettings): any;
-export {};
+};
+export default function __flatten(object: any, settings?: TFlattenSettings): any;

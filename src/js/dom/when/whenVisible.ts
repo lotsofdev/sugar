@@ -32,22 +32,22 @@ import __uniqid from '../../string/uniqid.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IWhenVisibleSettings {
+export type TWhenVisibleSettings = {
   whenVisible?: Function;
   whenInvisible?: Function;
   once: boolean;
-}
+};
 
 const _whenVisibleStatuses = new WeakMap();
 
 export default function __whenVisible(
   $elm: HTMLElement,
-  settings?: Partial<IWhenVisibleSettings>,
+  settings?: Partial<TWhenVisibleSettings>,
 ): Promise<HTMLElement> {
   let observer: IntersectionObserver;
 
   const pro = new Promise((resolve, reject) => {
-    const finalSettings: IWhenVisibleSettings = {
+    const finalSettings: TWhenVisibleSettings = {
       whenVisible: undefined,
       whenInvisible: undefined,
       once: true,

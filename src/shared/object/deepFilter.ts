@@ -35,21 +35,21 @@ import __isPlainObject from '../is/isPlainObject.js';
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IDeepFilterSettings {
+export type TDeepFilterSettings = {
   clone: boolean;
-}
+};
 
-export interface IDeepFilterFilter {
-  (item: IDeepFilterItem): undefined | boolean;
-}
+export type TDeepFilterFilter = {
+  (item: TDeepFilterItem): undefined | boolean;
+};
 
-export interface IDeepFilterItem {
+export type TDeepFilterItem = {
   key: string;
   value: any;
   isObject: boolean;
-}
+};
 
-function processObj(object: any, filter: IDeepFilterFilter, settings): any {
+function processObj(object: any, filter: TDeepFilterFilter, settings): any {
   const newObj = {},
     keys = Object.keys(object);
 
@@ -94,8 +94,8 @@ function processObj(object: any, filter: IDeepFilterFilter, settings): any {
 
 export default function __deepFilter(
   object: any,
-  filter: IDeepFilterFilter,
-  settings?: Partial<IDeepFilterSettings>,
+  filter: TDeepFilterFilter,
+  settings?: Partial<TDeepFilterSettings>,
 ) {
   settings = {
     clone: true,

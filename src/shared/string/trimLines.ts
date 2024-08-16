@@ -33,15 +33,15 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface ITrimLinesSettings {
+export type TTrimLinesSettings = {
   leftPadding?: number;
   rightPadding?: number;
   keepEmptyLines?: boolean;
-}
+};
 
 export default function __trimLines(
   string: string,
-  settings: ITrimLinesSettings = {},
+  settings: TTrimLinesSettings = {},
 ): string {
   settings = {
     leftPadding: 0,

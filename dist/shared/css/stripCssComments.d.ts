@@ -33,8 +33,8 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IStripCssCommentsSettings {
+export type TStripCssCommentsSettings = {
     block: boolean;
     line: boolean;
-}
-export default function stripCssComments(css: any, settings?: IStripCssCommentsSettings): string;
+};
+export default function stripCssComments(css: any, settings?: TStripCssCommentsSettings): string;

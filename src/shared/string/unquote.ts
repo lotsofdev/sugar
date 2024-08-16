@@ -11,7 +11,7 @@
  * - `"`, `'`, `”`, '`'
  *
  * @param    {String}    string    The string to process
- * @param    {IUnquoteSettings}    [settings={}]    Some settings to configure your unquoting process
+ * @param    {TUnquoteSettings}    [settings={}]    Some settings to configure your unquoting process
  * @return    {String}    The unquoted string
  *
  * @todo      tests
@@ -26,15 +26,15 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IUnquoteSettings {
+export type TUnquoteSettings = {
   quotesToRemove: string[];
-}
+};
 
 export default function __unquote(
   string: string,
-  settings?: Partial<IUnquoteSettings>,
+  settings?: Partial<TUnquoteSettings>,
 ): string {
-  const finalSettings: IUnquoteSettings = {
+  const finalSettings: TUnquoteSettings = {
     quotesToRemove: ['"', "'", '”', '`'],
     ...(settings ?? {}),
   };

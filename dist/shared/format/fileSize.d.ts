@@ -37,7 +37,7 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IFormatFileSizeSettings {
+export type TFormatFileSizeSettings = {
     base?: number;
     bits?: boolean;
     exponent?: number;
@@ -49,6 +49,5 @@ interface IFormatFileSizeSettings {
     round?: number;
     separator?: string;
     spacer?: string;
-}
-export default function __formatFileSize(size: number, settings?: IFormatFileSizeSettings): string | number | import("filesize").FileSizeReturnArray | import("filesize").FileSizeReturnObject;
-export {};
+};
+export default function __formatFileSize(size: number, settings?: TFormatFileSizeSettings): string | number | import("filesize").FileSizeReturnArray | import("filesize").FileSizeReturnObject;

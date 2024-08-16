@@ -40,7 +40,7 @@ import { filesize as __filesize } from 'filesize';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IFormatFileSizeSettings {
+export type TFormatFileSizeSettings = {
   base?: number;
   bits?: boolean;
   exponent?: number;
@@ -52,11 +52,11 @@ interface IFormatFileSizeSettings {
   round?: number;
   separator?: string;
   spacer?: string;
-}
+};
 
 export default function __formatFileSize(
   size: number,
-  settings: IFormatFileSizeSettings = {},
+  settings: TFormatFileSizeSettings = {},
 ) {
   // @ts-ignore
   return __filesize(size, settings);

@@ -22,11 +22,10 @@
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IParseRgbaResult {
+export type TParseRgbaResult = {
     r: number;
     g: number;
     b: number;
     a: number;
-}
-export default function __parseRgba(rgbaString: string): IParseRgbaResult;
-export {};
+};
+export default function __parseRgba(rgbaString: string): TParseRgbaResult;

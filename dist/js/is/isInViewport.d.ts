@@ -24,6 +24,5 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IInViewport {
-}
-export default function __isInViewport(elm: HTMLElement, settings?: Partial<IInViewport>): boolean;
+export type TIsInViewport = {};
+export default function __isInViewport(elm: HTMLElement, settings?: Partial<TIsInViewport>): boolean;

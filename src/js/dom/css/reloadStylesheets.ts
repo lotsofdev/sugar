@@ -23,14 +23,14 @@ import __uniqid from '../../string/uniqid.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IReloadStylesheetsSettings {
+export type TReloadStylesheetsSettings = {
   $root: HTMLElement | Document;
-}
+};
 
 export default function reloadStylesheets(
-  settings?: Partial<IReloadStylesheetsSettings>,
+  settings?: Partial<TReloadStylesheetsSettings>,
 ): void {
-  const finalSettings: IReloadStylesheetsSettings = {
+  const finalSettings: TReloadStylesheetsSettings = {
     $root: document,
     ...(settings ?? {}),
   };

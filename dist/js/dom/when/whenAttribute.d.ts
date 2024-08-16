@@ -45,7 +45,7 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IWhenAttributeSettings {
+export type TWhenAttributeSettings = {
     check?: Function;
-}
-export default function __whenAttribute($elm: HTMLElement, attrName: string, settings?: IWhenAttributeSettings): Promise<any>;
+};
+export default function __whenAttribute($elm: HTMLElement, attrName: string, settings?: TWhenAttributeSettings): Promise<any>;

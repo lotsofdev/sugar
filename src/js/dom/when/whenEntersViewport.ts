@@ -14,7 +14,7 @@ import __isInViewport from '../../is/isInViewport.js';
  * @feature       Some settings available to tweak the behavior
  *
  * @param 		{HTMLElement} 				elm 					The element to monitor
- * @param 		{Partial<IWhenEntersViewportSettings>} 					[settings={}] 		Some settings to tweak the detection behavior
+ * @param 		{Partial<TWhenEntersViewportSettings>} 					[settings={}] 		Some settings to tweak the detection behavior
  * @return 		(Promise<HTMLElement>) 											The promise that will be resolved when the element is in the viewport
  *
  * @setting         {String}        [offset='0px 0px -25% 0px']         An offset to detect the element entering in viewport earlier or later
@@ -36,13 +36,13 @@ import __isInViewport from '../../is/isInViewport.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IWhenEntersViewportSettings {
+export type TWhenEntersViewportSettings = {
   offset: string | number | undefined;
-}
+};
 
 export default function __whenEntersViewport(
   elm: HTMLElement,
-  settings?: IWhenEntersViewportSettings,
+  settings?: TWhenEntersViewportSettings,
 ): Promise<HTMLElement> {
   function getRootMargin(): string {
     return [
@@ -53,7 +53,7 @@ export default function __whenEntersViewport(
     ].join(' ');
   }
 
-  const finalSettings: IWhenEntersViewportSettings = {
+  const finalSettings: TWhenEntersViewportSettings = {
     offset: undefined,
     ...settings,
   };

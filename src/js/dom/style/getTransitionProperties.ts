@@ -33,17 +33,17 @@ import __getStyleProperty from './getStyleProperty.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IGetTransitionPropertiesResult {
-  transitions: IGetTransitionPropertiesObject[];
+export type TGetTransitionPropertiesResult = {
+  transitions: TGetTransitionPropertiesObject[];
   totalDuration: number;
-}
+};
 
-export interface IGetTransitionPropertiesObject {
+export type TGetTransitionPropertiesObject = {
   property: string;
   duration: number;
   delay: number;
   timingFunction: string;
-}
+};
 
 function splitIfNeeded(what, separator) {
   if (what.includes?.(separator)) {
@@ -54,7 +54,7 @@ function splitIfNeeded(what, separator) {
 
 function getTransitionProperties(
   elm: HTMLElement,
-): IGetTransitionPropertiesResult {
+): TGetTransitionPropertiesResult {
   // get the transition properties
   const property = __getStyleProperty(elm, 'transition-property');
   const duration = __getStyleProperty(elm, 'transition-duration') || 0;
@@ -73,7 +73,7 @@ function getTransitionProperties(
     timingFunctions: splitIfNeeded(timingFunction, ','),
   };
 
-  const result: IGetTransitionPropertiesResult = {
+  const result: TGetTransitionPropertiesResult = {
     transitions: [],
     totalDuration: 0,
   };

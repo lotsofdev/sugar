@@ -1,6 +1,4 @@
-import composerVendorDir, {
-  IcomposerVendorDirSettings,
-} from '../composerVendorDir';
+import composerVendorDir from '../composerVendorDir';
 
 describe('sugar.node.composer.composerVendorDir', () => {
   it('should return the correct vendor dirs for the sugar package', () => {

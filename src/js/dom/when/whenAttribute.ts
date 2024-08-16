@@ -48,17 +48,17 @@ import __parse from '../../../shared/string/parse.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IWhenAttributeSettings {
+export type TWhenAttributeSettings = {
   check?: Function;
-}
+};
 
 export default function __whenAttribute(
   $elm: HTMLElement,
   attrName: string,
-  settings?: IWhenAttributeSettings,
+  settings?: TWhenAttributeSettings,
 ): Promise<any> {
   return new Promise(async (resolve) => {
-    const finalSettings: IWhenAttributeSettings = {
+    const finalSettings: TWhenAttributeSettings = {
       check: undefined,
       ...(settings ?? {}),
     };

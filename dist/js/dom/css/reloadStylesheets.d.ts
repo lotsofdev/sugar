@@ -20,7 +20,7 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IReloadStylesheetsSettings {
+export type TReloadStylesheetsSettings = {
     $root: HTMLElement | Document;
-}
-export default function reloadStylesheets(settings?: Partial<IReloadStylesheetsSettings>): void;
+};
+export default function reloadStylesheets(settings?: Partial<TReloadStylesheetsSettings>): void;

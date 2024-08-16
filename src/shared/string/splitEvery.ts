@@ -12,7 +12,7 @@ import __countLineChars from './countLineChars.js';
  *
  * @param               {String}                  text                      The text to split
  * @param               {Number}                  every                     How many characters to split the text
- * @param               {Partial<ISplitEverySettings}       [settings={}]       Some settings to configure your split process
+ * @param               {Partial<TSplitEverySettings}       [settings={}]       Some settings to configure your split process
  * @return              {Array}                                             An array of the splited text parts
  *
  * @setting         {Boolean}           [splitWords=true]        If you want to split the words or not...
@@ -33,16 +33,16 @@ import __countLineChars from './countLineChars.js';
 
 // TODO: Add support for special characters like terminal colors, html tags, etc...
 
-export interface ISplitEverySettings {
+export type TSplitEverySettings = {
   splitWords: boolean;
-}
+};
 
 export default function __splitEvery(
   text: string,
   every: number,
-  settings: Partial<ISplitEverySettings> = {},
+  settings: Partial<TSplitEverySettings> = {},
 ): string[] {
-  const finalSettings: ISplitEverySettings = {
+  const finalSettings: TSplitEverySettings = {
     splitWords: true,
     ...settings,
   };

@@ -1,4 +1,4 @@
-import replaceTokens, { IReplaceTokensSettings } from '../replaceTokens';
+import replaceTokens, { TReplaceTokensSettings } from '../replaceTokens';
 
 describe('replaceTokens', () => {
   it('should replace tokens in a string', () => {
@@ -7,7 +7,7 @@ describe('replaceTokens', () => {
   });
 
   it('should use the provided regexp to match tokens', () => {
-    const settings: IReplaceTokensSettings = {
+    const settings: TReplaceTokensSettings = {
       regexp: '\\{([a-zA-Z0-9-_]+)\\}',
     };
     const result = replaceTokens('hello {world}', { world: 'Coco' }, settings);
@@ -15,7 +15,7 @@ describe('replaceTokens', () => {
   });
 
   it('should remove undefined tokens when stripUndefined is true', () => {
-    const settings: IReplaceTokensSettings = { stripUndefined: true };
+    const settings: TReplaceTokensSettings = { stripUndefined: true };
     const result = replaceTokens(
       'hello [world] [foo]',
       { world: 'Coco' },
@@ -25,7 +25,7 @@ describe('replaceTokens', () => {
   });
 
   it('should leave undefined tokens when stripUndefined is false', () => {
-    const settings: IReplaceTokensSettings = { stripUndefined: false };
+    const settings: TReplaceTokensSettings = { stripUndefined: false };
     const result = replaceTokens(
       'hello [world] [foo]',
       { world: 'Coco' },

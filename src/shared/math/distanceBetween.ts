@@ -33,14 +33,14 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface IDistanceBetweenPoint {
+export type TDistanceBetweenPoint = {
   x: number;
   y: number;
-}
+};
 
 export default function __distanceBetween(
-  point1: IDistanceBetweenPoint,
-  point2: IDistanceBetweenPoint,
+  point1: TDistanceBetweenPoint,
+  point2: TDistanceBetweenPoint,
 ): number {
   let xs = 0;
   let ys = 0;

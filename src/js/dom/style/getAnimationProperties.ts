@@ -35,7 +35,7 @@ import __getStyleProperty from './getStyleProperty.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IGetAnimationPropertiesObject {
+export type TGetAnimationPropertiesObject = {
   name: string;
   duration: number;
   delay: number;
@@ -44,12 +44,12 @@ export interface IGetAnimationPropertiesObject {
   direction: string;
   fillMode: string;
   playState: string;
-}
+};
 
-export interface IGetAnimationPropertiesResult {
+export type TGetAnimationPropertiesResult = {
   totalDuration: number;
-  animations: IGetAnimationPropertiesObject[];
-}
+  animations: TGetAnimationPropertiesObject[];
+};
 
 export default function __getAnimationProperties(elm: HTMLElement) {
   // get the animation properties
@@ -80,8 +80,8 @@ export default function __getAnimationProperties(elm: HTMLElement) {
     playStates: playState.split(','),
   };
 
-  const animations: IGetAnimationPropertiesObject[] = [];
-  const result: IGetAnimationPropertiesResult = {
+  const animations: TGetAnimationPropertiesObject[] = [];
+  const result: TGetAnimationPropertiesResult = {
     totalDuration: 0,
     animations,
   };

@@ -35,12 +35,12 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IWhenInteractSettings {
+export type TWhenInteractSettings = {
     pointerover: boolean;
     pointerout: boolean;
     pointerdown: boolean;
     touchstart: boolean;
     touchend: boolean;
     focus: boolean;
-}
-export default function __whenInteract(elm: HTMLElement, settings?: Partial<IWhenInteractSettings>): Promise<any>;
+};
+export default function __whenInteract(elm: HTMLElement, settings?: Partial<TWhenInteractSettings>): Promise<any>;

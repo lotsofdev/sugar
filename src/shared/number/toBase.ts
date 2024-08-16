@@ -26,14 +26,14 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IToBaseSettings {
+export type TToBaseSettings = {
   chars: string;
-}
+};
 
 export default function __toBase(
   num: number,
   base: number,
-  settings?: IToBaseSettings,
+  settings?: TToBaseSettings,
 ): string {
   settings = {
     chars: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',

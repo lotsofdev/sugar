@@ -29,7 +29,7 @@
  * @since           2.0.0
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface ICamelCasePropsSettings {
+export type TCamelCasePropsSettings = {
     deep: boolean;
-}
-export default function __camelCaseProps(object: any, settings?: Partial<ICamelCasePropsSettings>): any;
+};
+export default function __camelCaseProps(object: any, settings?: Partial<TCamelCasePropsSettings>): any;

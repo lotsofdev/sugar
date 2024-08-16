@@ -71,19 +71,19 @@ function RGBAToHSLA(r, g, b, a) {
   return { h, s, l, a };
 }
 
-interface IRgbaToHslaResult {
+export type TRgbaToHslaResult = {
   h: number;
   s: number;
   l: number;
   a: number;
-}
+};
 
 export default function __rgbaToHsla(
   r: string | number | any,
   g: number,
   b: number,
   a = 1,
-): IRgbaToHslaResult {
+): TRgbaToHslaResult {
   // string support
   if (typeof r === 'string') {
     if (!r.match(/^rgba?\(/)) {

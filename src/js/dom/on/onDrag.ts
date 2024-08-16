@@ -33,25 +33,25 @@ import __positionFromEvent from '../position/positionFromEvent.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IOnDragTrackItem {
+export type TOnDragTrackItem = {
   x: number;
   y: number;
   deltaX: number;
   deltaY: number;
   speedX: number;
   speedY: number;
-}
+};
 
-export interface IOnDragSettings {
+export type TOnDragSettings = {
   maxSpeed: number;
-}
+};
 
 export default function __onDrag(
   $elm: HTMLElement,
   cb: Function,
-  settings?: Partial<IOnDragSettings>,
+  settings?: Partial<TOnDragSettings>,
 ): void {
-  const finalSettings = <IOnDragSettings>{
+  const finalSettings = <TOnDragSettings>{
     maxSpeed: 0.01,
     ...(settings ?? {}),
   };

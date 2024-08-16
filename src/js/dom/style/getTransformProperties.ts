@@ -34,18 +34,18 @@ import __getTranslateProperties from './getTranslateProperties.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IGetTransformPropertiesResult {
+export type TGetTransformPropertiesResult = {
   translateX: number;
   translateY: number;
   translateZ: number;
   rotateX: number;
   rotateY: number;
   rotateZ: number;
-}
+};
 
 function getTransformProperties(
   $elm: HTMLElement,
-): IGetTransformPropertiesResult {
+): TGetTransformPropertiesResult {
   const rotates = __getRotateProperties($elm),
     translates = __getTranslateProperties($elm);
 

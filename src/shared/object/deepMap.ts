@@ -41,17 +41,17 @@ import __clone from './clone.js';
  * @author  Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IDeepMapSettings {
+export type TDeepMapSettings = {
   classInstances?: boolean;
   array?: boolean;
   clone?: boolean;
   privateProps?: boolean;
-}
+};
 
 export default function __deepMap(
   objectOrArray: any,
   processor?: Function,
-  settings?: IDeepMapSettings,
+  settings?: TDeepMapSettings,
   _path = [],
 ): any {
   settings = __deepMerge(

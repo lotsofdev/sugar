@@ -23,9 +23,9 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IGetScalePropertyResult {
+export type TGetScalePropertyResult = {
     x: number;
     y: number;
     z: number;
-}
-export default function __getScaleProperty($elm: HTMLElement): IGetScalePropertyResult | undefined;
+};
+export default function __getScaleProperty($elm: HTMLElement): TGetScalePropertyResult | undefined;

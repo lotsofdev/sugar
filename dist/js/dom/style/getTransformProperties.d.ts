@@ -30,13 +30,13 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IGetTransformPropertiesResult {
+export type TGetTransformPropertiesResult = {
     translateX: number;
     translateY: number;
     translateZ: number;
     rotateX: number;
     rotateY: number;
     rotateZ: number;
-}
-declare function getTransformProperties($elm: HTMLElement): IGetTransformPropertiesResult;
+};
+declare function getTransformProperties($elm: HTMLElement): TGetTransformPropertiesResult;
 export default getTransformProperties;

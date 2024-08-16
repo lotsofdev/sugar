@@ -33,18 +33,18 @@ import __findPkgJson from 'find-package-json';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IPackageRootSettings {
+export type TPackageRootSettings = {
   highest: boolean;
   upCount: number | undefined;
   requiredProperties: string[];
-}
+};
 
 const __packageRootDirsCache = {};
 export default function __packageRootDir(
   from = process.cwd(),
-  settings?: Partial<IPackageRootSettings>,
+  settings?: Partial<TPackageRootSettings>,
 ) {
-  const finalSettings: IPackageRootSettings = {
+  const finalSettings: TPackageRootSettings = {
     highest: false,
     upCount: undefined,
     requiredProperties: ['name', 'version'],

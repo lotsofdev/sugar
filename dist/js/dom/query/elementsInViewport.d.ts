@@ -23,8 +23,8 @@
  * @since           2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface IElementsInViewportSettings {
+export type TElementsInViewportSettings = {
     rootNode: HTMLElement;
     threshold: number;
-}
-export default function __elementsInViewport(settings?: Partial<IElementsInViewportSettings>): HTMLElement[];
+};
+export default function __elementsInViewport(settings?: Partial<TElementsInViewportSettings>): HTMLElement[];

@@ -27,13 +27,13 @@ import __simplifySpecialChars from './simplifySpecialChars.js';
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IIdCompliantSettings {
+export type TIdCompliantSettings = {
   exclude: string[];
-}
+};
 
 export default function __idCompliant(
   str: string,
-  settings?: IIdCompliantSettings,
+  settings?: TIdCompliantSettings,
 ): string {
   settings = {
     exclude: [],

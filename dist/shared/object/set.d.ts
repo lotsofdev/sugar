@@ -27,7 +27,7 @@
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export interface ISetSettings {
+export type TSetSettings = {
     preferAssign: boolean;
-}
-export default function __set(obj: any, path: string | string[], value: any, settings?: ISetSettings): void;
+};
+export default function __set(obj: any, path: string | string[], value: any, settings?: TSetSettings): void;

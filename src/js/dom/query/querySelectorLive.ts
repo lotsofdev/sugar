@@ -46,7 +46,7 @@ import __when from '../when/when.js';
  * @author 	Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IQuerySelectorLiveSettings {
+export type TQuerySelectorLiveSettings = {
   rootNode: HTMLElement | Document;
   once: boolean;
   afterFirst?: Function;
@@ -54,23 +54,23 @@ export interface IQuerySelectorLiveSettings {
   firstOnly: boolean;
   when?: TWhenTrigger<string>;
   attributes: string[];
-}
+};
 
-export interface IQuerySelectorLiveApi {
+export type TQuerySelectorLiveApi = {
   cancel: Function;
-}
+};
 
 type TQuerySelectorLiveCallback = (
   $elm: HTMLElement,
-  api: IQuerySelectorLiveApi,
+  api: TQuerySelectorLiveApi,
 ) => void;
 
 export default function __querySelectorLive(
   selector: string,
   cb: TQuerySelectorLiveCallback,
-  settings?: Partial<IQuerySelectorLiveSettings>,
+  settings?: Partial<TQuerySelectorLiveSettings>,
   _isFirstLevel = true,
-): IQuerySelectorLiveApi {
+): TQuerySelectorLiveApi {
   let noScopeSelector,
     observer,
     canceled = false;
@@ -78,7 +78,7 @@ export default function __querySelectorLive(
   const selectedNodes: HTMLElement[] = [];
 
   // extend settings
-  const finalSettings: IQuerySelectorLiveSettings = {
+  const finalSettings: TQuerySelectorLiveSettings = {
     rootNode: document,
     once: true,
     afterFirst: undefined,
@@ -89,7 +89,7 @@ export default function __querySelectorLive(
     ...(settings ?? {}),
   };
 
-  const innerQuerySelectorLive: IQuerySelectorLiveApi[] = [];
+  const innerQuerySelectorLive: TQuerySelectorLiveApi[] = [];
 
   // process selectors when scopes are true
   if (finalSettings.scopes) {

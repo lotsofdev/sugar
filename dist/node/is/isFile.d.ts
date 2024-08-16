@@ -21,8 +21,7 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface IIsFileSettings {
+export type TIsFileSettings = {
     symlink?: boolean;
-}
-export default function __isFile(path: string, settings?: IIsFileSettings): boolean;
-export {};
+};
+export default function __isFile(path: string, settings?: TIsFileSettings): boolean;

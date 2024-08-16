@@ -32,10 +32,9 @@
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-interface ITrimLinesSettings {
+export type TTrimLinesSettings = {
     leftPadding?: number;
     rightPadding?: number;
     keepEmptyLines?: boolean;
-}
-export default function __trimLines(string: string, settings?: ITrimLinesSettings): string;
-export {};
+};
+export default function __trimLines(string: string, settings?: TTrimLinesSettings): string;

@@ -33,15 +33,15 @@ import __countLineChars from './countLineChars.js';
  * @author 	Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-interface ICropSettings {
+export type TCropSettings = {
   chars?: string;
   splitWords?: boolean;
-}
+};
 
 export default function __crop(
   text: string,
   length: number,
-  settings: ICropSettings = {},
+  settings: TCropSettings = {},
 ): string {
   settings = __deepMerge(
     {

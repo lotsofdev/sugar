@@ -13,7 +13,7 @@ import __nodeModulesDir from './nodeModulesDir.js';
  * package direcory path
  *
  * @param       {String}        [nameOrPath=process.cwd()]        the package name or path wanted
- * @param       {IPackageDirSettings}     [settings={}]       Some settings to configure your process
+ * @param       {TPackageDirSettings}     [settings={}]       Some settings to configure your process
  * @return      {String}                      The package path
  *
  * @setting     {String}        [cwd=process.cwd()]        The directory in which you want to start the research
@@ -32,15 +32,15 @@ import __nodeModulesDir from './nodeModulesDir.js';
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
 
-export interface IPackageDirSettings {
+export type TPackageDirSettings = {
   cwd: string;
   monorepo: boolean;
   checkExistence: boolean;
-}
+};
 
 export default function packageDir(
   nameOrPath: string,
-  settings: Partial<IPackageDirSettings>,
+  settings: Partial<TPackageDirSettings>,
 ): any {
   settings = {
     cwd: process.cwd(),
