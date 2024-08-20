@@ -60,7 +60,7 @@ export default function __onDrag(
 
   let startPos, $target;
 
-  let track: IOnDragTrackItem[] = [];
+  let track: TOnDragTrackItem[] = [];
 
   let lastCapturedTime;
 

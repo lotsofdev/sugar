@@ -1,7 +1,7 @@
 import __uniqid from '../string/uniqid.js';
 
 /**
- * @name 		            escaoeQueue
+ * @name 		            escapeQueue
  * @namespace           js.keyboard
  * @type                Function
  * @platform            js
@@ -35,7 +35,6 @@ import __uniqid from '../string/uniqid.js';
  * // if you want to cancel your subscription
  * promise.cancel();
  *
- * @see         https://www.npmjs.com/package/hotkeys-js
  * @since       2.0.0
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */

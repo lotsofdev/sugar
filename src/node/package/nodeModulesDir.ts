@@ -26,11 +26,11 @@ import __packageRootDir from './packageRootDir.js';
  * @since       2.0.0
  * @author         Olivier Bossel <olivier.bossel@gmail.com> (https://lotsof.dev)
  */
-export type TNodeModulesDirSettings {
+export type TNodeModulesDirSettings = {
   cwd: string;
   monorepo: boolean;
   checkExistence: boolean;
-}
+};
 
 export default function nodeModulesDir(
   settings?: Partial<TNodeModulesDirSettings>,

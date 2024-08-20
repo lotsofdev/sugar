@@ -307,6 +307,7 @@
     "json-cyclic": "^1.0.2",
     "lodash.clone": "^4.5.0",
     "lodash.clonedeep": "^4.5.0",
+    "mark.js": "^8.11.1",
     "memoizee": "^0.4.15",
     "micromatch": "^4.0.5",
     "minimatch": "^9.0.3",
