@@ -14,7 +14,7 @@
  * @param         {Object}      [settings={}]    An option object to configure your hotkey. Here's the list of available settings:
  * @return      {SPromise}                       An SPromise instance that will be resolved when the user has pressed the escape key and that it's yout turn in the queue
  *
- * @setting         {HTMLElement}       [rootNode=document]         Specify where to add the listener
+ * @setting         {HTMLElement}       [ctx=document]         Specify where to add the listener
  * @setting         {String}            [id=null]                   Specify an id. If specified, will before unqueue the previous item with the same id and add it again
  *
  * @todo      tests
@@ -38,7 +38,7 @@
  */
 export type TEscapeQueueSettings = {
     id?: string;
-    rootNode?: HTMLElement | Document | HTMLElement[] | Document[];
+    ctx?: HTMLElement | Document | HTMLElement[] | Document[];
 };
 export type TEscapeQueueApi = {
     cancel: Function;

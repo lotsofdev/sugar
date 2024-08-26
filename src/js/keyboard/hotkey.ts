@@ -10,11 +10,20 @@
  * - ctrl+a
  * - shift+ctrl+a
  * - a
+ * This function take care of avoiding to call your callback when the active element
+ * is an input, a textarea or an editable content with the "contenteditable" attribute,
+ * unless:
+ * - the "meta" or "ctrl" key is used in the hotkey.
+ * - the pressed key is the "escape" key.
+ *
  *
  * @param       {String}        key         The key to listen for
  * @param       {Function}      callback    The callback to call when the hotkey is pressed
  * @param       {THotkeySettings}      [settings={}]       Some settings to configure your hotkey
  * @return      {THotkeyApi}                          An object with a cancel method that you can call to cancel the hotkey
+ *
+ * @setting    {HTMLElement}       [ctx=document.body]       The context in which to listen for the hotkey
+ * @setting    {Boolean}           [preventDefault=true]    Specify if you want to prevent the default behavior of the hotkey
  *
  * @todo      tests
  *
@@ -36,7 +45,7 @@
  */
 
 export type THotkeySettings = {
-  $elm: HTMLElement;
+  ctx: HTMLElement | Document;
   preventDefault: boolean;
 };
 
@@ -47,30 +56,74 @@ export type THotkeyApi = {
 export default function __hotkey(
   key: string,
   callback: Function,
-  settings?: THotkeySettings,
+  settings?: Partial<THotkeySettings>,
 ): THotkeyApi {
   const finalSettings: THotkeySettings = {
-    $elm: document.body,
+    ctx: document.body,
     preventDefault: true,
     ...(settings ?? {}),
   };
 
-  const keys = key.split('+'),
-    finalKey = keys.pop();
+  const keys = key.split('+').map((k) => {
+      if (k === 'command' || k === 'cmd') {
+        return 'meta';
+      }
+      if (k === 'escape' || k === 'esc') {
+        return 'Escape';
+      }
+      return k;
+    }),
+    finalKey = keys[keys.length - 1];
+
+  const specialKeys = ['shift', 'ctrl', 'alt', 'meta'];
+
+  const isMultipleSpecialKeys =
+    keys.filter((k) => specialKeys.includes(k)).length > 1;
 
   const _handler = (e) => {
+    // handle the active element.
+    // if it is an input, textarea, etc... and the hotkey does not
+    // include the meta key, then return
+    const $activeElement = document.activeElement;
+    if (
+      $activeElement?.tagName === 'INPUT' ||
+      $activeElement?.tagName === 'TEXTAREA' ||
+      $activeElement?.hasAttribute('contenteditable')
+    ) {
+      if (
+        !keys.includes('meta') &&
+        !keys.includes('ctrl') &&
+        finalKey !== 'Escape'
+      ) {
+        return;
+      }
+    }
+
     // handle the final key
     if (e.key !== finalKey) {
       return;
     }
 
     // handle the other keys (ctrl, shift, etc...)
-    if (keys.length) {
-      for (const k of keys) {
-        if (!e[`${k}Key`]) {
-          return;
-        }
-      }
+    let multipleSpecialKeys =
+        [e.shiftKey, e.ctrlKey, e.altKey, e.metaKey].filter((k) => k).length >
+        1,
+      hasSpecialKeys = e.shiftKey || e.ctrlKey || e.altKey || e.metaKey;
+
+    if (keys.length > 1 && !hasSpecialKeys) {
+      return;
+    }
+
+    if (isMultipleSpecialKeys && !multipleSpecialKeys) {
+      return;
+    }
+    if (
+      (e.ctrlKey && !keys.includes('ctrl')) ||
+      (e.metaKey && !keys.includes('meta')) ||
+      (e.altKey && !keys.includes('alt')) ||
+      (e.shiftKey && !keys.includes('shift'))
+    ) {
+      return;
     }
 
     // prevent default if needed
@@ -82,11 +135,11 @@ export default function __hotkey(
     callback(e);
   };
 
-  finalSettings.$elm.addEventListener('keyup', _handler);
+  finalSettings.ctx.addEventListener('keydown', _handler);
 
   return {
     cancel: () => {
-      finalSettings.$elm.removeEventListener('keyup', _handler);
+      finalSettings.ctx.removeEventListener('keydown', _handler);
     },
   };
 }

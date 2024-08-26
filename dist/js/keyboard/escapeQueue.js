@@ -8,13 +8,13 @@ class CancelablePromise extends Promise {
 export default function escapeQueue(callback, settings) {
     const pro = new CancelablePromise((resolve) => {
         var _a;
-        const finalSettings = Object.assign({ rootNode: document }, (settings !== null && settings !== void 0 ? settings : {}));
+        const finalSettings = Object.assign({ ctx: document }, (settings !== null && settings !== void 0 ? settings : {}));
         // @ts-ignore
-        const roots = Array.isArray(finalSettings.rootNode)
-            ? finalSettings.rootNode
-            : [finalSettings.rootNode];
+        const roots = Array.isArray(finalSettings.ctx)
+            ? finalSettings.ctx
+            : [finalSettings.ctx];
         roots.forEach(($root) => {
-            // make sure we only register 1 by rootNode
+            // make sure we only register 1 by ctx
             if (_escapeQueueMap.has($root))
                 return;
             _escapeQueueMap.set($root, true);
